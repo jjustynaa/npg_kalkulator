@@ -6,10 +6,17 @@
 #define PROJEKT_PROJEKT_HPP
 
 #include <iostream>
+#include <cmath>
+#include <iomanip>
 #include <string>
 
-void blankspace_deleter(std::string);
+void cykl_o_tryg();
 
+void cykl();
+
+void tryg();
+
+void print_zao();
 
 
 #endif //PROJEKT_PROJEKT_HPP
