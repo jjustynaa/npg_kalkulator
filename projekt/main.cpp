@@ -60,7 +60,7 @@ int main() {
     {
         case '1': //// ten case sprawdza i 1 i 10
             if (funk == "0"){
-                std::cout << "10";
+                cykl_o_tryg();
                 break;
             }else if (funk == "\0") {
                 std::cout << "1";
@@ -79,7 +79,7 @@ int main() {
             //przerzut na porówania
             break;
         case '6':
-            //przerzut na zaokrąglenia
+            print_zao();
             break;
         case '7':
             //przerzut na funkcje kwadratową
@@ -123,7 +123,8 @@ int main() {
     switch (com) {
         case '1':
             if (comend == "0"){
-                std::cout << "10"; // zmienić 10 na opis co robi ta funkcja
+                std::cout << "Program tworzy funkcje cyklometryczną lub trygonometryczną\nNależy najpierwy wpisać rodzaj funkcji a następnie wartość np.:\nsin( 90\n\n"
+                             "Dodatkowo do wyboru w funkcji trygonometrycznej można wybrać czy wpisuje się kąt w radianach czy w stopniach\nFunkcja cyklometryczna podaje wartość w stopniach." << std::endl;
                 break;
             }else if (comend == "\0") {
                 std::cout << "1"; // analogicznie jak wyżej ale to co wyrzej
@@ -144,7 +145,7 @@ int main() {
             //przerzut na porówania
             goto p_menu;
         case '6':
-            //przerzut na zaokrąglenia
+            std::cout << "Zaokrąglenie przyjmuje dwie wartości liczbe do zaokrąglania oraz liczbe miejsc po przecinku ile jest oczekujesz otrzymać" << std::endl;
             goto p_menu;
         case '7':
             //przerzut na funkcje kwadratową
@@ -154,9 +155,6 @@ int main() {
             goto p_menu;
         case '9':
             //perzut na logarytmy
-            goto p_menu;
-        case '10':
-            //przerzut na sin i arcsin
             goto p_menu;
         case 'b':
             if (comend == "ack") {
@@ -171,18 +169,5 @@ int main() {
             goto help;
 
     }
-
-//    finish:
-//    std::string con;
-//    std::cout << "Chcesz kontunuować? [T/N]";
-//    std::cin >> con;
-//    if (con == "T"){
-//        goto p_menu;
-//    } else{
-//        return 0;
-//    }
-
-
-
 
 }
