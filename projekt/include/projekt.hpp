@@ -5,6 +5,8 @@
 #include <cmath>
 #include <iomanip>
 #include <string>
+#include <vector>
+#include <cstddef>
 
 void cykl_o_tryg();
 
@@ -20,5 +22,10 @@ double multiplication(double num1, double num2);
 double exponential(double num1, double num2);
 int modulo(int num1, int num2);
 
+std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col);
+void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col);
+void addMatrix();
+void substractMatrix();
+void matrix();
 
 #endif //PROJEKT_PROJEKT_HPP
