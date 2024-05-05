@@ -3,6 +3,30 @@
 //
 #include "projekt.hpp"
 
+double addition(double num1, double num2) {
+    return num1 + num2;
+}
+
+double subtraction(double num1, double num2) {
+    return num1 - num2;
+}
+
+double division(double num1, double num2) {
+    return num1 / num2;
+}
+
+double multiplication(double num1, double num2) {
+    return num1 * num2;
+}
+
+double exponential(double num1, double num2) {
+    return pow(num1, num2);
+}
+
+int modulo(int num1, int num2) {
+    return num1 % num2;
+}
+
 void cykl_o_tryg() {
     std::string choose;
     std::cout << "Chcesz skorzystać z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
