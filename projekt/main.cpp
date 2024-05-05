@@ -67,7 +67,7 @@ int main() {
                 break;
             }
         case '2':
-            //przerzut na macierzowy
+            matrix();
             break;
         case '3':
             //przerzut na potęgi
@@ -132,7 +132,9 @@ int main() {
             }
             goto p_menu;
         case '2':
-            //przerzut na macierzowy
+            std::cout<< "Program dodaje, odejmuje i mnozy macierze\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
+                        "Nalezy pamietac ze wielkosc macierzy w dodawaniu i odejmowaniu musi sie pokrywac\n"
+                        "W mnozeniu zas te wielkosci sa odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze pierwszej." << std::endl;
             goto p_menu;
 
         case '3':
