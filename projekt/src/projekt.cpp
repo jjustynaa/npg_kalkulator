@@ -92,6 +92,37 @@ void substractMatrix(){
     showMatrix(new_matrix ,rows ,col);
 }
 
+void multiMatrix(){
+    std::cout << "Pamietaj ze rozmiar wierszy pierwszej macierzy = rozmiar kolumn drugiej macierzy\n oraz rozmiar kolumn pierwszej macierzy = rozmiar wierszy drugiej macierzy" << std::endl;
+    std::size_t rows1;
+    std::size_t col1;
+    std::size_t rows2;
+    std::size_t col2;
+    std::cout <<"Podaj rozmiar wierszy pierwszej macierzy:\n";
+    std::cin >> rows1;
+    col2 = rows1;
+    std::cout <<"Podaj rozmiar kolumn pierwszej macierzy:\n";
+    std::cin >> col1;
+    rows2 = col1;
+
+    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::vector<std::vector<int>> matrix1 = createMatrix(rows1, col1);
+    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::vector<std::vector<int>> matrix2 = createMatrix(rows2, col2);
+
+    std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
+    for(std::size_t i = 0; i < rows1; i++){
+        for(std::size_t j = 0; j<col2; j++){
+            new_matrix[i][j] = 0;
+            for(std::size_t k = 0; k < rows2; k++){
+                new_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
+            }
+        }
+    }
+    std::cout << "\nWynik wykonanego dzialania:\n";
+    showMatrix(new_matrix ,rows1 ,col2);
+}
+
 void matrix() {
     matrix:
     std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy" << std::endl;
