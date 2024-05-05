@@ -26,6 +26,7 @@ std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col);
 void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col);
 void addMatrix();
 void substractMatrix();
+void multiMatrix();
 void matrix();
 
 #endif //PROJEKT_PROJEKT_HPP
