@@ -27,6 +27,93 @@ int modulo(int num1, int num2) {
     return num1 % num2;
 }
 
+std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
+    std::vector<std::vector<int>> matrix(rows, std::vector<int>(col));
+
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
+            std::cin >> matrix[i][j];
+
+    return matrix;
+}
+
+void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col) {
+    std::cout << "[" << std::endl;
+    for(std::size_t i = 0; i < rows; i++) {
+        for (std::size_t j = 0; j < col; j++)
+            std::cout << std::setw(3) << matrix[i][j] << " ";
+        std::cout << std::endl;
+    }
+    std::cout << "]" << std::endl;
+}
+
+void addMatrix(){
+    std::size_t rows;
+    std::size_t col;
+    std::cout <<"Podaj rozmiar wierszy:\n";
+    std::cin >> rows;
+    std::cout <<"Podaj rozmiar kolumn:\n";
+    std::cin >> col;
+
+    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::vector<std::vector<int>> matrix1 = createMatrix(rows, col);
+    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
+
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
+            new_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
+
+    std::cout << "\nWynik wykonanego dzialania:\n";
+    showMatrix(new_matrix ,rows ,col);
+}
+
+void substractMatrix(){
+    std::size_t rows;
+    std::size_t col;
+    std::cout <<"Podaj rozmiar wierszy:\n";
+    std::cin >> rows;
+    std::cout <<"Podaj rozmiar kolumn:\n";
+    std::cin >> col;
+    std::cout << "Pamietaj zeby podac macierze w odpowiedniej kolejnosci, odejmowanie nie jest dzialaniem przemiennym" << std::endl;
+
+    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::vector<std::vector<int>> matrix1 = createMatrix(rows, col);
+    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
+
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
+            new_matrix[i][j] = matrix1[i][j] - matrix2[i][j];
+
+    std::cout << "\nWynik wykonanego dzialania:\n";
+    showMatrix(new_matrix ,rows ,col);
+}
+
+void matrix() {
+    matrix:
+    std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy" << std::endl;
+
+    char mark;
+    std::cin >> mark;
+    switch(mark){
+        case '+':
+            addMatrix();
+            break;
+        case '-':
+            substractMatrix();
+            break;
+        case '*':
+            multiMatrix();
+            break;
+        default:
+            std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
+            goto matrix;
+    }
+}
+
 void cykl_o_tryg() {
     std::string choose;
     std::cout << "Chcesz skorzystać z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
