@@ -238,3 +238,19 @@ void print_zao(){
     std::cin >> num >> m_p_p;
     std::cout << "Liczba po zaokrągleniu wynosi: " << std::fixed << std::setprecision(m_p_p) << num << std::endl;
 }
+
+std::vector<double> kwadratowa(double a, double b, double c){
+    double delta = b * b - 4 * a * c;
+    if(delta > 0){
+        double x1 = (sqrt(delta) - b) / (2 * a);
+        double x2 = (- sqrt(delta) - b) / (2 * a);
+        return std::vector<double> {x1, x2};
+    } else if (delta == 0){
+        double x = (- b) / (2 * a);
+        return std::vector<double> {x};
+    } else{
+        std::cout<< "Brak rzeczywistych pierwiastkow" << std::endl;
+        return {};
+    }
+}
+
