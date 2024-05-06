@@ -240,6 +240,10 @@ void print_zao(){
 }
 
 std::vector<double> kwadratowa(double a, double b, double c){
+    if(a == 0){
+        std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;
+        return {};
+    }
     double delta = b * b - 4 * a * c;
     if(delta > 0){
         double x1 = (sqrt(delta) - b) / (2 * a);
