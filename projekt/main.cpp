@@ -46,7 +46,8 @@ int main() {
     p_menu:
     std::cout << "Jakiej funkcji chcesz użyć:\n 1. Kalkulator prosty \n 2. Kalkulator macierzowy\n 3. Potęgowanie i pierwiastkowanie\n 4. Przelicznik wartości"
                  "\n 5. Porównywanie liczb \n 6. Zaokrąglenia \n 7. Kalkulator rówań kwadratowych \n 8. Kalkulator pól i objętości"
-                 "\n 9. Kalkulator logarytmiczny \n10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n\nAby dowiedzieć się jak działają dane funkcje i jak poprawnie z nich kożystać wpisz help\n"<<std::endl;
+                 "\n 9. Kalkulator logarytmiczny \n10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n11. Kalkulator do liczb zespolonych"
+                 "\n\nAby dowiedzieć się jak działają dane funkcje i jak poprawnie z nich kożystać wpisz help\n"<<std::endl;
     goto menu;
 // menu i p_menu osobne, żeby móc je w razie złego wpisania przeskakiwać do menu a nie od początki p_menu
     menu:
@@ -58,12 +59,15 @@ int main() {
     czyszczenie();
     switch (fun)
     {
-        case '1': //// ten case sprawdza i 1 i 10
+        case '1': //// ten case sprawdza, 1, 10 i 11
             if (funk == "0"){
                 cykl_o_tryg();
                 break;
             }else if (funk == "\0") {
                 std::cout << "1";
+                break;
+            } else if (funk == "1") {
+                complex_choice();
                 break;
             }
         case '2':
@@ -129,6 +133,9 @@ int main() {
             }else if (comend == "\0") {
                 std::cout << "1"; // analogicznie jak wyżej ale to co wyrzej
                  break;
+            } else if (comend == "1") {
+                std::cout << "Za każdym razem w funkcji najperw należy podać część rzeczywistą a następnie część urojoną.\nPierwsza funkcja kalkulatora jeśli w części urojonej otrzyma zero to potraktuje pierwszy argument jako kąt i należy podać go w stopniach\n"
+                             "Jeśli funkcja przyjmuje dwie liczby zespolone to napierw należy podać obie wartości jednej a następnie obie wartości drugiej" << std::endl;
             }
             goto p_menu;
         case '2':
