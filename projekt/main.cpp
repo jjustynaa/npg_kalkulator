@@ -70,7 +70,7 @@ int main() {
             matrix();
             break;
         case '3':
-            //przerzut na potęgi
+            kalk_poteg();
             break;
         case '4':
             //przerzut na przelicznik

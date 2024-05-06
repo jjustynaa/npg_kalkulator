@@ -1,19 +1,24 @@
+//
+// Created by Marek Generowicz on 27/04/2024.
+//
+
 #ifndef PROJEKT_PROJEKT_HPP
 #define PROJEKT_PROJEKT_HPP
 
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 #include <string>
+#include <cmath>
 #include <vector>
 #include <cstddef>
 
 void cykl_o_tryg();
 
-void cykl();
+void blankspace_deleter(std::string);
 
+double potegowanie (double liczba, int potega);
+double pierwiastkowanie(double liczba, int stopien);
+void kalk_poteg();
 void tryg();
-
 void print_zao();
 double addition(double num1, double num2);
 double subtraction(double num1, double num2);

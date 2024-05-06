@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/marekgenerowicz/Documents/Uczelnia/Semestr_II/NPG/projekt -B /Users/marekgenerowicz/Documents/Uczelnia/Semestr_II/NPG/projekt/cmake-build-debug
+"C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\ASUS\Desktop\kalkulator\projekt -B C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug
 CMake Warning (dev) in CMakeLists.txt:
   No project() command is present.  The top-level CMakeLists.txt file must
   contain a literal, direct call to the project() command.  Add a line of
@@ -18,8 +18,20 @@ CMake Warning (dev) in CMakeLists.txt:
   both commands.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- PROJECT: projekt
 -- Using AddressSanitizer (ASan).
--- Configuring done (0.0s)
+-- Configuring done (68.3s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/marekgenerowicz/Documents/Uczelnia/Semestr_II/NPG/projekt/cmake-build-debug
+-- Build files have been written to: C:/Users/ASUS/Desktop/kalkulator/projekt/cmake-build-debug
