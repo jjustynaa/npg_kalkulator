@@ -307,22 +307,22 @@ void print_zao(){
     std::cout << "Liczba po zaokrągleniu wynosi: " << std::fixed << std::setprecision(m_p_p) << num << std::endl;
 }
 
-std::vector<double> kwadratowa(double a, double b, double c){
+void kwadratowa(double a, double b, double c){
     if(a == 0){
         std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;
-        return {};
     }
     double delta = b * b - 4 * a * c;
     if(delta > 0){
         double x1 = (sqrt(delta) - b) / (2 * a);
         double x2 = (- sqrt(delta) - b) / (2 * a);
-        return std::vector<double> {x1, x2};
+        std::cout<< "x1 = "<< x1 << " x2 = "<< x2 << std::endl;
     } else if (delta == 0){
         double x = (- b) / (2 * a);
-        return std::vector<double> {x};
+        std::cout << "Podwojne miejsce zerowe x0 = "<< x << std::endl;
     } else{
-        std::cout<< "Brak rzeczywistych pierwiastkow" << std::endl;
-        return {};
+        std::cout<< "Brak rzeczywistych pierwiastkow, ale sa zespolone" << std::endl;
+        double pierwiastek_z_delty_zespolony = sqrt(sqrt(delta * delta));
+        std::cout << "x1 = " << -b/(2 * a) << " + " << pierwiastek_z_delty_zespolony/(2 * a) << "i, x2 = " << -b/(2 * a) << " - " << pierwiastek_z_delty_zespolony/(2 * a) << "i" << std::endl;
     }
 }
 
