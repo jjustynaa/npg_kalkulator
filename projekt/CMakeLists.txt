@@ -7,4 +7,8 @@ set(SOURCE_FILES
         src/projekt.cpp
 )
 
+set(SOURCES_FILES_TESTS
+        test/test.cpp
+        )
+
 include(SetCommonConfig.cmake)
