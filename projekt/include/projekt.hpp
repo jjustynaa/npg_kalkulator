@@ -57,6 +57,12 @@ public:
 
     Complex(double alfa) : Re(cos(alfa)), Im(sin(alfa)), Phi(alfa) {};
 
+    Complex operator + (const Complex& other) const {return {Re + other.Re,Im + other.Im};}
+    Complex operator - (const Complex& other) const {return {Re - other.Re,Im - other.Im};}
+    Complex operator * (const Complex& other) const {return {Re * other.Re - Im * other.Im, Re * other.Im + Im * other.Re};}
+    Complex operator / (const Complex& other) const {return {((Re * other.Re) + (Im * other.Im)) / (other.Re * other.Re + other.Im * other.Im),
+                                                             ((Im * other.Re) - (Re * other.Im)) / (other.Re * other.Re + other.Im * other.Im)};;}
+
     double cpx_lg() const { return sqrt(Re * Re + Im * Im); }
 
     double clasic_to_tryg() const;
