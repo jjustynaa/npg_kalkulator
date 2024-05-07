@@ -41,8 +41,8 @@ void matrix();
 
 
 //kwadratowa
-std::vector<double> kwadratowa(double a, double b, double c);
-std::vector<double> kwadratowa(const std::vector<double>& a, const std::vector<double>& b, const std::vector<double>& c);
+void kwadratowa(double a, double b, double c);
+void kwadratowa(const std::vector<double>& a, const std::vector<double>& b, const std::vector<double>& c);
 
 
 //zespolone
