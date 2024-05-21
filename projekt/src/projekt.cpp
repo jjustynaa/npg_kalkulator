@@ -326,6 +326,23 @@ void kwadratowa(double a, double b, double c){
     }
 }
 
+void kwadratowa(Complex a, Complex b, Complex c){
+    if (a.cpx_lg() == 0){
+        std::cout << "Wspolczynnik a nie moze byc zerem"<< std::endl;
+    } else {
+        Complex four(4, 0); // 4 jako liczba zespolona
+        Complex two(2, 0); // 2 jako liczba zespolona
+        //liczenie delty
+        Complex delta = (b * b) - (four * a * c);
+        Complex sqrt_delta = delta.sqrt();
+        // Oblicz pierwiastki równania
+        Complex minus_b = inerface_complex(b);
+        Complex x1 = (minus_b + sqrt_delta) / (two * a);
+        Complex x2 = (minus_b - sqrt_delta) / (two * a);
+        std::cout << "x1 = " << x1.Re << " + " << x1.Im << "i";
+        std::cout << " x2 = " << x2.Re << " + " << x2.Im << "i" << std::endl;
+    }
+}
 
 double Complex::clasic_to_tryg() const {
     if (Im >= 0 && cpx_lg() != 0) {
