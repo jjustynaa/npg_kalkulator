@@ -18,20 +18,9 @@ CMake Warning (dev) in CMakeLists.txt:
   both commands.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- The C compiler identification is GNU 13.1.0
--- The CXX compiler identification is GNU 13.1.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/mingw/bin/gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/mingw/bin/g++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- PROJECT: projekt
 -- Using AddressSanitizer (ASan).
--- Configuring done (68.3s)
--- Generating done (0.0s)
+-- Could NOT find Python3 (missing: Python3_EXECUTABLE Interpreter) 
+-- Configuring done (43.9s)
+-- Generating done (3.2s)
 -- Build files have been written to: C:/Users/ASUS/Desktop/kalkulator/projekt/cmake-build-debug

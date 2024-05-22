@@ -69,6 +69,9 @@ int main() {
             } else if (funk == "1") {
                 complex_choice();
                 break;
+            } else {
+                blad();
+                goto menu;
             }
         case '2':
             matrix();

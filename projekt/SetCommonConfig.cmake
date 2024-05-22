@@ -39,13 +39,13 @@ add_executable(${EXEC_DEBUG} ${SOURCE_FILES} main.${lang_src_extension})
 
 if(EXISTS ${PROJECT_SOURCE_DIR}/test)
     set(EXEC_TEST ${PROJECT_ID}__test)
-    add_executable(${EXEC_TEST} ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
+    add_executable(${EXEC_TEST} ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/test.cpp)
 
     # == Uwzględnij pliki frameworku Google Testing Framework (GTF) ==
 
     # Przyjmij, że główny katalog z plikami frameworku GTF znajduje się
     # dwa katalogi wyżej względem katalogu projektu.
-    set(GTEST_ROOT ../../googletest-master)
+    set(GTEST_ROOT ../googletest-master)
 
     # Dodaj katalogi z plikami nagłówkowymi GTF.
     target_include_directories(${EXEC_TEST} PUBLIC

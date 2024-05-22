@@ -152,6 +152,87 @@
 		},
 		{
 			"path" : "SetCommonConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/cmake/gmock.pc.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/cmake/gmock_main.pc.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/internal_utils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython3.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython/Support.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/Config.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/gtest.pc.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/gtest_main.pc.in"
 		}
 	],
 	"kind" : "cmakeFiles",
