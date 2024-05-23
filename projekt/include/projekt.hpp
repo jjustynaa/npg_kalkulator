@@ -82,4 +82,9 @@ void print_complex(Complex cpx);
 
 void complex_choice();
 
+bool does_triangle_exist(double a, double b, double c);
+void triangle();
+void rectangular();
+void area();
+
 #endif //PROJEKT_PROJEKT_HPP
