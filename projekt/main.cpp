@@ -92,7 +92,7 @@ int main() {
             //przerzut na funkcje kwadratową
             break;
         case '8':
-            //przerzut na pola
+            area();
             break;
         case '9':
             //perzut na logarytmy
