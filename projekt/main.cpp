@@ -163,7 +163,11 @@ int main() {
             //przerzut na funkcje kwadratową
             goto p_menu;
         case '8':
-            //przerzut na pola
+            std::cout << "Program oblicza pole wybranej figury: prostokat, trojkat, romb i trapez.\n"
+                         "W obliczaniu pola prostokata wystarczy podac dlugosciu obu bokow po odpowiedniej komendzie.\n"
+                         "Pole trojkata mozna obliczyc na 3 sposoby: 1. majac dlugosc boku i jego prostopadla wysokosc, 2. majac wszystkie dlugosci bokow, 3. majac dlugosci dwoch bokow i kat pomiedzy nimi.\n"
+                         "Przy rombie pola mozna obliczyc na 2 sposoby: 1. znajac dlugosc boku i wysokosc, 2. znane sa dlugosci jego przekatnych.\n"
+                         "Natomiast pole trapezu obliczamy znajac dlugosci jego postaw i wysokosc." << std::endl;
             goto p_menu;
         case '9':
             //perzut na logarytmy
