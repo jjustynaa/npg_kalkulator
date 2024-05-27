@@ -462,3 +462,153 @@ void complex_choice(){
         }
     }
 }
+
+bool does_triangle_exist(double a, double b, double c){
+    if (a + b > c) return true;
+    return false;
+}
+
+void triangle(){
+    triangle:
+    std::cout << "Wybierz jakim sposobem chcialbys obliczyc pole trojkata\n1 - dlugosc boku i wysokosci na niej opuszczonej\n"
+                 "2 - znane sa wszystkie dlugosci bokow trojkata\n3 - posiadamy dlugosci dwoch bokow i miare kata pomiedzy nimi" << std::endl;
+    int mark;
+    std::cout << "Wybierz cyfre:\n";
+    std::cin >> mark;
+
+    double a, b, c, h, p, angle;
+    double area;
+
+    switch( mark ){
+        case 1:
+            std::cout << "Obliczanie pola przez podanie boku i wysokosci." << std::endl;
+        bok11:
+            std::cout << "Dlugosc boku:\n";
+            std::cin >> a;
+            if (a <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok11;
+            }
+        wysokosc11:
+            std::cout << "Dlugosc wysokosci:\n";
+            std::cin >> h;
+            if (h <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto wysokosc11;
+            }
+            area = a * h / 2;
+            break;
+
+        case 2:
+        triangle2:
+            std::cout << "Obliczanie pola przez podanie dlugosci wszystkich bokow." << std::endl;
+        bok21:
+            std::cout << "Dlugosc pierwszego boku:\n";
+            std::cin >> a;
+            if (a <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok21;
+            }
+        bok22:
+            std::cout << "Dlugosc drugiego boku:\n";
+            std::cin >> b;
+            if (b <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok22;
+            }
+        bok23:
+            std::cout << "Dlugosc trzeciego boku:\n";
+            std::cin >> c;
+            if (c <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok23;
+            }
+
+            if(does_triangle_exist(a,b,c) && does_triangle_exist(c,a,b) && does_triangle_exist(b,c,a)) {
+                p = (a + b + c) / 2;
+                area = sqrt(p * (p - a) * (p - b) * (p - c));
+            }
+            else {
+                std::cout << "Podano nieprawidlowe dlugosci w trojkacie. Trojkat nie istnieje.\n"
+                             "Sprobuj jeszcze raz" << std::endl;
+                goto triangle2;
+            }
+            break;
+
+        case 3:
+            std::cout << "Obliczanie pola przez podanie dlugosci dwoch bokow i kata pomiedzy nimi." << std::endl;
+        bok31:
+            std::cout << "Dlugosc pierwszego boku:\n";
+            std::cin >> a;
+            if (a <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok31;
+            }
+        bok32:
+            std::cout << "Dlugosc drugiego boku:\n";
+            std::cin >> b;
+            if (b <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok32;
+            }
+        miara:
+            std::cout << "Miara kata:\n";
+            std::cin >> angle;
+            if ((angle <= 0) || (angle > 180)){
+                std::cout << "Podano nieprawidlowa miare. Sprobuj ponownie." << std::endl;
+                goto miara;
+            }
+
+            area = a * b * sin(angle) / 2;
+            break;
+        default:
+            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
+            //blad();
+            goto triangle;
+    }
+
+    std::cout << "Pole trojkata wynosi: " << area << std::endl;
+}
+
+void rectangular(){
+    double a;
+    double b;
+    double area;
+    std::cout << "Podaj dlugosci bokow prostokata: " << std::endl;
+    bok1:
+    std::cout << "Dlugosc pierwszego boku:\n";
+    std::cin >> a;
+    if (a <= 0 ){
+        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        goto bok1;
+    }
+    bok2:
+    std::cout << "Dlugosc drugiego boku:\n";
+    std::cin >> b;
+    if (b <= 0 ){
+        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        goto bok2;
+    }
+    area = a * b;
+    std::cout << "Pole prostokatu wynosi: " << area << std::endl;
+}
+
+void area(){
+    area:
+    std::cout <<"Wybierz dzialanie programu:\nP obliczanie pola prostokata\nT obliczanie pola trojkata" << std::endl;
+
+    char mark;
+    std::cin >> mark;
+    switch( std::tolower(mark) ){
+        case 'p':
+            rectangular();
+            break;
+        case 't':
+            triangle();
+            break;
+        default:
+            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
+            //blad();
+            goto area;
+    }
+}
