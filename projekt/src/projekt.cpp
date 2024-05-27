@@ -344,6 +344,45 @@ void kwadratowa(Complex a, Complex b, Complex c){
     }
 }
 
+
+std::vector<double> solveCubic(double a, double b, double c, double d) {
+    std::vector<double> roots;
+
+    if (a == 0) {
+        throw std::invalid_argument("To nie jest rownanie trzeciego stopnia");
+    }
+
+    // Reduce the cubic equation to the form t^3 + pt + q = 0
+    double p = (3 * a * c - b * b) / (3 * a * a);
+    double q = (2 * b * b * b - 9 * a * b * c + 27 * a * a * d) / (27 * a * a * a);
+
+    // Calculate the discriminant
+    double discriminant = pow(q / 2, 2) + pow(p / 3, 3);
+
+    if (discriminant > 0) {
+        // One real root and two complex conjugate roots
+        double u = cbrt(-q / 2 + sqrt(discriminant));
+        double v = cbrt(-q / 2 - sqrt(discriminant));
+        roots.push_back(u + v - b / (3 * a));
+    } else if (discriminant == 0) {
+        // Three real roots, at least two are equal
+        double u = cbrt(-q / 2);
+        roots.push_back(2 * u - b / (3 * a));
+        roots.push_back(-u - b / (3 * a));
+    } else {
+        // Three distinct real roots
+        double r = sqrt(-pow(p / 3, 3));
+        double phi = acos(-q / (2 * r));
+        double r_cbrt = cbrt(r);
+
+        roots.push_back(2 * r_cbrt * cos(phi / 3) - b / (3 * a));
+        roots.push_back(2 * r_cbrt * cos((phi + 2 * M_PI) / 3) - b / (3 * a));
+        roots.push_back(2 * r_cbrt * cos((phi + 4 * M_PI) / 3) - b / (3 * a));
+    }
+
+    return roots;
+}
+
 double Complex::clasic_to_tryg() const {
     if (Im >= 0 && cpx_lg() != 0) {
         return acos(Re / cpx_lg());
