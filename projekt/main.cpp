@@ -88,8 +88,27 @@ int main() {
         case '6':
             print_zao();
             break;
-        case '7':
-            //przerzut na funkcje kwadratową
+        case '7': {
+        if (funk == "0") {
+            double a, b, c, d;
+            std::cout << "Podaj współczynniki a, b, c, d: ";
+            std::cin >> a >> b >> c >> d;
+            try {
+                std::vector<double> roots = solveCubic(a, b, c, d);
+                std::cout << "Pierwiastki równania: ";
+                for (double root : roots) {
+                    std::cout << root << " ";
+                }
+                std::cout << std::endl;
+            } catch (const std::invalid_argument &e) {
+                std::cerr << e.what() << std::endl;
+            }
+            break;
+        } else {
+            blad();
+            goto menu;
+        }
+    }
             break;
         case '8':
             //przerzut na pola
