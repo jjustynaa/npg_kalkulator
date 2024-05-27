@@ -89,26 +89,38 @@ int main() {
             print_zao();
             break;
         case '7': {
-        if (funk == "0") {
-            double a, b, c, d;
-            std::cout << "Podaj współczynniki a, b, c, d: ";
-            std::cin >> a >> b >> c >> d;
-            try {
-                std::vector<double> roots = solveCubic(a, b, c, d);
-                std::cout << "Pierwiastki równania: ";
-                for (double root : roots) {
-                    std::cout << root << " ";
+            if (funk == "0") {
+                char choice;
+                std::cout << "Wybierz typ równania: (1) kwadratowe, (2) sześcienne: ";
+                std::cin >> choice;
+                if (choice == '1') {
+                    double a, b, c;
+                    std::cout << "Podaj współczynniki a, b, c: ";
+                    std::cin >> a >> b >> c;
+                    kwadratowa(a, b, c);
+                } else if (choice == '2') {
+                    double a, b, c, d;
+                    std::cout << "Podaj współczynniki a, b, c, d: ";
+                    std::cin >> a >> b >> c >> d;
+                    try {
+                        std::vector<double> roots = solveCubic(a, b, c, d);
+                        std::cout << "Pierwiastki równania: ";
+                        for (double root : roots) {
+                            std::cout << root << " ";
+                        }
+                        std::cout << std::endl;
+                    } catch (const std::invalid_argument &e) {
+                        std::cerr << e.what() << std::endl;
+                    }
+                } else {
+                    blad();
                 }
-                std::cout << std::endl;
-            } catch (const std::invalid_argument &e) {
-                std::cerr << e.what() << std::endl;
+                break;
+            } else {
+                blad();
+                goto menu;
             }
-            break;
-        } else {
-            blad();
-            goto menu;
         }
-    }
             break;
         case '8':
             //przerzut na pola
