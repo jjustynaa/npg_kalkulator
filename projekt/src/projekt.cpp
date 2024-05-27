@@ -93,6 +93,7 @@ int modulo(int num1, int num2) {
     return num1 % num2;
 }
 
+//funkcja tworzaca macierz o okreslonym rozmarze
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
     std::vector<std::vector<int>> matrix(rows, std::vector<int>(col));
 
@@ -103,6 +104,7 @@ std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
     return matrix;
 }
 
+//funkcja pokazujaca na ekran macierz wynikowa
 void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col) {
     std::cout << "[" << std::endl;
     for(std::size_t i = 0; i < rows; i++) {
@@ -113,9 +115,18 @@ void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::siz
     std::cout << "]" << std::endl;
 }
 
-void addMatrix(){
-    std::size_t rows;
-    std::size_t col;
+//funkcja dodajaca macierze
+std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows, int col){
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    for(int i = 0; i < rows; i++)
+        for(int j = 0; j < col; j++)
+            new_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
+    return new_matrix;
+}
+
+void addMatrix_user(){
+    int rows;
+    int col;
     std::cout <<"Podaj rozmiar wierszy:\n";
     std::cin >> rows;
     std::cout <<"Podaj rozmiar kolumn:\n";
@@ -127,17 +138,24 @@ void addMatrix(){
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
     std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
-    for(std::size_t i = 0; i < rows; i++)
-        for(std::size_t j = 0; j < col; j++)
-            new_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
+    new_matrix = addMatrix(matrix1, matrix2, rows, col);
 
     std::cout << "\nWynik wykonanego dzialania:\n";
     showMatrix(new_matrix ,rows ,col);
 }
 
-void substractMatrix(){
-    std::size_t rows;
-    std::size_t col;
+//funkcja odejmujaca macierze
+std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows, int col){
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    for(int i = 0; i < rows; i++)
+        for(int j = 0; j < col; j++)
+            new_matrix[i][j] = matrix1[i][j] - matrix2[i][j];
+    return new_matrix;
+}
+
+void substractMatrix_user(){
+    int rows;
+    int col;
     std::cout <<"Podaj rozmiar wierszy:\n";
     std::cin >> rows;
     std::cout <<"Podaj rozmiar kolumn:\n";
@@ -150,20 +168,32 @@ void substractMatrix(){
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
     std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
-    for(std::size_t i = 0; i < rows; i++)
-        for(std::size_t j = 0; j < col; j++)
-            new_matrix[i][j] = matrix1[i][j] - matrix2[i][j];
+    new_matrix = substractMatrix(matrix1, matrix2, rows, col);
 
     std::cout << "\nWynik wykonanego dzialania:\n";
     showMatrix(new_matrix ,rows ,col);
 }
 
-void multiMatrix(){
+//funkcja mnozaca macierze
+std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows1, int rows2, int col2){
+    std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
+    for(int i = 0; i < rows1; i++){
+        for(int j = 0; j < col2; j++){
+            new_matrix[i][j] = 0;
+            for(int k = 0; k < rows2; k++){
+                new_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
+            }
+        }
+    }
+    return new_matrix;
+}
+
+void multiMatrix_user(){
     std::cout << "Pamietaj ze rozmiar wierszy pierwszej macierzy = rozmiar kolumn drugiej macierzy\n oraz rozmiar kolumn pierwszej macierzy = rozmiar wierszy drugiej macierzy" << std::endl;
-    std::size_t rows1;
-    std::size_t col1;
-    std::size_t rows2;
-    std::size_t col2;
+    int rows1;
+    int col1;
+    int rows2;
+    int col2;
     std::cout <<"Podaj rozmiar wierszy pierwszej macierzy:\n";
     std::cin >> rows1;
     col2 = rows1;
@@ -177,18 +207,13 @@ void multiMatrix(){
     std::vector<std::vector<int>> matrix2 = createMatrix(rows2, col2);
 
     std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
-    for(std::size_t i = 0; i < rows1; i++){
-        for(std::size_t j = 0; j<col2; j++){
-            new_matrix[i][j] = 0;
-            for(std::size_t k = 0; k < rows2; k++){
-                new_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
-            }
-        }
-    }
+    new_matrix = multiMatrix(matrix1, matrix2, rows1, rows2, col2);
+
     std::cout << "\nWynik wykonanego dzialania:\n";
     showMatrix(new_matrix ,rows1 ,col2);
 }
 
+//menu funkcji macierz
 void matrix() {
     matrix:
     std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy" << std::endl;

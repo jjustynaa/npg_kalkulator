@@ -34,9 +34,12 @@ int modulo(int num1, int num2);
 //matrix
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col);
 void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col);
-void addMatrix();
-void substractMatrix();
-void multiMatrix();
+std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows, int col);
+void addMatrix_user();
+std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows, int col);
+void substractMatrix_user();
+std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows1, int rows2, int col2);
+void multiMatrix_user();
 void matrix();
 
 
@@ -84,6 +87,7 @@ void print_complex(Complex cpx);
 
 void complex_choice();
 
+//pola figur
 bool does_triangle_exist(double a, double b, double c);
 void triangle();
 void rectangular();
