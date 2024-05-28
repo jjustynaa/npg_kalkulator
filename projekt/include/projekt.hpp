@@ -11,6 +11,7 @@
 #include <vector>
 #include <cstddef>
 #include <iomanip>
+#include <complex>
 
 void cykl_o_tryg();
 void cykl();

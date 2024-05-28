@@ -1,5 +1,11 @@
 # ninja log v5
-147	1953	7362015124173205	CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj	2aa23dc7020e06ba
-8	1405	7362018670584027	CMakeFiles/projekt__debug.dir/main.cpp.obj	30adeef9c9157044
-1406	37756	7362019033689978	projekt__debug.exe	8375b75b72318c1a
 3158	88515	7368931760613899	CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj	2aa23dc7020e06ba
+8	1405	7362018670584027	CMakeFiles/projekt__debug.dir/main.cpp.obj	30adeef9c9157044
+18	3722	7383420650268459	CMakeFiles/projekt__test.dir/test/test.cpp.obj	95842e1c6261c6e4
+1406	37756	7362019033689978	projekt__debug.exe	8375b75b72318c1a
+1315	16159	7383414271269247	googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	f3e7cb78120d24bf
+25	1310	7383416482368413	lib/libgmock.a	289fb479bdfa782
+54	57005	7383416058457155	googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	7c52106ee7967043
+53	20853	7383416432925220	lib/libgtest.a	b0c0bb2221528330
+9	1776	7383420630820472	CMakeFiles/projekt__test.dir/src/projekt.cpp.obj	d9ed754a915fe884
+12	9891	7383423103477972	CMakeFiles/projekt__test.dir/test/test.cpp.obj	95842e1c6261c6e4

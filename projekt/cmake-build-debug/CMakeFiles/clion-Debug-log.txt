@@ -1,26 +1,11 @@
-"C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Users/ASUS/AppData/Local/JetBrains/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\ASUS\Desktop\kalkulator\projekt -B C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug
-CMake Warning (dev) in CMakeLists.txt:
-  No project() command is present.  The top-level CMakeLists.txt file must
-  contain a literal, direct call to the project() command.  Add a line of
-  code such as
+"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\ASUS\Desktop\kalkulator\projekt -B C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug
+-- PROJECT: 
+CMake Error at SetCommonConfig.cmake:2 (project):
+  project PROJECT called with incorrect number of arguments
+Call Stack (most recent call first):
+  CMakeLists.txt:13 (include)
 
-    project(ProjectName)
 
-  near the top of the file, but after cmake_minimum_required().
-
-  CMake is pretending there is a "project(Project)" command on the first
-  line.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Warning (dev) in CMakeLists.txt:
-  cmake_minimum_required() should be called prior to this top-level project()
-  call.  Please see the cmake-commands(7) manual for usage documentation of
-  both commands.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
--- PROJECT: projekt
 -- Using AddressSanitizer (ASan).
 -- Could NOT find Python3 (missing: Python3_EXECUTABLE Interpreter) 
--- Configuring done (43.9s)
--- Generating done (3.2s)
--- Build files have been written to: C:/Users/ASUS/Desktop/kalkulator/projekt/cmake-build-debug
+-- Configuring incomplete, errors occurred!
