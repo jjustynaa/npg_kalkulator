@@ -4,6 +4,7 @@
 //dwa z nich pojawiają się przez puste swiche i nimi się wgl nie przejmujemy
 //dwa pozostałe są bo używamy comon configa z PSiO i niepodoba mu się że porównujemy coś do NULLa dla charów
 // więc można spróbować go jakoś ładnie upakować żeby się nie czepiało ale raczej nic to nie zepsuje
+
 void czyszczenie(){
     for (int i = 0; i < 25; i++) {
         std::cout << std::endl;
@@ -83,7 +84,7 @@ int main() {
             //przerzut na przelicznik
             break;
         case '5':
-            //przerzut na porówania
+            //przerzut na porownania
             break;
         case '6':
             print_zao();
@@ -112,6 +113,7 @@ int main() {
                     } catch (const std::invalid_argument &e) {
                         std::cerr << e.what() << std::endl;
                     }
+
                 } else {
                     blad();
                 }
@@ -126,7 +128,7 @@ int main() {
             area();
             break;
         case '9':
-            //perzut na logarytmy
+            //przerzut na logarytmy
             break;
         case 'h':
             if (funk == "elp"){
@@ -175,7 +177,7 @@ int main() {
         case '2':
             std::cout<< "Program dodaje, odejmuje i mnozy macierze\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
                         "Nalezy pamietac ze wielkosc macierzy w dodawaniu i odejmowaniu musi sie pokrywac\n"
-                        "W mnozeniu zas te wielkosci sa odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze pierwszej." << std::endl;
+                        "W mnozeniu zas te wielkosci sa odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze pierwszej.\n\n" << std::endl;
             goto p_menu;
 
         case '3':

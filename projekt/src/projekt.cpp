@@ -116,17 +116,17 @@ void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::siz
 }
 
 //funkcja dodajaca macierze
-std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows, int col){
+std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col){
     std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
-    for(int i = 0; i < rows; i++)
-        for(int j = 0; j < col; j++)
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
             new_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
     return new_matrix;
 }
 
 void addMatrix_user(){
-    int rows;
-    int col;
+    std::size_t rows;
+    std::size_t col;
     std::cout <<"Podaj rozmiar wierszy:\n";
     std::cin >> rows;
     std::cout <<"Podaj rozmiar kolumn:\n";
@@ -145,17 +145,17 @@ void addMatrix_user(){
 }
 
 //funkcja odejmujaca macierze
-std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows, int col){
+std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col){
     std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
-    for(int i = 0; i < rows; i++)
-        for(int j = 0; j < col; j++)
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
             new_matrix[i][j] = matrix1[i][j] - matrix2[i][j];
     return new_matrix;
 }
 
 void substractMatrix_user(){
-    int rows;
-    int col;
+    std::size_t rows;
+    std::size_t col;
     std::cout <<"Podaj rozmiar wierszy:\n";
     std::cin >> rows;
     std::cout <<"Podaj rozmiar kolumn:\n";
@@ -175,12 +175,12 @@ void substractMatrix_user(){
 }
 
 //funkcja mnozaca macierze
-std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows1, int rows2, int col2){
+std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2){
     std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
-    for(int i = 0; i < rows1; i++){
-        for(int j = 0; j < col2; j++){
+    for(std::size_t i = 0; i < rows1; i++){
+        for(std::size_t j = 0; j < col2; j++){
             new_matrix[i][j] = 0;
-            for(int k = 0; k < rows2; k++){
+            for(std::size_t k = 0; k < rows2; k++){
                 new_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
             }
         }
@@ -190,10 +190,10 @@ std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1,
 
 void multiMatrix_user(){
     std::cout << "Pamietaj ze rozmiar wierszy pierwszej macierzy = rozmiar kolumn drugiej macierzy\n oraz rozmiar kolumn pierwszej macierzy = rozmiar wierszy drugiej macierzy" << std::endl;
-    int rows1;
-    int col1;
-    int rows2;
-    int col2;
+    std::size_t rows1;
+    std::size_t col1;
+    std::size_t rows2;
+    std::size_t col2;
     std::cout <<"Podaj rozmiar wierszy pierwszej macierzy:\n";
     std::cin >> rows1;
     col2 = rows1;
@@ -222,13 +222,13 @@ void matrix() {
     std::cin >> mark;
     switch(mark){
         case '+':
-            addMatrix();
+            addMatrix_user();
             break;
         case '-':
-            substractMatrix();
+            substractMatrix_user();
             break;
         case '*':
-            multiMatrix();
+            multiMatrix_user();
             break;
         default:
             std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
