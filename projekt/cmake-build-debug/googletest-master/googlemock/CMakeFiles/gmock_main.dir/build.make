@@ -70,18 +70,18 @@ include googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make
 
 googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make
 googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: googletest-master/googlemock/CMakeFiles/gmock_main.dir/includes_CXX.rsp
-googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: C:/Users/user/Desktop/npg_kalkulator/googletest-master/googlemock/src/gmock_main.cc
+googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master/googlemock/src/gmock_main.cc
 googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: googletest-master/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
-	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj -MF CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d -o CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj -c C:\Users\user\Desktop\npg_kalkulator\googletest-master\googlemock\src\gmock_main.cc
+	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj -MF CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d -o CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\googletest-master\googlemock\src\gmock_main.cc
 
 googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/src/gmock_main.cc.i"
-	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\npg_kalkulator\googletest-master\googlemock\src\gmock_main.cc > CMakeFiles\gmock_main.dir\src\gmock_main.cc.i
+	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\npg_kalkulator\projekt\googletest-master\googlemock\src\gmock_main.cc > CMakeFiles\gmock_main.dir\src\gmock_main.cc.i
 
 googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/src/gmock_main.cc.s"
-	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\npg_kalkulator\googletest-master\googlemock\src\gmock_main.cc -o CMakeFiles\gmock_main.dir\src\gmock_main.cc.s
+	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\npg_kalkulator\projekt\googletest-master\googlemock\src\gmock_main.cc -o CMakeFiles\gmock_main.dir\src\gmock_main.cc.s
 
 # Object files for target gmock_main
 gmock_main_OBJECTS = \
@@ -106,6 +106,6 @@ googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean:
 .PHONY : googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
 
 googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\Desktop\npg_kalkulator\projekt C:\Users\user\Desktop\npg_kalkulator\googletest-master\googlemock C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock\CMakeFiles\gmock_main.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\Desktop\npg_kalkulator\projekt C:\Users\user\Desktop\npg_kalkulator\projekt\googletest-master\googlemock C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googlemock\CMakeFiles\gmock_main.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
 

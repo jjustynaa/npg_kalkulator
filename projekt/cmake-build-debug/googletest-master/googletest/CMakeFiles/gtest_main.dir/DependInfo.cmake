@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/user/Desktop/npg_kalkulator/googletest-master/googletest/src/gtest_main.cc" "googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj" "gcc" "googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj.d"
+  "C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master/googletest/src/gtest_main.cc" "googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj" "gcc" "googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
