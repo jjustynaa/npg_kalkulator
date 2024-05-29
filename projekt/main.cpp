@@ -47,7 +47,7 @@ int main() {
     p_menu:
     std::cout << "Jakiej funkcji chcesz użyć:\n 1. Kalkulator prosty \n 2. Kalkulator macierzowy\n 3. Potęgowanie i pierwiastkowanie\n 4. Przelicznik wartości"
                  "\n 5. Porównywanie liczb \n 6. Zaokrąglenia \n 7. Kalkulator rówań kwadratowych lub równań trzeciego stopnia \n 8. Kalkulator pól i objętości"
-                 "\n 9. Kalkulator logarytmiczny \n10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n11. Kalkulator do liczb zespolonych"
+                 "\n 9. Kalkulator logarytmów \n10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n11. Kalkulator do liczb zespolonych"
                  "\n\nAby dowiedzieć się jak działają dane funkcje i jak poprawnie z nich kożystać wpisz help\n"<<std::endl;
     goto menu;
 // menu i p_menu osobne, żeby móc je w razie złego wpisania przeskakiwać do menu a nie od początki p_menu
@@ -128,7 +128,7 @@ int main() {
             area();
             break;
         case '9':
-            //przerzut na logarytmy
+            std::cout << logarytmy() << std::endl;
             break;
         case 'h':
             if (funk == "elp"){
@@ -193,7 +193,7 @@ int main() {
             std::cout << "Zaokrąglenie przyjmuje dwie wartości liczbe do zaokrąglania oraz liczbe miejsc po przecinku ile jest oczekujesz otrzymać" << std::endl;
             goto p_menu;
         case '7':
-            //przerzut na funkcje kwadratową
+            std::cout << "Funkcja rozwiązuje równania, ale najpierw musisz wybrać typ" << std::endl;
             goto p_menu;
         case '8':
             std::cout << "Program oblicza pole wybranej figury: prostokat, trojkat, romb i trapez.\n"
@@ -203,7 +203,8 @@ int main() {
                          "Natomiast pole trapezu obliczamy znajac dlugosci jego postaw i wysokosc." << std::endl;
             goto p_menu;
         case '9':
-            //perzut na logarytmy
+            std::cout << "Program oblicza wartość logarytmu z podanej liczby o podanej bazie.\nAby uzyskać poprawny wynik należy najpierw wpisać liczbę logarytmowaną"
+                         "a następnie, po spacji lub enterze, podstawę logarytmu" << std::endl;
             goto p_menu;
         case 'b':
             if (comend == "ack") {
