@@ -76,7 +76,6 @@ void complex_choice();
 
 //kwadratowa
 void kwadratowa(double a, double b, double c);
-//void kwadratowa(const std::vector<double>& a, const std::vector<double>& b, const std::vector<double>& c);
 void kwadratowa(Complex a, Complex b, Complex c);
 
 //równianie wielomianowe stopnia 3
