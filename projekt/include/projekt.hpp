@@ -98,7 +98,7 @@ void area();
 
 
 //logarytmy (jak by ktoś nie domyślił się po nazwie)
-float logarytmy();
+float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu );
 
 void logarytmy_by_Natalia();
 
