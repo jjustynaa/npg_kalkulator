@@ -193,7 +193,7 @@ int main() {
             std::cout << "Zaokrąglenie przyjmuje dwie wartości liczbe do zaokrąglania oraz liczbe miejsc po przecinku ile jest oczekujesz otrzymać" << std::endl;
             goto p_menu;
         case '7':
-            //przerzut na funkcje kwadratową
+            std::cout << "Funkcja rozwiązuje równania, ale najpierw musisz wybrać typ" << std::endl;
             goto p_menu;
         case '8':
             std::cout << "Program oblicza pole wybranej figury: prostokat, trojkat, romb i trapez.\n"
