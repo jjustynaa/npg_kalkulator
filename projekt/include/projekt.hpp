@@ -11,6 +11,7 @@
 #include <vector>
 #include <cstddef>
 #include <iomanip>
+#include <complex>
 
 void cykl_o_tryg();
 void cykl();
@@ -49,8 +50,9 @@ void kwadratowa(const std::vector<double>& a, const std::vector<double>& b, cons
 void kwadratowa(Complex a, Complex b, Complex c);
 
 //równianie wielomianowe stopnia 3
-std::vector<double> solveCubic(double a, double b, double c, double d)
+std::vector<double> solveCubic(double a, double b, double c, double d);
 //zespolone
+
 
 class Complex {
 public:
@@ -66,7 +68,7 @@ public:
     Complex operator - (const Complex& other) const {return {Re - other.Re,Im - other.Im};}
     Complex operator * (const Complex& other) const {return {Re * other.Re - Im * other.Im, Re * other.Im + Im * other.Re};}
     Complex operator / (const Complex& other) const {return {((Re * other.Re) + (Im * other.Im)) / (other.Re * other.Re + other.Im * other.Im),
-                                                             ((Im * other.Re) - (Re * other.Im)) / (other.Re * other.Re + other.Im * other.Im)};;}
+                                                             ((Im * other.Re) - (Re * other.Im)) / (other.Re * other.Re + other.Im * other.Im)};}
 
     double cpx_lg() const { return sqrt(Re * Re + Im * Im); }
 
@@ -87,10 +89,12 @@ void print_complex(Complex cpx);
 
 void complex_choice();
 
+
 //pola figur
 bool does_triangle_exist(double a, double b, double c);
 void triangle();
 void rectangular();
 void area();
+
 
 #endif //PROJEKT_PROJEKT_HPP
