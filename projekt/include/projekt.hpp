@@ -100,4 +100,6 @@ void area();
 //logarytmy (jak by ktoś nie domyślił się po nazwie)
 float logarytmy();
 
+void logarytmy_by_Natalia();
+
 #endif //PROJEKT_PROJEKT_HPP
