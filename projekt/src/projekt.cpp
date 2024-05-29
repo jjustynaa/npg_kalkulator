@@ -252,7 +252,6 @@ void cykl_o_tryg() {
     }
 }
 
-
 void tryg() {
     std::cout << "Podaj funkcje i liczbe" << std::endl;
 
@@ -292,7 +291,6 @@ void tryg() {
     }
 }
 
-
 void cykl() {
     std::cout << "Podaj funkcje i liczbe" << std::endl;
 
@@ -321,9 +319,6 @@ void cykl() {
         cykl();
     }
 }
-
-
-
 
 void print_zao(){
     double num;
@@ -359,7 +354,7 @@ void kwadratowa(Complex a, Complex b, Complex c){
         Complex two(2, 0); // 2 jako liczba zespolona
         //liczenie delty
         Complex delta = (b * b) - (four * a * c);
-        Complex sqrt_delta = delta.sqrt();
+        Complex sqrt_delta = sqrt(delta);
         // Oblicz pierwiastki równania
         Complex minus_b = inerface_complex(b);
         Complex x1 = (minus_b + sqrt_delta) / (two * a);
@@ -368,7 +363,6 @@ void kwadratowa(Complex a, Complex b, Complex c){
         std::cout << " x2 = " << x2.Re << " + " << x2.Im << "i" << std::endl;
     }
 }
-
 
 std::vector<double> solveCubic(double a, double b, double c, double d) {
     std::vector<double> roots;
@@ -426,6 +420,11 @@ void print_complex(Complex cpx){
         std::cout << "Niezdefiniowano";
 }
 
+Complex sqrt(Complex& cpx){
+    std::complex<double> cpx_pr = std::sqrt(std::complex<double>(cpx.Re, cpx.Im));
+    Complex cpx_1(real(cpx_pr), imag(cpx_pr));
+    return cpx_1;
+}
 
 void complex_choice(){
     char oper;
@@ -458,13 +457,13 @@ void complex_choice(){
         Complex comp_1(re_1, im_1);
         Complex comp_2(re_2, im_1);
         if (oper == 2){
-            print_complex(add_complex(comp_1, comp_2));
+            print_complex(comp_1 + comp_2);
         } else if (oper == 3){
-            print_complex(sub_complex(comp_1, comp_2));
+            print_complex(comp_1 - comp_2);
         } else if (oper == 4){
-            print_complex(multi_complex(comp_1, comp_2));
+            print_complex(comp_1 * comp_2);
         } else if (oper == 5){
-            print_complex(div_complex(comp_1, comp_2));
+            print_complex(comp_1 / comp_2);
         }
     } else if (oper == 6 || oper == 7){
         double re;
