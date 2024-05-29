@@ -340,7 +340,7 @@ gmock_BINARY_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/projekt/cmake-build
 gmock_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/googletest-master/googlemock
+gmock_SOURCE_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
@@ -352,7 +352,7 @@ googletest-distribution_BINARY_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/p
 googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/googletest-master
+googletest-distribution_SOURCE_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/projekt/cmake-build-debug/googletest-master/googletest
@@ -361,7 +361,7 @@ gtest_BINARY_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/projekt/cmake-build
 gtest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/googletest-master/googletest
+gtest_SOURCE_DIR:STATIC=C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF

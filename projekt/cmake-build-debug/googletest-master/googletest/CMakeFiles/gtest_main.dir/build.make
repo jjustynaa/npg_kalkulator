@@ -70,18 +70,18 @@ include googletest-master/googletest/CMakeFiles/gtest_main.dir/flags.make
 
 googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googletest-master/googletest/CMakeFiles/gtest_main.dir/flags.make
 googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googletest-master/googletest/CMakeFiles/gtest_main.dir/includes_CXX.rsp
-googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: C:/Users/user/Desktop/npg_kalkulator/googletest-master/googletest/src/gtest_main.cc
+googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master/googletest/src/gtest_main.cc
 googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googletest-master/googletest/CMakeFiles/gtest_main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
-	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Users\user\Desktop\npg_kalkulator\googletest-master\googletest\src\gtest_main.cc
+	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\googletest-master\googletest\src\gtest_main.cc
 
 googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\npg_kalkulator\googletest-master\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
+	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\npg_kalkulator\projekt\googletest-master\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
 
 googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\npg_kalkulator\googletest-master\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
+	cd /d C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest && C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\npg_kalkulator\projekt\googletest-master\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \
@@ -106,6 +106,6 @@ googletest-master/googletest/CMakeFiles/gtest_main.dir/clean:
 .PHONY : googletest-master/googletest/CMakeFiles/gtest_main.dir/clean
 
 googletest-master/googletest/CMakeFiles/gtest_main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\Desktop\npg_kalkulator\projekt C:\Users\user\Desktop\npg_kalkulator\googletest-master\googletest C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\Desktop\npg_kalkulator\projekt C:\Users\user\Desktop\npg_kalkulator\projekt\googletest-master\googletest C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\googletest-master\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : googletest-master/googletest/CMakeFiles/gtest_main.dir/depend
 

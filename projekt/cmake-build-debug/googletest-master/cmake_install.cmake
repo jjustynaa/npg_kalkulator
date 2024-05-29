@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/user/Desktop/npg_kalkulator/googletest-master
+# Install script for directory: C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
