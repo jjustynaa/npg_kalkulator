@@ -33,11 +33,11 @@ int modulo(int num1, int num2);
 //matrix
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col);
 void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col);
-std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows, int col);
+std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col);
 void addMatrix_user();
-std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows, int col);
+std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col);
 void substractMatrix_user();
-std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, int rows1, int rows2, int col2);
+std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2);
 void multiMatrix_user();
 void matrix();
 
