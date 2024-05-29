@@ -1,158 +1,135 @@
 #include "projekt.hpp"
+#include <iostream>
+#include <string>
+#include <vector>
+#include <stdexcept>
 
-//Jeśli ktoś to czyta to tłumacze te 4 błędy co są
-//dwa z nich pojawiają się przez puste swiche i nimi się wgl nie przejmujemy
-//dwa pozostałe są bo używamy comon configa z PSiO i niepodoba mu się że porównujemy coś do NULLa dla charów
-// więc można spróbować go jakoś ładnie upakować żeby się nie czepiało ale raczej nic to nie zepsuje
-void czyszczenie(){
+void czyszczenie() {
     for (int i = 0; i < 25; i++) {
         std::cout << std::endl;
     }
 }
 
-void blad(){
+void blad() {
     std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
 }
 
-int repet(){
+int repet() {
     std::string con;
-    std::cout << "Chcesz kontunuować? [T/N]" << std::endl;
+    std::cout << "Chcesz kontynuować? [T/N]" << std::endl;
     std::cin >> con;
-    if (con == "T"){
-        return 1;
-    } else{
-        return 0;
-}}
-
+    return (con == "T" || con == "t") ? 1 : 0;
+}
 
 int main() {
 
     start:
     czyszczenie();
     std::cout << "<<Witaj w kalkulatorze>>\n\nAby przejść dalej wpisz NEXT" << std::endl;
-    goto next;
-
-    next:
     std::string t;
     std::cin >> t;
-    if (t == "NEXT" || t == "Next" || t == "next"){
-        czyszczenie();
-        goto p_menu ;
-    } else{
+    if (t != "NEXT" && t != "Next" && t != "next") {
         blad();
-        goto next;
+        goto start;
     }
 
     p_menu:
-    std::cout << "Jakiej funkcji chcesz użyć:\n 1. Kalkulator prosty \n 2. Kalkulator macierzowy\n 3. Potęgowanie i pierwiastkowanie\n 4. Przelicznik wartości"
-                 "\n 5. Porównywanie liczb \n 6. Zaokrąglenia \n 7. Kalkulator rówań kwadratowych lub równań trzeciego stopnia \n 8. Kalkulator pól i objętości"
-                 "\n 9. Kalkulator logarytmiczny \n10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n11. Kalkulator do liczb zespolonych"
-                 "\n\nAby dowiedzieć się jak działają dane funkcje i jak poprawnie z nich kożystać wpisz help\n"<<std::endl;
-    goto menu;
-// menu i p_menu osobne, żeby móc je w razie złego wpisania przeskakiwać do menu a nie od początki p_menu
-    menu:
-    char fun;
-    int ans;
-    std::string funk;
-    std::cin >> fun;
-    std::cin >> funk;
     czyszczenie();
-    switch (fun)
-    {
-        case '1': //// ten case sprawdza, 1, 10 i 11
-            if (funk == "0"){
-                cykl_o_tryg();
-                break;
-            }else if (funk == "\0") {
-                std::cout << "1";
-                break;
-            } else if (funk == "1") {
-                complex_choice();
-                break;
-            } else {
-                blad();
-                goto menu;
-            }
-        case '2':
+    std::cout << "Jakiej funkcji chcesz użyć:\n"
+                 " 1. Kalkulator prosty \n"
+                 " 2. Kalkulator macierzowy\n"
+                 " 3. Potęgowanie i pierwiastkowanie\n"
+                 " 4. Przelicznik wartości\n"
+                 " 5. Porównywanie liczb\n"
+                 " 6. Zaokrąglenia\n"
+                 " 7. Kalkulator równań kwadratowych lub równań trzeciego stopnia\n"
+                 " 8. Kalkulator pól i objętości\n"
+                 " 9. Kalkulator logarytmów\n"
+                 "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
+                 "11. Kalkulator do liczb zespolonych\n"
+                 " 0. Help\n"
+                 " r. Reset\n" << std::endl;
+
+    int fun;
+    std::cin >> fun;
+
+    czyszczenie();
+    switch (fun) {
+        case 1:
+            std::cout << "1";
+            // Wstaw funkcję kalkulatora prostego
+            break;
+        case 2:
             matrix();
             break;
-        case '3':
+        case 3:
             kalk_poteg();
             break;
-        case '4':
-            //przerzut na przelicznik
+        case 4:
+            // Przerzut na przelicznik
             break;
-        case '5':
-            //przerzut na porówania
+        case 5:
+            // Przerzut na porównania
             break;
-        case '6':
+        case 6:
             print_zao();
             break;
-        case '7': {
-            if (funk == "0") {
-                char choice;
-                std::cout << "Wybierz typ równania: (1) kwadratowe, (2) sześcienne: ";
-                std::cin >> choice;
-                if (choice == '1') {
-                    double a, b, c;
-                    std::cout << "Podaj współczynniki a, b, c: ";
-                    std::cin >> a >> b >> c;
-                    kwadratowa(a, b, c);
-                } else if (choice == '2') {
-                    double a, b, c, d;
-                    std::cout << "Podaj współczynniki a, b, c, d: ";
-                    std::cin >> a >> b >> c >> d;
-                    try {
-                        std::vector<double> roots = solveCubic(a, b, c, d);
-                        std::cout << "Pierwiastki równania: ";
-                        for (double root : roots) {
-                            std::cout << root << " ";
-                        }
-                        std::cout << std::endl;
-                    } catch (const std::invalid_argument &e) {
-                        std::cerr << e.what() << std::endl;
+        case 7: {
+            char choice;
+            std::cout << "Wybierz typ równania: (1) kwadratowe, (2) sześcienne: ";
+            std::cin >> choice;
+            if (choice == '1') {
+                double a, b, c;
+                std::cout << "Podaj współczynniki a, b, c: ";
+                std::cin >> a >> b >> c;
+                kwadratowa(a, b, c);
+            } else if (choice == '2') {
+                double a, b, c, d;
+                std::cout << "Podaj współczynniki a, b, c, d: ";
+                std::cin >> a >> b >> c >> d;
+                try {
+                    std::vector<double> roots = solveCubic(a, b, c, d);
+                    std::cout << "Pierwiastki równania: ";
+                    for (double root : roots) {
+                        std::cout << root << " ";
                     }
-                } else {
-                    blad();
+                    std::cout << std::endl;
+                } catch (const std::invalid_argument &e) {
+                    std::cerr << e.what() << std::endl;
                 }
-                break;
             } else {
                 blad();
-                goto menu;
             }
+            break;
         }
+        case 8:
+            area();
             break;
-        case '8':
-            //przerzut na pola
+        case 9:
+            logarytmy_by_Natalia();
             break;
-        case '9':
-            //perzut na logarytmy
+        case 10:
+            cykl_o_tryg();
             break;
-        case 'h':
-            if (funk == "elp"){
-                goto p_help;
-            }
+        case 11:
+            complex_choice();
+            break;
+        case 0:
+            goto p_help;
         case 'r':
-            if (funk == "eset"){
-                goto start;
-            }
+            goto start;
         default:
             blad();
-            goto menu;
+            goto p_menu;
     }
-    ans = repet();
-    if (ans == 1){
-        goto p_menu;
-    } else{
-        return EXIT_SUCCESS;
-    }
+
 
 
     p_help:
     std::cout << "Którą funkcje wytłumaczyć:\n 1. Kalkulator prosty \n 2. Kalkulator macierzowy\n 3. Potęgowanie i pierwiastkowanie\n 4. Przelicznik wartości"
                  "\n 5. Porównywanie liczb \n 6. Zaokrąglenia \n 7. Kalkulator rówań kwadratowych \n 8. Kalkulator pól i objętości"
                  "\n 9. Kalkulator logarytmiczny \n10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n\nAby wrócić do wyboru kalkulatora wpisz back\n" << std::endl;
-
+    
     help:
     char com;
     std::string comend;
