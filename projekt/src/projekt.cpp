@@ -383,6 +383,75 @@ std::vector<double> solveCubic(double a, double b, double c, double d) {
     return roots;
 }
 
+// całeczki 
+double calka_liniowa(double a, double b, double x1, double x2){
+    std::cout << "Podaj kolejno: wspolczynnik a, wspolczynnik b, poczatek oraz koniec przedzialu calkowania" << std::endl;
+    double dx = 0.0001;
+    double wynik = 0;
+    if (x1 > x2){
+        return -1;
+    } else if (x1 == x2){
+        return 0;
+    } else{
+        while (x1 < x2){
+            wynik += (x1 * a + b) * dx;
+            x1 += dx;
+        }
+        return wynik;
+    }
+}
+
+double calka_kwadratowa(double a, double b, double c, double x1, double x2){
+    std::cout << "Podaj kolejno: wspolczynnik a, wspolczynnik b, wspolczynnik c, poczatek oraz koniec przedzialu calkowania" << std::endl;
+    double dx = 0.0001;
+    double wynik = 0;
+    if (x1 > x2){
+        return -1;
+    } else if (x1 == x2){
+        return 0;
+    } else{
+        while (x1 < x2){
+            wynik += (pow(x1, 2) * a + x1 * b + c) * dx;
+            x1 += dx;
+        }
+        return wynik;
+    }
+}
+
+double calka_sin(double x1, double x2){
+    std::cout << "Podaj kolejno: poczatek oraz koniec przedzialu calkowania" << std::endl;
+    double dx = 0.0001;
+    double wynik = 0;
+    if (x1 > x2){
+        return -1;
+    } else if (x1 == x2){
+        return 0;
+    } else{
+        while (x1 < x2){
+            wynik += sin(x1) * dx;
+            x1 += dx;
+        }
+        return wynik;
+    }
+}
+
+double calka_cos(double x1, double x2){
+    std::cout << "Podaj kolejno: poczatek oraz koniec przedzialu calkowania" << std::endl;
+    double dx = 0.0001;
+    double wynik = 0;
+    if (x1 > x2){
+        return -1;
+    } else if (x1 == x2){
+        return 0;
+    } else{
+        while (x1 < x2){
+            wynik += cos(x1) * dx;
+            x1 += dx;
+        }
+        return wynik;
+    }
+}
+
 double Complex::clasic_to_tryg() const {
     if (Im >= 0 && cpx_lg() != 0) {
         return acos(Re / cpx_lg());
