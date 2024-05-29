@@ -97,4 +97,7 @@ void trapeze();
 void area();
 
 
+//logarytmy (jak by ktoś nie domyślił się po nazwie)
+float logarytmy();
+
 #endif //PROJEKT_PROJEKT_HPP

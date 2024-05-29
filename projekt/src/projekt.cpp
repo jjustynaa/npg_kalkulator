@@ -767,3 +767,11 @@ void area(){
             goto area;
     }
 }
+
+float logarytmy(){
+    std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
+    float ll, base;
+    std::cin >> ll >> base;
+    float wynik = log(ll) / log(base);
+    return wynik;
+}
