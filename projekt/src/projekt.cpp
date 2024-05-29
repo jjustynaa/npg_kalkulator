@@ -413,6 +413,11 @@ double Complex::clasic_to_tryg() const {
     return 7312;
 }
 
+Complex inerface_complex(Complex& cpx){
+    Complex cpx_int(cpx.Re, -cpx.Im);
+    return cpx_int;
+}
+
 void print_complex(Complex cpx){
     if (cpx.Phi != 7321) {
         std::cout << std::fixed << std::setprecision(3) << cpx.Re << " + i" << cpx.Im << "\ncos(" << cpx.Phi << ") + isin(" << cpx.Phi << ")" << std::endl;

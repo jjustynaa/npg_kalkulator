@@ -42,6 +42,6 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- PROJECT: projekt
 -- Using AddressSanitizer (ASan).
 -- Found Python3: C:/Users/user/AppData/Local/Programs/Python/Python312/python.exe (found version "3.12.3") found components: Interpreter 
--- Configuring done (10.9s)
--- Generating done (0.2s)
+-- Configuring done (6.4s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/user/Desktop/npg_kalkulator/projekt/cmake-build-debug
