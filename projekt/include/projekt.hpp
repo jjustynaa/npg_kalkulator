@@ -63,28 +63,19 @@ public:
     double clasic_to_tryg() const;
 };
 
-
-
 //Complex add_complex(Complex& cpx_1, Complex& cpx_2){return {cpx_1.Re + cpx_2.Re, cpx_1.Im + cpx_2.Im};}
-
 //Complex sub_complex(Complex& cpx_1, Complex& cpx_2){return {cpx_1.Re - cpx_2.Re, cpx_1.Im - cpx_2.Im};}
-
 //Complex multi_complex(Complex& cpx_1, Complex& cpx_2){return {cpx_1.Re * cpx_2.Re - cpx_1.Im * cpx_2.Im, cpx_1.Re * cpx_2.Im + cpx_1.Im * cpx_2.Re};}
-
 //Complex div_complex(Complex& cpx_1, Complex& cpx_2){return {((cpx_1.Re * cpx_2.Re) + (cpx_1.Im * cpx_2.Im)) / (cpx_2.Re * cpx_2.Re + cpx_2.Im * cpx_2.Im), ((cpx_1.Im * cpx_2.Re) - (cpx_1.Re * cpx_2.Im)) / (cpx_2.Re * cpx_2.Re + cpx_2.Im * cpx_2.Im)};}
 
 Complex sqrt(Complex& cpx);
-
-Complex inerface_complex(Complex& cpx){return {cpx.Re, -cpx.Im};}
-
+Complex inerface_complex(Complex& cpx);
 void print_complex(Complex cpx);
-
 void complex_choice();
 
 
 //kwadratowa
 void kwadratowa(double a, double b, double c);
-void kwadratowa(const std::vector<double>& a, const std::vector<double>& b, const std::vector<double>& c);
 void kwadratowa(Complex a, Complex b, Complex c);
 
 //równianie wielomianowe stopnia 3
@@ -92,9 +83,21 @@ std::vector<double> solveCubic(double a, double b, double c, double d);
 
 //pola figur
 bool does_triangle_exist(double a, double b, double c);
+double triangleArea1(double a, double h);
+double triangleArea2(double a, double b, double c);
+double triangleArea3(double a, double b, double angle);
 void triangle();
+double rectangularArea(double a, double b);
 void rectangular();
+double diamondArea1(double a, double h);
+double diamondArea2(double e, double f);
+void diamond();
+double trapezeArea(double a, double b, double h);
+void trapeze();
 void area();
 
+
+//logarytmy (jak by ktoś nie domyślił się po nazwie)
+float logarytmy();
 
 #endif //PROJEKT_PROJEKT_HPP
