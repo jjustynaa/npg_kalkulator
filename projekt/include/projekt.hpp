@@ -63,22 +63,14 @@ public:
     double clasic_to_tryg() const;
 };
 
-
-
 //Complex add_complex(Complex& cpx_1, Complex& cpx_2){return {cpx_1.Re + cpx_2.Re, cpx_1.Im + cpx_2.Im};}
-
 //Complex sub_complex(Complex& cpx_1, Complex& cpx_2){return {cpx_1.Re - cpx_2.Re, cpx_1.Im - cpx_2.Im};}
-
 //Complex multi_complex(Complex& cpx_1, Complex& cpx_2){return {cpx_1.Re * cpx_2.Re - cpx_1.Im * cpx_2.Im, cpx_1.Re * cpx_2.Im + cpx_1.Im * cpx_2.Re};}
-
 //Complex div_complex(Complex& cpx_1, Complex& cpx_2){return {((cpx_1.Re * cpx_2.Re) + (cpx_1.Im * cpx_2.Im)) / (cpx_2.Re * cpx_2.Re + cpx_2.Im * cpx_2.Im), ((cpx_1.Im * cpx_2.Re) - (cpx_1.Re * cpx_2.Im)) / (cpx_2.Re * cpx_2.Re + cpx_2.Im * cpx_2.Im)};}
 
 Complex sqrt(Complex& cpx);
-
-Complex inerface_complex(Complex& cpx){return {cpx.Re, -cpx.Im};}
-
+Complex inerface_complex(Complex& cpx);
 void print_complex(Complex cpx);
-
 void complex_choice();
 
 
