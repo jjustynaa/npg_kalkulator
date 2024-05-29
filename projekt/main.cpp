@@ -128,7 +128,7 @@ int main() {
             area();
             break;
         case '9':
-            std::cout << logarytmy() << std::endl;
+            logarytmy_by_Natalia();
             break;
         case 'h':
             if (funk == "elp"){
