@@ -679,7 +679,7 @@ double triangleArea2(double a, double b, double c){
 }
 
 double triangleArea3(double a, double b, double angle){
-    return a * b * sin(angle) / 2;
+    return ceil(a * b * sin(angle*3.14159/180) / 2);
 }
 
 void triangle(){
@@ -938,8 +938,8 @@ void area(){
     }
 }
 
-float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu ){
-    float wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
+double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu ){
+    double wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
     return wynik;
 }
 
