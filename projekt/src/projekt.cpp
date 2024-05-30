@@ -93,16 +93,20 @@ int modulo(int num1, int num2) {
     return num1 % num2;
 }
 
+//funkcja tworzaca macierz o okreslonym rozmarze
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
     std::vector<std::vector<int>> matrix(rows, std::vector<int>(col));
 
     for(std::size_t i = 0; i < rows; i++)
-        for(std::size_t j = 0; j < col; j++)
+        for(std::size_t j = 0; j < col; j++) {
+            std::cout << "[ " << i+1 << ", " << j+1 << "]:";
             std::cin >> matrix[i][j];
+        }
 
     return matrix;
 }
 
+//funkcja pokazujaca na ekran macierz wynikowa
 void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col) {
     std::cout << "[" << std::endl;
     for(std::size_t i = 0; i < rows; i++) {
@@ -113,7 +117,16 @@ void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::siz
     std::cout << "]" << std::endl;
 }
 
-void addMatrix(){
+//funkcja dodajaca macierze
+std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col){
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
+            new_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
+    return new_matrix;
+}
+
+void addMatrix_user(){
     std::size_t rows;
     std::size_t col;
     std::cout <<"Podaj rozmiar wierszy:\n";
@@ -127,15 +140,22 @@ void addMatrix(){
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
     std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
-    for(std::size_t i = 0; i < rows; i++)
-        for(std::size_t j = 0; j < col; j++)
-            new_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
+    new_matrix = addMatrix(matrix1, matrix2, rows, col);
 
     std::cout << "\nWynik wykonanego dzialania:\n";
     showMatrix(new_matrix ,rows ,col);
 }
 
-void substractMatrix(){
+//funkcja odejmujaca macierze
+std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col){
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
+            new_matrix[i][j] = matrix1[i][j] - matrix2[i][j];
+    return new_matrix;
+}
+
+void substractMatrix_user(){
     std::size_t rows;
     std::size_t col;
     std::cout <<"Podaj rozmiar wierszy:\n";
@@ -150,15 +170,27 @@ void substractMatrix(){
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
     std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
-    for(std::size_t i = 0; i < rows; i++)
-        for(std::size_t j = 0; j < col; j++)
-            new_matrix[i][j] = matrix1[i][j] - matrix2[i][j];
+    new_matrix = substractMatrix(matrix1, matrix2, rows, col);
 
     std::cout << "\nWynik wykonanego dzialania:\n";
     showMatrix(new_matrix ,rows ,col);
 }
 
-void multiMatrix(){
+//funkcja mnozaca macierze
+std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2){
+    std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
+    for(std::size_t i = 0; i < rows1; i++){
+        for(std::size_t j = 0; j < col2; j++){
+            new_matrix[i][j] = 0;
+            for(std::size_t k = 0; k < rows2; k++){
+                new_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
+            }
+        }
+    }
+    return new_matrix;
+}
+
+void multiMatrix_user(){
     std::cout << "Pamietaj ze rozmiar wierszy pierwszej macierzy = rozmiar kolumn drugiej macierzy\n oraz rozmiar kolumn pierwszej macierzy = rozmiar wierszy drugiej macierzy" << std::endl;
     std::size_t rows1;
     std::size_t col1;
@@ -177,18 +209,13 @@ void multiMatrix(){
     std::vector<std::vector<int>> matrix2 = createMatrix(rows2, col2);
 
     std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
-    for(std::size_t i = 0; i < rows1; i++){
-        for(std::size_t j = 0; j<col2; j++){
-            new_matrix[i][j] = 0;
-            for(std::size_t k = 0; k < rows2; k++){
-                new_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
-            }
-        }
-    }
+    new_matrix = multiMatrix(matrix1, matrix2, rows1, rows2, col2);
+
     std::cout << "\nWynik wykonanego dzialania:\n";
     showMatrix(new_matrix ,rows1 ,col2);
 }
 
+//menu funkcji macierz
 void matrix() {
     matrix:
     std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy" << std::endl;
@@ -197,13 +224,13 @@ void matrix() {
     std::cin >> mark;
     switch(mark){
         case '+':
-            addMatrix();
+            addMatrix_user();
             break;
         case '-':
-            substractMatrix();
+            substractMatrix_user();
             break;
         case '*':
-            multiMatrix();
+            multiMatrix_user();
             break;
         default:
             std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
@@ -226,7 +253,6 @@ void cykl_o_tryg() {
         cykl_o_tryg();
     }
 }
-
 
 void tryg() {
     std::cout << "Podaj funkcje i liczbe" << std::endl;
@@ -267,7 +293,6 @@ void tryg() {
     }
 }
 
-
 void cykl() {
     std::cout << "Podaj funkcje i liczbe" << std::endl;
 
@@ -296,9 +321,6 @@ void cykl() {
         cykl();
     }
 }
-
-
-
 
 void print_zao(){
     double num;
@@ -334,7 +356,7 @@ void kwadratowa(Complex a, Complex b, Complex c){
         Complex two(2, 0); // 2 jako liczba zespolona
         //liczenie delty
         Complex delta = (b * b) - (four * a * c);
-        Complex sqrt_delta = delta.sqrt();
+        Complex sqrt_delta = sqrt(delta);
         // Oblicz pierwiastki równania
         Complex minus_b = inerface_complex(b);
         Complex x1 = (minus_b + sqrt_delta) / (two * a);
@@ -343,7 +365,6 @@ void kwadratowa(Complex a, Complex b, Complex c){
         std::cout << " x2 = " << x2.Re << " + " << x2.Im << "i" << std::endl;
     }
 }
-
 
 std::vector<double> solveCubic(double a, double b, double c, double d) {
     std::vector<double> roots;
@@ -503,6 +524,11 @@ double Complex::clasic_to_tryg() const {
     return 7312;
 }
 
+Complex inerface_complex(Complex& cpx){
+    Complex cpx_int(cpx.Re, -cpx.Im);
+    return cpx_int;
+}
+
 void print_complex(Complex cpx){
     if (cpx.Phi != 7321) {
         std::cout << std::fixed << std::setprecision(3) << cpx.Re << " + i" << cpx.Im << "\ncos(" << cpx.Phi << ") + isin(" << cpx.Phi << ")" << std::endl;
@@ -510,6 +536,11 @@ void print_complex(Complex cpx){
         std::cout << "Niezdefiniowano";
 }
 
+Complex sqrt(Complex& cpx){
+    std::complex<double> cpx_pr = std::sqrt(std::complex<double>(cpx.Re, cpx.Im));
+    Complex cpx_1(real(cpx_pr), imag(cpx_pr));
+    return cpx_1;
+}
 
 void complex_choice(){
     char oper;
@@ -542,13 +573,13 @@ void complex_choice(){
         Complex comp_1(re_1, im_1);
         Complex comp_2(re_2, im_1);
         if (oper == 2){
-            print_complex(add_complex(comp_1, comp_2));
+            print_complex(comp_1 + comp_2);
         } else if (oper == 3){
-            print_complex(sub_complex(comp_1, comp_2));
+            print_complex(comp_1 - comp_2);
         } else if (oper == 4){
-            print_complex(multi_complex(comp_1, comp_2));
+            print_complex(comp_1 * comp_2);
         } else if (oper == 5){
-            print_complex(div_complex(comp_1, comp_2));
+            print_complex(comp_1 / comp_2);
         }
     } else if (oper == 6 || oper == 7){
         double re;
@@ -572,3 +603,289 @@ void complex_choice(){
     }
 }
 
+
+bool does_triangle_exist(double a, double b, double c){
+    if (a + b > c) return true;
+    return false;
+}
+
+double triangleArea1(double a, double h){
+    return a * h / 2;
+}
+
+double triangleArea2(double a, double b, double c){
+    double p = (a + b + c) / 2;
+    return sqrt(p * (p - a) * (p - b) * (p - c));
+}
+
+double triangleArea3(double a, double b, double angle){
+    return a * b * sin(angle) / 2;
+}
+
+void triangle(){
+    triangle:
+    std::cout << "Wybierz jakim sposobem chcialbys obliczyc pole trojkata\n1 - dlugosc boku i wysokosci na niej opuszczonej\n"
+                 "2 - znane sa wszystkie dlugosci bokow trojkata\n3 - posiadamy dlugosci dwoch bokow i miare kata pomiedzy nimi" << std::endl;
+    int mark;
+    std::cout << "Wybierz cyfre:\n";
+    std::cin >> mark;
+
+    double a, b, c, h, angle;
+    double area;
+
+    switch( mark ){
+        case 1:
+            std::cout << "Obliczanie pola przez podanie boku i wysokosci." << std::endl;
+        bok11:
+            std::cout << "Dlugosc boku:\n";
+            std::cin >> a;
+            if (a <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok11;
+            }
+        wysokosc11:
+            std::cout << "Dlugosc wysokosci:\n";
+            std::cin >> h;
+            if (h <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto wysokosc11;
+            }
+            area = triangleArea1(a, h);
+            break;
+
+        case 2:
+        triangle2:
+            std::cout << "Obliczanie pola przez podanie dlugosci wszystkich bokow." << std::endl;
+        bok21:
+            std::cout << "Dlugosc pierwszego boku:\n";
+            std::cin >> a;
+            if (a <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok21;
+            }
+        bok22:
+            std::cout << "Dlugosc drugiego boku:\n";
+            std::cin >> b;
+            if (b <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok22;
+            }
+        bok23:
+            std::cout << "Dlugosc trzeciego boku:\n";
+            std::cin >> c;
+            if (c <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok23;
+            }
+
+            if(does_triangle_exist(a,b,c) && does_triangle_exist(c,a,b) && does_triangle_exist(b,c,a)) {
+                area = triangleArea2(a, b, c);
+            }
+            else {
+                std::cout << "Podano nieprawidlowe dlugosci w trojkacie. Trojkat nie istnieje.\n"
+                             "Sprobuj jeszcze raz" << std::endl;
+                goto triangle2;
+            }
+            break;
+
+        case 3:
+            std::cout << "Obliczanie pola przez podanie dlugosci dwoch bokow i kata pomiedzy nimi." << std::endl;
+        bok31:
+            std::cout << "Dlugosc pierwszego boku:\n";
+            std::cin >> a;
+            if (a <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok31;
+            }
+        bok32:
+            std::cout << "Dlugosc drugiego boku:\n";
+            std::cin >> b;
+            if (b <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok32;
+            }
+        miara:
+            std::cout << "Miara kata:\n";
+            std::cin >> angle;
+            if ((angle <= 0) || (angle > 180)){
+                std::cout << "Podano nieprawidlowa miare. Sprobuj ponownie." << std::endl;
+                goto miara;
+            }
+
+            area = triangleArea3(a, b, angle);
+            break;
+        default:
+            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
+            //blad();
+            goto triangle;
+    }
+
+    std::cout << "Pole trojkata wynosi: " << area << std::endl;
+}
+
+double rectangularArea(double a, double b){
+    return a * b;
+}
+
+void rectangular(){
+    double a;
+    double b;
+    double area;
+    std::cout << "Podaj dlugosci bokow prostokata: " << std::endl;
+    bok1:
+    std::cout << "Dlugosc pierwszego boku:\n";
+    std::cin >> a;
+    if (a <= 0 ){
+        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        goto bok1;
+    }
+    bok2:
+    std::cout << "Dlugosc drugiego boku:\n";
+    std::cin >> b;
+    if (b <= 0 ){
+        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        goto bok2;
+    }
+    area = rectangularArea(a, b);
+    std::cout << "Pole prostokatu wynosi: " << area << std::endl;
+}
+
+double diamondArea1(double a, double h){
+    return a * h;
+}
+
+double diamondArea2(double e, double f){
+    return e * f / 2;
+}
+
+void diamond(){
+    diamond:
+    std::cout << "Wybierz jakim sposobem chcialbys obliczyc pole trapezu\n1 - dlugosc boku i wysokosci na niej opuszczonej\n"
+                 "2 - znane sa dlugosci przekatnych rombu" << std::endl;
+
+    int mark;
+    std::cout << "Wybierz cyfre:\n";
+    std::cin >> mark;
+
+    double a, h;
+    double area;
+
+    switch( mark ){
+        case 1:
+            std::cout << "Obliczanie pola przez podanie boku i wysokosci." << std::endl;
+        bok11:
+            std::cout << "Dlugosc boku:\n";
+            std::cin >> a;
+            if (a <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok11;
+            }
+        wysokosc11:
+            std::cout << "Dlugosc wysokosci:\n";
+            std::cin >> h;
+            if (h <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto wysokosc11;
+            }
+            area = diamondArea1(a, h);
+            break;
+
+        case 2:
+            std::cout << "Obliczanie pola przez podanie dlugosci przekatnych." << std::endl;
+        bok21:
+            std::cout << "Dlugosc pierwszej przekatnej:\n";
+            std::cin >> a;
+            if (a <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok21;
+            }
+        bok22:
+            std::cout << "Dlugosc drugiej przekatnej:\n";
+            std::cin >> h;
+            if (h <= 0 ){
+                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                goto bok22;
+            }
+            area = diamondArea2(a, h);
+            break;
+
+        default:
+            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
+            //blad();
+            goto diamond;
+    }
+    std::cout << "Pole rombu wynosi: " << area << std::endl;
+}
+
+double trapezeArea(double a, double b, double h){
+    return (a + b) * h / 2;
+}
+
+void trapeze(){
+    double a;
+    double b;
+    double h;
+    double area;
+    std::cout << "Podaj dlugosci podstaw trapezu: " << std::endl;
+    bok1:
+    std::cout << "Dlugosc pierwszej podstawy:\n";
+    std::cin >> a;
+    if (a <= 0 ){
+        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        goto bok1;
+    }
+    bok2:
+    std::cout << "Dlugosc drugiej podstawy:\n";
+    std::cin >> b;
+    if (b <= 0 ){
+        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        goto bok2;
+    }
+    wysokosc:
+    std::cout << "Dlugosc wysokosci:\n";
+    std::cin >> h;
+    if (h <= 0 ){
+        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        goto wysokosc;
+    }
+    area = trapezeArea(a, b, h);
+    std::cout << "Pole trapezu wynosi: " << area << std::endl;
+}
+
+void area(){
+    area:
+    std::cout <<"Wybierz dzialanie programu:\nP obliczanie pola prostokata\nT obliczanie pola trojkata\nR obliczanie pola rombu\nN obliczanie pola trapezu" << std::endl;
+
+    char mark;
+    std::cin >> mark;
+    switch( std::tolower(mark) ){
+        case 'p':
+            rectangular();
+            break;
+        case 't':
+            triangle();
+            break;
+        case 'r':
+            diamond();
+            break;
+        case 'n':
+            trapeze();
+            break;
+        default:
+            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
+            //blad();
+            goto area;
+    }
+}
+
+float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu ){
+    float wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
+    return wynik;
+}
+
+void logarytmy_by_Natalia(){
+    std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
+    float ll, base;
+    std::cin >> ll >> base;
+    std::cout << "Wynik logarytmu to" << logarytmy(ll,base);
+}

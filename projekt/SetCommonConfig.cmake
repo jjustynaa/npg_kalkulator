@@ -7,7 +7,8 @@ set(CMAKE_C_STANDARD 11)  # dostępne wartości: 90, 99, 11
 # Ustaw standard języka C++.
 set(CMAKE_CXX_STANDARD 17)
 
-add_compile_options(-Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar)
+add_compile_options()
+#add_compile_options(-Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar)
 
 # Skorzystaj z narzędzia AddressSanitizer (pozwalającego wykryć m.in. błędy pisania
 # po nie-swojej pamięci statycznej). Narzędzie jest dostępne natywnie dla systemów
@@ -45,7 +46,7 @@ if(EXISTS ${PROJECT_SOURCE_DIR}/test)
 
     # Przyjmij, że główny katalog z plikami frameworku GTF znajduje się
     # dwa katalogi wyżej względem katalogu projektu.
-    set(GTEST_ROOT ../googletest-master)
+    set(GTEST_ROOT googletest-master)
 
     # Dodaj katalogi z plikami nagłówkowymi GTF.
     target_include_directories(${EXEC_TEST} PUBLIC

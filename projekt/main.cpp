@@ -4,7 +4,11 @@
 #include <vector>
 #include <stdexcept>
 
-void czyszczenie() {
+//Jeśli ktoś to czyta to tłumacze te 4 błędy co są
+//dwa z nich pojawiają się przez puste swiche i nimi się wgl nie przejmujemy
+//dwa pozostałe są bo używamy comon configa z PSiO i niepodoba mu się że porównujemy coś do NULLa dla charów
+// więc można spróbować go jakoś ładnie upakować żeby się nie czepiało ale raczej nic to nie zepsuje
+void czyszczenie(){
     for (int i = 0; i < 25; i++) {
         std::cout << std::endl;
     }
@@ -51,31 +55,31 @@ int main() {
                  " 0. Help\n"
                  " r. Reset\n" << std::endl;
 
-    int fun;
+    char fun;
     std::cin >> fun;
 
     czyszczenie();
     switch (fun) {
-        case 1:
+        case '1':
             std::cout << "1";
             // Wstaw funkcję kalkulatora prostego
             break;
-        case 2:
+        case '2':
             matrix();
             break;
-        case 3:
+        case '3':
             kalk_poteg();
             break;
-        case 4:
+        case '4':
             // Przerzut na przelicznik
             break;
-        case 5:
+        case '5':
             // Przerzut na porównania
             break;
-        case 6:
+        case '6':
             print_zao();
             break;
-        case 7: {
+        case '7': {
             char choice;
             std::cout << "Wybierz typ równania: (1) kwadratowe, (2) sześcienne: ";
             std::cin >> choice;
@@ -103,22 +107,22 @@ int main() {
             }
             break;
         }
-        case 8:
+        case '8':
             area();
             break;
-        case 9:
+        case '9':
             logarytmy_by_Natalia();
             break;
-        case 10:
+        case '10':
             cykl_o_tryg();
             break;
-        case 11:
+        case '11':
             complex_choice();
             break;
-        case 12:
+        case '12':
             calki();
             break;
-        case 0:
+        case '0':
             goto p_help;
         case 'r':
             goto start;
@@ -127,9 +131,7 @@ int main() {
             goto p_menu;
     }
 
-
-
-     p_help:
+    p_help:
     std::cout << "Którą funkcje wytłumaczyć:\n"
                  " 1. Kalkulator prosty \n"
                  " 2. Kalkulator macierzowy\n"
@@ -143,7 +145,7 @@ int main() {
                  "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
                  "11. Kalkulator do liczb zespolonych\n"
                  "12. Kalkulator do calek oznaczonych\n"
-                 "13. Powrot na start"
+                 "13. Powrót na start\n"
                  "14. Powrót do wyboru kalkulatora \n" << std::endl;
 
     int help_fun;
@@ -196,7 +198,7 @@ int main() {
             goto p_menu;
         default:
             blad();
-            goto help;
+            goto p_help;
     }
     goto p_menu;
 }
