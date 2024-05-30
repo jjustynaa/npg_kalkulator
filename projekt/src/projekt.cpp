@@ -195,8 +195,6 @@ void multiMatrix_user() {
     std::size_t rows2;
     std::size_t col2;
     std::cout << "Podaj rozmiar wierszy pierwszej macierzy:\n";
-    //==========================================================================================
-    //powyżej tego komentarza zostały już usunięte polskie znaki
     std::cin >> rows1;
     col2 = rows1;
     std::cout <<"Podaj rozmiar kolumn pierwszej macierzy:\n";
@@ -237,6 +235,8 @@ void matrix() {
             goto matrix;
     }
 }
+    //==========================================================================================
+    //powyżej tego komentarza zostały już usunięte polskie znaki
 
 void cykl_o_tryg() {
     std::string choose;
