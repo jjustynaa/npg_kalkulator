@@ -108,7 +108,7 @@ void area();
 void calki();
 
 //logarytmy (jak by ktoś nie domyślił się po nazwie)
-float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu );
+double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu);
 
 void logarytmy_by_Natalia();
 
