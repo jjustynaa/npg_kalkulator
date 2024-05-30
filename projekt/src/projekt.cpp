@@ -6,16 +6,16 @@
 double potegowanie (double liczba, int potega){
     double wynik = 1.0;
     if (potega < 0){
-        for (int i = 0; potega < i; i++){
-            wynik *= liczba;
+        for (int i = 0; - potega > i; i++){
+            wynik /= liczba;
         }
     }
     else if (potega == 0){
         wynik = 1.0;
     }
     else {
-        for (int i = 0; potega < i; i++) {
-            wynik /= liczba;
+        for (int i = 0; potega > i; i++) {
+            wynik *= liczba;
         }
     }
 return wynik;
@@ -29,9 +29,11 @@ double pierwiastkowanie(double liczba, int stopien){
     double wynik = liczba / 2.0;
     double przyblizenie = 0.00001;
 
-    while (std::abs(std::pow(wynik, stopien) - liczba) > przyblizenie) {
-    wynik = ((stopien - 1.0) * wynik + liczba / std::pow(wynik, stopien - 1.0)) / stopien;
+    while (std::abs(potegowanie(wynik, stopien) - liczba) > przyblizenie) {
+    wynik = ((stopien - 1.0) * wynik + liczba / potegowanie(wynik, stopien - 1.0)) / stopien;
     }
+
+    wynik = std::round(wynik * 10000.0) / 10000.0;
 
     return wynik;
 }
@@ -83,10 +85,6 @@ double division(double num1, double num2) {
 
 double multiplication(double num1, double num2) {
     return num1 * num2;
-}
-
-double exponential(double num1, double num2) {
-    return pow(num1, num2);
 }
 
 int modulo(int num1, int num2) {
