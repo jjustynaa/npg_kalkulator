@@ -3,24 +3,26 @@
 //
 #include "projekt.hpp"
 
-double potegowanie(double liczba, int potega) {
+double potegowanie (double liczba, int potega){
     double wynik = 1.0;
-    if (potega < 0) {
-        for (int i = 0; potega < i; i++) {
+    if (potega < 0){
+        for (int i = 0; potega < i; i++){
             wynik *= liczba;
         }
-    } else if (potega == 0) {
+    }
+    else if (potega == 0){
         wynik = 1.0;
-    } else {
+    }
+    else {
         for (int i = 0; potega < i; i++) {
             wynik /= liczba;
         }
     }
-    return wynik;
+return wynik;
 }
 
-double pierwiastkowanie(double liczba, int stopien) {
-    if (liczba < 0 && (stopien % 2) == 0) {
+double pierwiastkowanie(double liczba, int stopien){
+    if (liczba < 0 && (stopien % 2) == 0 ) {
         return NAN;
     }
 
@@ -28,41 +30,41 @@ double pierwiastkowanie(double liczba, int stopien) {
     double przyblizenie = 0.00001;
 
     while (std::abs(std::pow(wynik, stopien) - liczba) > przyblizenie) {
-        wynik = ((stopien - 1.0) * wynik + liczba / std::pow(wynik, stopien - 1.0)) / stopien;
+    wynik = ((stopien - 1.0) * wynik + liczba / std::pow(wynik, stopien - 1.0)) / stopien;
     }
 
     return wynik;
 }
 
-void kalk_poteg() {
-kalk_poteg:
-    std::cout << "Wprowadz co chcesz zrobic\n* - potegowanie\ns - pierwiastkowanie" << std::endl;
+void kalk_poteg (){
+    kalk_poteg:
+    std::cout <<"Wprowadz co chcesz zrobić\n* - potegowanie\ns - pierwiastkowanie" << std::endl;
 
     char znak;
     std::cin >> znak;
-    switch (znak) {
+    switch(znak){
         case '*':
-            std::cout << "Podaj wartosc jaka chcesz podniesc do potegi" << std::endl;
+            std::cout << "Podaj wartość jaką chcesz podnieść do potęgi" << std::endl;
             double liczba;
             std::cin >> liczba;
-            std::cout << "Podaj stopien do jakiego chcesz podniesc wczesniejsza wartosc" << std::endl;
+            std::cout << "Podaj stopień do jakiego chcesz podnieść wcześniejszą wartość" << std::endl;
             int stopien;
             std::cin >> stopien;
             std::cout << potegowanie(liczba, stopien) << std::endl;
             break;
 
         case 's':
-            std::cout << "Podaj wartosc jaka chcesz pierwiastkowac" << std::endl;
+            std::cout << "Podaj wartość jaką chcesz pierwiastkowac" << std::endl;
             double wartosc;
             std::cin >> wartosc;
-            std::cout << "Podaj stopien piewiastka" << std::endl;
+            std::cout << "Podaj stopień piewiastka" << std::endl;
             int pierw;
             std::cin >> pierw;
             std::cout << pierwiastkowanie(wartosc, pierw) << std::endl;
             break;
 
         default:
-            std::cout << "Nie znana komenda \nsprobuj jeszcze raz" << std::endl;
+            std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
             goto kalk_poteg;
     }
 }
@@ -95,9 +97,9 @@ int modulo(int num1, int num2) {
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
     std::vector<std::vector<int>> matrix(rows, std::vector<int>(col));
 
-    for (std::size_t i = 0; i < rows; i++)
-        for (std::size_t j = 0; j < col; j++) {
-            std::cout << "[ " << i + 1 << ", " << j + 1 << "]:";
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++) {
+            std::cout << "[ " << i+1 << ", " << j+1 << "]: ";
             std::cin >> matrix[i][j];
         }
 
@@ -107,7 +109,7 @@ std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
 //funkcja pokazujaca na ekran macierz wynikowa
 void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col) {
     std::cout << "[" << std::endl;
-    for (std::size_t i = 0; i < rows; i++) {
+    for(std::size_t i = 0; i < rows; i++) {
         for (std::size_t j = 0; j < col; j++)
             std::cout << std::setw(3) << matrix[i][j] << " ";
         std::cout << std::endl;
@@ -116,71 +118,71 @@ void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::siz
 }
 
 //funkcja dodajaca macierze
-std::vector<std::vector<int>> addMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col) {
-    std::vector<std::vector<int>> new_matrix(rows, std::vector<int>(col));
-    for (std::size_t i = 0; i < rows; i++)
-        for (std::size_t j = 0; j < col; j++)
+std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col){
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
             new_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
     return new_matrix;
 }
 
-void addMatrix_user() {
+void addMatrix_user(){
     std::size_t rows;
     std::size_t col;
-    std::cout << "Podaj rozmiar wierszy:\n";
+    std::cout <<"Podaj rozmiar wierszy:\n";
     std::cin >> rows;
-    std::cout << "Podaj rozmiar kolumn:\n";
+    std::cout <<"Podaj rozmiar kolumn:\n";
     std::cin >> col;
 
-    std::cout << "\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
     std::vector<std::vector<int>> matrix1 = createMatrix(rows, col);
-    std::cout << "\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
-    std::vector<std::vector<int>> new_matrix(rows, std::vector<int>(col));
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
     new_matrix = addMatrix(matrix1, matrix2, rows, col);
 
     std::cout << "\nWynik wykonanego dzialania:\n";
-    showMatrix(new_matrix, rows, col);
+    showMatrix(new_matrix ,rows ,col);
 }
 
 //funkcja odejmujaca macierze
-std::vector<std::vector<int>> substractMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col) {
-    std::vector<std::vector<int>> new_matrix(rows, std::vector<int>(col));
-    for (std::size_t i = 0; i < rows; i++)
-        for (std::size_t j = 0; j < col; j++)
+std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col){
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    for(std::size_t i = 0; i < rows; i++)
+        for(std::size_t j = 0; j < col; j++)
             new_matrix[i][j] = matrix1[i][j] - matrix2[i][j];
     return new_matrix;
 }
 
-void substractMatrix_user() {
+void substractMatrix_user(){
     std::size_t rows;
     std::size_t col;
-    std::cout << "Podaj rozmiar wierszy:\n";
+    std::cout <<"Podaj rozmiar wierszy:\n";
     std::cin >> rows;
-    std::cout << "Podaj rozmiar kolumn:\n";
+    std::cout <<"Podaj rozmiar kolumn:\n";
     std::cin >> col;
     std::cout << "Pamietaj zeby podac macierze w odpowiedniej kolejnosci, odejmowanie nie jest dzialaniem przemiennym" << std::endl;
 
-    std::cout << "\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
     std::vector<std::vector<int>> matrix1 = createMatrix(rows, col);
-    std::cout << "\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
-    std::vector<std::vector<int>> new_matrix(rows, std::vector<int>(col));
+    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
     new_matrix = substractMatrix(matrix1, matrix2, rows, col);
 
     std::cout << "\nWynik wykonanego dzialania:\n";
-    showMatrix(new_matrix, rows, col);
+    showMatrix(new_matrix ,rows ,col);
 }
 
 //funkcja mnozaca macierze
-std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2) {
-    std::vector<std::vector<int>> new_matrix(rows1, std::vector<int>(col2));
-    for (std::size_t i = 0; i < rows1; i++) {
-        for (std::size_t j = 0; j < col2; j++) {
+std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2){
+    std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
+    for(std::size_t i = 0; i < rows1; i++){
+        for(std::size_t j = 0; j < col2; j++){
             new_matrix[i][j] = 0;
-            for (std::size_t k = 0; k < rows2; k++) {
+            for(std::size_t k = 0; k < rows2; k++){
                 new_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
             }
         }
@@ -188,13 +190,13 @@ std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1,
     return new_matrix;
 }
 
-void multiMatrix_user() {
+void multiMatrix_user(){
     std::cout << "Pamietaj ze rozmiar wierszy pierwszej macierzy = rozmiar kolumn drugiej macierzy\n oraz rozmiar kolumn pierwszej macierzy = rozmiar wierszy drugiej macierzy" << std::endl;
     std::size_t rows1;
     std::size_t col1;
     std::size_t rows2;
     std::size_t col2;
-    std::cout << "Podaj rozmiar wierszy pierwszej macierzy:\n";
+    std::cout <<"Podaj rozmiar wierszy pierwszej macierzy:\n";
     std::cin >> rows1;
     col2 = rows1;
     std::cout <<"Podaj rozmiar kolumn pierwszej macierzy:\n";
@@ -213,10 +215,69 @@ void multiMatrix_user() {
     showMatrix(new_matrix ,rows1 ,col2);
 }
 
+//wyznaczniki macierzy
+//funkcja sprawdzająca czy macierz jest kwadratowa
+bool sq_matrix(std::vector<std::vector<int>> Matrix){
+    if (Matrix.size() == Matrix[0].size()) {
+        return true;
+    }else {
+        return false;
+    }}
+
+//funkcja zmniejszająca macierz
+std::vector<std::vector<int>> Matrix_cutter(const std::vector<std::vector<int>>& Matrix, std::size_t row_to_cut, std::size_t col_to_cut){
+    std::vector<std::vector<int>> Cutted_Matrix;
+    for(std::size_t i = 0; i < Matrix.size(); i++){
+        if (i != row_to_cut - 1){
+            std::vector<int> row;
+            for (std::size_t j = 0; j < Matrix[0].size(); j++){
+                if (j != col_to_cut - 1){
+                    row.push_back(Matrix[i][j]);
+                }
+            }
+            Cutted_Matrix.push_back(row);
+        }
+    }
+    return Cutted_Matrix;
+}
+
+//funckaj licząca wartość wyznacznika
+int determinant(const std::vector<std::vector<int>>& Matrix){
+    if (Matrix.size() == 1){
+        return Matrix[0][0];
+    } else if (Matrix.size() == 2) {
+        return Matrix[0][0] * Matrix[1][1] - Matrix[0][1] * Matrix[1][0];
+    } else {
+        int deter = 0;
+        for (std::size_t i = 0; i < Matrix.size(); ++i) {
+            std::vector<std::vector<int>> subMatrix = Matrix_cutter(Matrix, 1, i+1);
+            deter += (i % 2 == 0 ? 1 : -1) * Matrix[0][i] * determinant(subMatrix);
+        }
+        return deter;
+    }
+}
+
+//funkcja do opisu do wyznacznika
+void determinat_str(){
+    std::size_t  r;
+    std::size_t  k;
+    std::cout << "Podaj liczbę wierszy i kolumn" << std::endl;
+    std::cin >> r;
+    std::cin >> k;
+    std::vector<std::vector<int>> Matrix = createMatrix(r,k);
+    if(sq_matrix(Matrix)){
+        std::cout << "Wyznacznik macierzy:" << std::endl;
+        showMatrix(Matrix, Matrix.size(), Matrix[0].size());
+        std::cout << "Wynosi: " << determinant(Matrix) << std::endl;
+    }else{
+        std::cout << "Nie można policzyć wyznacznika ponieważ macierz nie jest macierzą kwadratową" << std::endl;
+    }
+}
+
 //menu funkcji macierz
 void matrix() {
     matrix:
-    std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy" << std::endl;
+    std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy\n| wyznacznik macierzy" << std::endl;
 
     char mark;
     std::cin >> mark;
@@ -230,6 +291,9 @@ void matrix() {
         case '*':
             multiMatrix_user();
             break;
+        case '|':
+            determinat_str();
+            break;
         default:
             std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
             goto matrix;
@@ -237,86 +301,85 @@ void matrix() {
 }
 
 void cykl_o_tryg() {
-  std::string choose;
-  std::cout << "Chcesz skorzystac z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
-  std::cin >> choose;
-  if (choose.find("cyklome") != std::string::npos) {
-    cykl();
-  } else if (choose.find("trygono") != std::string::npos) {
-    tryg();
-  } else if (choose == "back"){
+    std::string choose;
+    std::cout << "Chcesz skorzystać z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
+    std::cin >> choose;
+    if (choose.find("cyklome") != std::string::npos) {
+        cykl();
+    } else if (choose.find("trygono") != std::string::npos) {
+        tryg();
+    } else if (choose == "back"){
 
-  }else{
-    std::cout << "Funkcja nie znana sprobuj jeszcze raz" << std::endl;
-    cykl_o_tryg();
-  }
+    }else{
+        std::cout << "Funkcja nie znana spróbuj jeszcze raz" << std::endl;
+        cykl_o_tryg();
+    }
 }
 
 void tryg() {
-  std::cout << "Podaj funkcje i liczbe" << std::endl;
+    std::cout << "Podaj funkcje i liczbe" << std::endl;
 
-  double num;
+    double num;
 
-  std::string fun_tryg;
+    std::string fun_tryg;
 
-  std::cin >> fun_tryg >> num;
+    std::cin >> fun_tryg >> num;
 
-  std::string wyb;
+    std::string wyb;
 
-  std::cout << "Wartosc podajesz w radianach czy stopniach?" << std::endl;
+    std::cout << "Wartość podajesz w radjanach czy stopniach?" << std::endl;
 
-  std::cin >> wyb;
+    std::cin >> wyb;
 
-  if (wyb.find("stop") != std::string::npos) {
-    num = num / 57.3;
-  } else if (wyb.find("stop") == std::string::npos && wyb.find("radia") == std::string::npos) {
-    std::cout << "Nieznana komenda sprobuj jeszcze raz" << std::endl;
-    tryg();
-  }
+    if (wyb.find("stop") != std::string::npos) {
+        num = num / 57.3;
+    } else if (wyb.find("stop") == std::string::npos && wyb.find("radia") == std::string::npos) {
+        std::cout << "Nieznana komenda spróbuj jeszcze raz" << std::endl;
+        tryg();
+    }
 
 
-  if (fun_tryg.find("sin") != std::string::npos) {
-    std::cout << "Wartosc sinusa podanego kata wynosi " << sin(num) << std::endl;
-  } else if (fun_tryg.find("cos") != std::string::npos) {
-    std::cout << "Wartosc cosinusa podanego kata wynosi " << cos(num) << std::endl;
-  } else if (fun_tryg.find("tan") != std::string::npos) {
-    std::cout << "Wartosc tangensa podanego kata wynosi " << tan(num) << std::endl;
-  } else if (fun_tryg.find("ctag") != std::string::npos) {
-    std::cout << "Wartosc cotangensa podanego kata wynosi " << 1 / tan(num) << std::endl;
-  } else if (fun_tryg == "back"){
+    if (fun_tryg.find("sin") != std::string::npos) {
+        std::cout << "Warotść sinusa podanego kąta wynosi " << sin(num) << std::endl;
+    } else if (fun_tryg.find("cos") != std::string::npos) {
+        std::cout << "Warotść cosinsusa podanego kąta wynosi " << cos(num) << std::endl;
+    } else if (fun_tryg.find("tan") != std::string::npos) {
+        std::cout << "Warotść tangensa podanego kąta wynosi " << tan(num) << std::endl;
+    } else if (fun_tryg.find("ctag") != std::string::npos) {
+        std::cout << "Warotść cotangensa podanego kąta wynosi " << 1 / tan(num) << std::endl;
+    } else if (fun_tryg == "back"){
 
-  } else {
-    std::cout << "Nieznane polecenie, sprobuj jeszcze raz" << std::endl;
-    tryg();
-  }
+    } else {
+        std::cout << "Nieznane polecenie, spróbuj jeszcze raz" << std::endl;
+        tryg();
+    }
 }
 
 void cykl() {
-  std::cout << "Podaj funkcje i liczbe" << std::endl;
+    std::cout << "Podaj funkcje i liczbe" << std::endl;
 
-  double num;
-//================================================================================================
+    double num;
 
     std::string fun_cyk;
 
     std::cin >> fun_cyk >> num;
 
-     if (fun_cyk.find("sin") != std::string::npos) {
-        std::cout << "Wartosc arcusasinusa podanego kata wynosi " << std::fixed << std::setprecision(1)
+    if (fun_cyk.find("sin") != std::string::npos) {
+        std::cout << "Warotść arcusasinusa podanego kąta wynosi " << std::fixed << std::setprecision(1)
                   << asin(num) * 57.3 << "°" << std::endl;
     } else if (fun_cyk.find("cos") != std::string::npos) {
-        std::cout << "Wartosc arcusacosinusa podanego kata wynosi " << std::fixed << std::setprecision(1)
+        std::cout << "Warotść arcusacosinusa podanego kąta wynosi " << std::fixed << std::setprecision(1)
                   << acos(num) * 57.3 << "°" << std::endl;
     } else if (fun_cyk.find("tan") != std::string::npos) {
-        std::cout << "Wartosc arcusatangensa podanego kata wynosi " << std::fixed << std::setprecision(1)
+        std::cout << "Warotść arcusatangensa podanego kąta wynosi " << std::fixed << std::setprecision(1)
                   << atan(num) * 57.3 << "°" << std::endl;
     } else if (fun_cyk.find("ctag") != std::string::npos) {
-        std::cout << "Wartosc arcusacotangensa podanego kata wynosi " << std::fixed << std::setprecision(1)
+        std::cout << "Warotść arcusacotangensa podanego kąta wynosi " << std::fixed << std::setprecision(1)
                   << M_PI / 2 - atan(num) * 57.3 << "°" << std::endl;
-    } else if (fun_cyk == "back") {
+    } else if (fun_cyk == "back"){
 
     } else {
-        std::cout << "Nieznane polecenie, sprobuj jeszcze raz" << std::endl;
+        std::cout << "Nieznane polecenie, spróbuj jeszcze raz" << std::endl;
         cykl();
     }
 }
@@ -325,7 +388,7 @@ void print_zao(){
     double num;
     int m_p_p;
     std::cin >> num >> m_p_p;
-    std::cout << "Liczba po zaokragleniu wynosi: " << std::fixed << std::setprecision(m_p_p) << num << std::endl;
+    std::cout << "Liczba po zaokrągleniu wynosi: " << std::fixed << std::setprecision(m_p_p) << num << std::endl;
 }
 
 void kwadratowa(double a, double b, double c){
@@ -403,7 +466,7 @@ std::vector<double> solveCubic(double a, double b, double c, double d) {
     return roots;
 }
 
-// całeczki 
+
 double calka_liniowa(double a, double b, double x1, double x2){
     double dx = 0.0001;
     double wynik = 0;
@@ -511,7 +574,6 @@ void calki() {
     }
 }
 
-
 double Complex::clasic_to_tryg() const {
     if (Im >= 0 && cpx_lg() != 0) {
         return acos(Re / cpx_lg());
@@ -544,14 +606,14 @@ Complex sqrt(Complex& cpx){
 void complex_choice(){
     char oper;
     std::vector<double> tym_kont;
-    std::cout << "Mozliwe operacje do wykonania:\n1. Przeksztalcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrot\n"
-                 "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnozenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
-                 "6. Znajdowanie liczby sprzezonej\n 7.Obliczanie dlugości liczby zespolonej\n\nKtora z operacji chcesz wykonac?" << std::endl;
+    std::cout << "Możliwe operacje do wykonania:\n1. Przekształcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrót\n"
+                 "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnożenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
+                 "6. Znajdowanie liczby sprzeżonej\n 7.Obliczanie długości liczby zespolonej\n\nKtórą z operacji chcesz wykonać?" << std::endl;
     std::cin >> oper;
     if (oper == 1){
         double re;
         double im;
-        std::cout << "Podaj liczbe zespolona" << std::endl;
+        std::cout << "Podaj liczbe zespoloną" << std::endl;
         std::cin >> re;
         std::cin >> im;
         if (im != 0) {
@@ -594,14 +656,13 @@ void complex_choice(){
         }
     } else {
         char wyb;
-        std::cout << "Nie zdefiniowano, chcesz wrocić do menu [T/N]" << std::endl;
+        std::cout << "Nie zdefiniowano, chcesz wrócić do menu [T/N]" << std::endl;
         std::cin >> wyb;
         if (wyb == 'N'){
             complex_choice();
         }
     }
 }
-
 
 bool does_triangle_exist(double a, double b, double c){
     if (a + b > c) return true;
@@ -877,14 +938,14 @@ void area(){
     }
 }
 
-double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu ){
-    double wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
+float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu ){
+    float wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
     return wynik;
 }
 
 void logarytmy_by_Natalia(){
     std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
-    double ll, base;
+    float ll, base;
     std::cin >> ll >> base;
     std::cout << "Wynik logarytmu to" << logarytmy(ll,base);
 }
