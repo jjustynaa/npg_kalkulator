@@ -140,8 +140,11 @@ int main() {
                  " 7. Kalkulator równań kwadratowych lub równań trzeciego stopnia\n"
                  " 8. Kalkulator pól i objętości\n"
                  " 9. Kalkulator logarytmów\n"
-                 "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n\n"
-                 "Aby wrócić do wyboru kalkulatora wpisz back\n" << std::endl;
+                 "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
+                 "11. Kalkulator do liczb zespolonych\n"
+                 "12. Kalkulator do calek oznaczonych\n"
+                 "13. Powrot na start"
+                 "14. Powrót do wyboru kalkulatora \n" << std::endl;
 
     int help_fun;
     std::cin >> help_fun;
@@ -158,13 +161,13 @@ int main() {
                          "W mnożeniu zaś te wielkości są odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze drugiej." << std::endl;
             break;
         case 3:
-            std::cout << "Funkcja do potęgowania i pierwiastkowania" << std::endl;
+            std::cout << "help do potęgowania i pierwiastkowania" << std::endl;
             break;
         case 4:
-            std::cout << "Przelicznik wartości" << std::endl;
+            std::cout << "help do przelicznika wartości" << std::endl;
             break;
         case 5:
-            std::cout << "Porównywanie liczb" << std::endl;
+            std::cout << "help do porównywania liczb" << std::endl;
             break;
         case 6:
             std::cout << "Zaokrąglenie przyjmuje dwie wartości: liczbę do zaokrąglania oraz liczbę miejsc po przecinku, ile oczekujesz otrzymać" << std::endl;
@@ -181,9 +184,19 @@ int main() {
         case 10:
             std::cout << "Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych" << std::endl;
             break;
+        case 11:
+            // std::cout << "help do liczb zespolonych" << std::endl;
+            break;
+        case 12:
+            // std::cout << "help do calek " << std::endl;
+            break;
+        case 13:
+            goto start;
+        case 14:
+            goto p_menu;
         default:
             blad();
-            goto p_help;
+            goto help;
     }
     goto p_menu;
 }
