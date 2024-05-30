@@ -47,6 +47,7 @@ int main() {
                  " 9. Kalkulator logarytmów\n"
                  "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
                  "11. Kalkulator do liczb zespolonych\n"
+                 "12. Kalkulator do calek oznaczonych\n"
                  " 0. Help\n"
                  " r. Reset\n" << std::endl;
 
@@ -113,6 +114,9 @@ int main() {
             break;
         case 11:
             complex_choice();
+            break;
+        case 12:
+            calki();
             break;
         case 0:
             goto p_help;
