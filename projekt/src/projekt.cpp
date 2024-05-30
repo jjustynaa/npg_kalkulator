@@ -3,26 +3,24 @@
 //
 #include "projekt.hpp"
 
-double potegowanie (double liczba, int potega){
+double potegowanie(double liczba, int potega) {
     double wynik = 1.0;
-    if (potega < 0){
-        for (int i = 0; potega < i; i++){
+    if (potega < 0) {
+        for (int i = 0; potega < i; i++) {
             wynik *= liczba;
         }
-    }
-    else if (potega == 0){
+    } else if (potega == 0) {
         wynik = 1.0;
-    }
-    else {
+    } else {
         for (int i = 0; potega < i; i++) {
             wynik /= liczba;
         }
     }
-return wynik;
+    return wynik;
 }
 
-double pierwiastkowanie(double liczba, int stopien){
-    if (liczba < 0 && (stopien % 2) == 0 ) {
+double pierwiastkowanie(double liczba, int stopien) {
+    if (liczba < 0 && (stopien % 2) == 0) {
         return NAN;
     }
 
@@ -30,41 +28,41 @@ double pierwiastkowanie(double liczba, int stopien){
     double przyblizenie = 0.00001;
 
     while (std::abs(std::pow(wynik, stopien) - liczba) > przyblizenie) {
-    wynik = ((stopien - 1.0) * wynik + liczba / std::pow(wynik, stopien - 1.0)) / stopien;
+        wynik = ((stopien - 1.0) * wynik + liczba / std::pow(wynik, stopien - 1.0)) / stopien;
     }
 
     return wynik;
 }
 
-void kalk_poteg (){
-    kalk_poteg:
-    std::cout <<"Wprowadz co chcesz zrobić\n* - potegowanie\ns - pierwiastkowanie" << std::endl;
+void kalk_poteg() {
+kalk_poteg:
+    std::cout << "Wprowadz co chcesz zrobic\n* - potegowanie\ns - pierwiastkowanie" << std::endl;
 
     char znak;
     std::cin >> znak;
-    switch(znak){
+    switch (znak) {
         case '*':
-            std::cout << "Podaj wartość jaką chcesz podnieść do potęgi" << std::endl;
+            std::cout << "Podaj wartosc jaka chcesz podniesc do potegi" << std::endl;
             double liczba;
             std::cin >> liczba;
-            std::cout << "Podaj stopień do jakiego chcesz podnieść wcześniejszą wartość" << std::endl;
+            std::cout << "Podaj stopien do jakiego chcesz podniesc wczesniejsza wartosc" << std::endl;
             int stopien;
             std::cin >> stopien;
             std::cout << potegowanie(liczba, stopien) << std::endl;
             break;
 
         case 's':
-            std::cout << "Podaj wartość jaką chcesz pierwiastkowac" << std::endl;
+            std::cout << "Podaj wartosc jaka chcesz pierwiastkowac" << std::endl;
             double wartosc;
             std::cin >> wartosc;
-            std::cout << "Podaj stopień piewiastka" << std::endl;
+            std::cout << "Podaj stopien piewiastka" << std::endl;
             int pierw;
             std::cin >> pierw;
             std::cout << pierwiastkowanie(wartosc, pierw) << std::endl;
             break;
 
         default:
-            std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
+            std::cout << "Nie znana komenda \nsprobuj jeszcze raz" << std::endl;
             goto kalk_poteg;
     }
 }
@@ -97,9 +95,9 @@ int modulo(int num1, int num2) {
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
     std::vector<std::vector<int>> matrix(rows, std::vector<int>(col));
 
-    for(std::size_t i = 0; i < rows; i++)
-        for(std::size_t j = 0; j < col; j++) {
-            std::cout << "[ " << i+1 << ", " << j+1 << "]:";
+    for (std::size_t i = 0; i < rows; i++)
+        for (std::size_t j = 0; j < col; j++) {
+            std::cout << "[ " << i + 1 << ", " << j + 1 << "]:";
             std::cin >> matrix[i][j];
         }
 
@@ -109,7 +107,7 @@ std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
 //funkcja pokazujaca na ekran macierz wynikowa
 void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::size_t col) {
     std::cout << "[" << std::endl;
-    for(std::size_t i = 0; i < rows; i++) {
+    for (std::size_t i = 0; i < rows; i++) {
         for (std::size_t j = 0; j < col; j++)
             std::cout << std::setw(3) << matrix[i][j] << " ";
         std::cout << std::endl;
@@ -118,71 +116,71 @@ void showMatrix(std::vector<std::vector<int>> matrix, std::size_t rows, std::siz
 }
 
 //funkcja dodajaca macierze
-std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col){
-    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
-    for(std::size_t i = 0; i < rows; i++)
-        for(std::size_t j = 0; j < col; j++)
+std::vector<std::vector<int>> addMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col) {
+    std::vector<std::vector<int>> new_matrix(rows, std::vector<int>(col));
+    for (std::size_t i = 0; i < rows; i++)
+        for (std::size_t j = 0; j < col; j++)
             new_matrix[i][j] = matrix1[i][j] + matrix2[i][j];
     return new_matrix;
 }
 
-void addMatrix_user(){
+void addMatrix_user() {
     std::size_t rows;
     std::size_t col;
-    std::cout <<"Podaj rozmiar wierszy:\n";
+    std::cout << "Podaj rozmiar wierszy:\n";
     std::cin >> rows;
-    std::cout <<"Podaj rozmiar kolumn:\n";
+    std::cout << "Podaj rozmiar kolumn:\n";
     std::cin >> col;
 
-    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::cout << "\nWpisywanie wartosci do pierwszej macierzy:\n";
     std::vector<std::vector<int>> matrix1 = createMatrix(rows, col);
-    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::cout << "\nWpisywanie wartosci do drugiej macierzy:\n";
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
-    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    std::vector<std::vector<int>> new_matrix(rows, std::vector<int>(col));
     new_matrix = addMatrix(matrix1, matrix2, rows, col);
 
     std::cout << "\nWynik wykonanego dzialania:\n";
-    showMatrix(new_matrix ,rows ,col);
+    showMatrix(new_matrix, rows, col);
 }
 
 //funkcja odejmujaca macierze
-std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col){
-    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
-    for(std::size_t i = 0; i < rows; i++)
-        for(std::size_t j = 0; j < col; j++)
+std::vector<std::vector<int>> substractMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows, std::size_t col) {
+    std::vector<std::vector<int>> new_matrix(rows, std::vector<int>(col));
+    for (std::size_t i = 0; i < rows; i++)
+        for (std::size_t j = 0; j < col; j++)
             new_matrix[i][j] = matrix1[i][j] - matrix2[i][j];
     return new_matrix;
 }
 
-void substractMatrix_user(){
+void substractMatrix_user() {
     std::size_t rows;
     std::size_t col;
-    std::cout <<"Podaj rozmiar wierszy:\n";
+    std::cout << "Podaj rozmiar wierszy:\n";
     std::cin >> rows;
-    std::cout <<"Podaj rozmiar kolumn:\n";
+    std::cout << "Podaj rozmiar kolumn:\n";
     std::cin >> col;
     std::cout << "Pamietaj zeby podac macierze w odpowiedniej kolejnosci, odejmowanie nie jest dzialaniem przemiennym" << std::endl;
 
-    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::cout << "\nWpisywanie wartosci do pierwszej macierzy:\n";
     std::vector<std::vector<int>> matrix1 = createMatrix(rows, col);
-    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::cout << "\nWpisywanie wartosci do drugiej macierzy:\n";
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
-    std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
+    std::vector<std::vector<int>> new_matrix(rows, std::vector<int>(col));
     new_matrix = substractMatrix(matrix1, matrix2, rows, col);
 
     std::cout << "\nWynik wykonanego dzialania:\n";
-    showMatrix(new_matrix ,rows ,col);
+    showMatrix(new_matrix, rows, col);
 }
 
 //funkcja mnozaca macierze
-std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2){
-    std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
-    for(std::size_t i = 0; i < rows1; i++){
-        for(std::size_t j = 0; j < col2; j++){
+std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2) {
+    std::vector<std::vector<int>> new_matrix(rows1, std::vector<int>(col2));
+    for (std::size_t i = 0; i < rows1; i++) {
+        for (std::size_t j = 0; j < col2; j++) {
             new_matrix[i][j] = 0;
-            for(std::size_t k = 0; k < rows2; k++){
+            for (std::size_t k = 0; k < rows2; k++) {
                 new_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
             }
         }
@@ -190,13 +188,15 @@ std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1,
     return new_matrix;
 }
 
-void multiMatrix_user(){
+void multiMatrix_user() {
     std::cout << "Pamietaj ze rozmiar wierszy pierwszej macierzy = rozmiar kolumn drugiej macierzy\n oraz rozmiar kolumn pierwszej macierzy = rozmiar wierszy drugiej macierzy" << std::endl;
     std::size_t rows1;
     std::size_t col1;
     std::size_t rows2;
     std::size_t col2;
-    std::cout <<"Podaj rozmiar wierszy pierwszej macierzy:\n";
+    std::cout << "Podaj rozmiar wierszy pierwszej macierzy:\n";
+    //==========================================================================================
+    //powyżej tego komentarza zostały już usunięte polskie znaki
     std::cin >> rows1;
     col2 = rows1;
     std::cout <<"Podaj rozmiar kolumn pierwszej macierzy:\n";
