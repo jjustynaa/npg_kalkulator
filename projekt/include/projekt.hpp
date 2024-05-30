@@ -39,6 +39,10 @@ std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> mat
 void substractMatrix_user();
 std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2);
 void multiMatrix_user();
+bool sq_matrix(std::vector<std::vector<int>> Matrix);
+std::vector<std::vector<int>> Matrix_cutter(const std::vector<std::vector<int>>& Matrix, std::size_t row_to_cut, std::size_t col_to_cut);
+int determinant(const std::vector<std::vector<int>>& Matrix);
+void determinat_str();
 void matrix();
 
 //całki
@@ -46,9 +50,6 @@ double calka_liniowa(double a, double b, double x1, double x2);
 double calka_kwadratowa(double a, double b, double c, double x1, double x2);
 double calka_sin(double x1, double x2);
 double calka_cos(double x1, double x2);
-
-//równianie wielomianowe stopnia 3
-std::vector<double> solveCubic(double a, double b, double c, double d);
 
 //zespolone
 class Complex {
