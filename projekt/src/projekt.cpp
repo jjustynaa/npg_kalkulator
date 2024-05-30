@@ -301,22 +301,22 @@ void cykl() {
 
     std::cin >> fun_cyk >> num;
 
-    if (fun_cyk.find("sin") != std::string::npos) {
-        std::cout << "Warotść arcusasinusa podanego kąta wynosi " << std::fixed << std::setprecision(1)
+     if (fun_cyk.find("sin") != std::string::npos) {
+        std::cout << "Wartosc arcusasinusa podanego kata wynosi " << std::fixed << std::setprecision(1)
                   << asin(num) * 57.3 << "°" << std::endl;
     } else if (fun_cyk.find("cos") != std::string::npos) {
-        std::cout << "Warotść arcusacosinusa podanego kąta wynosi " << std::fixed << std::setprecision(1)
+        std::cout << "Wartosc arcusacosinusa podanego kata wynosi " << std::fixed << std::setprecision(1)
                   << acos(num) * 57.3 << "°" << std::endl;
     } else if (fun_cyk.find("tan") != std::string::npos) {
-        std::cout << "Warotść arcusatangensa podanego kąta wynosi " << std::fixed << std::setprecision(1)
+        std::cout << "Wartosc arcusatangensa podanego kata wynosi " << std::fixed << std::setprecision(1)
                   << atan(num) * 57.3 << "°" << std::endl;
     } else if (fun_cyk.find("ctag") != std::string::npos) {
-        std::cout << "Warotść arcusacotangensa podanego kąta wynosi " << std::fixed << std::setprecision(1)
+        std::cout << "Wartosc arcusacotangensa podanego kata wynosi " << std::fixed << std::setprecision(1)
                   << M_PI / 2 - atan(num) * 57.3 << "°" << std::endl;
-    } else if (fun_cyk == "back"){
+    } else if (fun_cyk == "back") {
 
     } else {
-        std::cout << "Nieznane polecenie, spróbuj jeszcze raz" << std::endl;
+        std::cout << "Nieznane polecenie, sprobuj jeszcze raz" << std::endl;
         cykl();
     }
 }
@@ -325,7 +325,7 @@ void print_zao(){
     double num;
     int m_p_p;
     std::cin >> num >> m_p_p;
-    std::cout << "Liczba po zaokrągleniu wynosi: " << std::fixed << std::setprecision(m_p_p) << num << std::endl;
+    std::cout << "Liczba po zaokragleniu wynosi: " << std::fixed << std::setprecision(m_p_p) << num << std::endl;
 }
 
 void kwadratowa(double a, double b, double c){
@@ -544,14 +544,14 @@ Complex sqrt(Complex& cpx){
 void complex_choice(){
     char oper;
     std::vector<double> tym_kont;
-    std::cout << "Możliwe operacje do wykonania:\n1. Przekształcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrót\n"
-                 "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnożenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
-                 "6. Znajdowanie liczby sprzeżonej\n 7.Obliczanie długości liczby zespolonej\n\nKtórą z operacji chcesz wykonać?" << std::endl;
+    std::cout << "Mozliwe operacje do wykonania:\n1. Przeksztalcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrot\n"
+                 "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnozenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
+                 "6. Znajdowanie liczby sprzezonej\n 7.Obliczanie dlugości liczby zespolonej\n\nKtora z operacji chcesz wykonac?" << std::endl;
     std::cin >> oper;
     if (oper == 1){
         double re;
         double im;
-        std::cout << "Podaj liczbe zespoloną" << std::endl;
+        std::cout << "Podaj liczbe zespolona" << std::endl;
         std::cin >> re;
         std::cin >> im;
         if (im != 0) {
@@ -594,7 +594,7 @@ void complex_choice(){
         }
     } else {
         char wyb;
-        std::cout << "Nie zdefiniowano, chcesz wrócić do menu [T/N]" << std::endl;
+        std::cout << "Nie zdefiniowano, chcesz wrocić do menu [T/N]" << std::endl;
         std::cin >> wyb;
         if (wyb == 'N'){
             complex_choice();
@@ -877,14 +877,14 @@ void area(){
     }
 }
 
-float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu ){
-    float wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
+double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu ){
+    double wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
     return wynik;
 }
 
 void logarytmy_by_Natalia(){
     std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
-    float ll, base;
+    double ll, base;
     std::cin >> ll >> base;
     std::cout << "Wynik logarytmu to" << logarytmy(ll,base);
 }
