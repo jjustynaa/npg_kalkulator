@@ -945,7 +945,7 @@ double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu ){
 
 void logarytmy_by_Natalia(){
     std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
-    float ll, base;
+    double ll, base;
     std::cin >> ll >> base;
     std::cout << "Wynik logarytmu to" << logarytmy(ll,base);
 }
