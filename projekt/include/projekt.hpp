@@ -41,6 +41,15 @@ std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1,
 void multiMatrix_user();
 void matrix();
 
+//całki
+double calka_liniowa(double a, double b, double x1, double x2);
+double calka_kwadratowa(double a, double b, double c, double x1, double x2);
+double calka_sin(double x1, double x2);
+double calka_cos(double x1, double x2);
+
+//równianie wielomianowe stopnia 3
+std::vector<double> solveCubic(double a, double b, double c, double d);
+
 //zespolone
 class Complex {
 public:
@@ -95,7 +104,7 @@ void diamond();
 double trapezeArea(double a, double b, double h);
 void trapeze();
 void area();
-
+void calki();
 
 //logarytmy (jak by ktoś nie domyślił się po nazwie)
 float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu );
