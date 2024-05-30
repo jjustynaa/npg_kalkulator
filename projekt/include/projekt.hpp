@@ -48,7 +48,7 @@ double calka_sin(double x1, double x2);
 double calka_cos(double x1, double x2);
 
 //równianie wielomianowe stopnia 3
-std::vector<double> solveCubic(double a, double b, double c, double d)
+std::vector<double> solveCubic(double a, double b, double c, double d);
 
 //zespolone
 class Complex {
