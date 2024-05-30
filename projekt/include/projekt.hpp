@@ -109,7 +109,7 @@ void diamond();
 double trapezeArea(double a, double b, double h);
 void trapeze();
 void area();
-
+void calki();
 
 //logarytmy (jak by ktoś nie domyślił się po nazwie)
 float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu );
