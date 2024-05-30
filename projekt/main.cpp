@@ -40,6 +40,7 @@ int main() {
     p_menu:
     czyszczenie();
     std::cout << "Jakiej funkcji chcesz użyć:\n"
+                 " 0. Help\n"
                  " 1. Kalkulator prosty \n"
                  " 2. Kalkulator macierzowy\n"
                  " 3. Potęgowanie i pierwiastkowanie\n"
@@ -52,34 +53,33 @@ int main() {
                  "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
                  "11. Kalkulator do liczb zespolonych\n"
                  "12. Kalkulator do calek oznaczonych\n"
-                 " 0. Help\n"
-                 " r. Reset\n" << std::endl;
+                 "13. Reset\n" << std::endl;
 
-    char fun;
+    int fun;
     std::cin >> fun;
 
     czyszczenie();
     switch (fun) {
-        case '1':
+        case 1:
             std::cout << "1";
             // Wstaw funkcję kalkulatora prostego
             break;
-        case '2':
+        case 2:
             matrix();
             break;
-        case '3':
+        case 3:
             kalk_poteg();
             break;
-        case '4':
+        case 4:
             // Przerzut na przelicznik
             break;
-        case '5':
+        case 5:
             // Przerzut na porównania
             break;
-        case '6':
+        case 6:
             print_zao();
             break;
-        case '7': {
+        case 7: {
             char choice;
             std::cout << "Wybierz typ równania: (1) kwadratowe, (2) sześcienne: ";
             std::cin >> choice;
@@ -107,24 +107,24 @@ int main() {
             }
             break;
         }
-        case '8':
+        case 8:
             area();
             break;
-        case '9':
+        case 9:
             logarytmy_by_Natalia();
             break;
-        case '10':
+        case 10:
             cykl_o_tryg();
             break;
-        case '11':
+        case 11:
             complex_choice();
             break;
-        case '12':
+        case 12:
             calki();
             break;
-        case '0':
+        case 0:
             goto p_help;
-        case 'r':
+        case 13:
             goto start;
         default:
             blad();
