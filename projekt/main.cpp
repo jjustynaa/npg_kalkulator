@@ -129,69 +129,61 @@ int main() {
 
 
 
-    p_help:
-    std::cout << "Którą funkcje wytłumaczyć:\n 1. Kalkulator prosty \n 2. Kalkulator macierzowy\n 3. Potęgowanie i pierwiastkowanie\n 4. Przelicznik wartości"
-                 "\n 5. Porównywanie liczb \n 6. Zaokrąglenia \n 7. Kalkulator rówań kwadratowych \n 8. Kalkulator pól i objętości"
-                 "\n 9. Kalkulator logarytmiczny \n10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n\nAby wrócić do wyboru kalkulatora wpisz back\n" << std::endl;
-    
-    help:
-    char com;
-    std::string comend;
-    std::cin >> com;
-    std::cin >> comend;
-    switch (com) {
-        case '1':
-            if (comend == "0"){
-                std::cout << "Program tworzy funkcje cyklometryczną lub trygonometryczną\nNależy najpierwy wpisać rodzaj funkcji a następnie wartość np.:\nsin( 90\n\n"
-                             "Dodatkowo do wyboru w funkcji trygonometrycznej można wybrać czy wpisuje się kąt w radianach czy w stopniach\nFunkcja cyklometryczna podaje wartość w stopniach." << std::endl;
-                break;
-            }else if (comend == "\0") {
-                std::cout << "1"; // analogicznie jak wyżej ale to co wyrzej
-                 break;
-            } else if (comend == "1") {
-                std::cout << "Za każdym razem w funkcji najperw należy podać część rzeczywistą a następnie część urojoną.\nPierwsza funkcja kalkulatora jeśli w części urojonej otrzyma zero to potraktuje pierwszy argument jako kąt i należy podać go w stopniach\n"
-                             "Jeśli funkcja przyjmuje dwie liczby zespolone to napierw należy podać obie wartości jednej a następnie obie wartości drugiej" << std::endl;
-            }
-            goto p_menu;
-        case '2':
-            std::cout<< "Program dodaje, odejmuje i mnozy macierze\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
-                        "Nalezy pamietac ze wielkosc macierzy w dodawaniu i odejmowaniu musi sie pokrywac\n"
-                        "W mnozeniu zas te wielkosci sa odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze pierwszej." << std::endl;
-            goto p_menu;
+     p_help:
+    std::cout << "Którą funkcje wytłumaczyć:\n"
+                 " 1. Kalkulator prosty \n"
+                 " 2. Kalkulator macierzowy\n"
+                 " 3. Potęgowanie i pierwiastkowanie\n"
+                 " 4. Przelicznik wartości\n"
+                 " 5. Porównywanie liczb\n"
+                 " 6. Zaokrąglenia\n"
+                 " 7. Kalkulator równań kwadratowych lub równań trzeciego stopnia\n"
+                 " 8. Kalkulator pól i objętości\n"
+                 " 9. Kalkulator logarytmów\n"
+                 "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n\n"
+                 "Aby wrócić do wyboru kalkulatora wpisz back\n" << std::endl;
 
-        case '3':
-            //przerzut na potęgi
-            goto p_menu;
-        case '4':
-            //przerzut na przelicznik
-            goto p_menu;
-        case '5':
-            //przerzut na porówania
-            goto p_menu;
-        case '6':
-            std::cout << "Zaokrąglenie przyjmuje dwie wartości liczbe do zaokrąglania oraz liczbe miejsc po przecinku ile jest oczekujesz otrzymać" << std::endl;
-            goto p_menu;
-        case '7':
+    int help_fun;
+    std::cin >> help_fun;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear the newline character
+
+    switch (help_fun) {
+        case 1:
+            std::cout << "Program tworzy funkcje cyklometryczną lub trygonometryczną\nNależy najpierwy wpisać rodzaj funkcji a następnie wartość np.:\nsin( 90\n\n"
+                         "Dodatkowo do wyboru w funkcji trygonometrycznej można wybrać czy wpisuje się kąt w radianach czy w stopniach\nFunkcja cyklometryczna podaje wartość w stopniach." << std::endl;
+            break;
+        case 2:
+            std::cout << "Program dodaje, odejmuje i mnoży macierze\nNa początku należy wybrać znak, później wprowadzić odpowiednie macierze\n\n"
+                         "Należy pamiętać że wielkość macierzy w dodawaniu i odejmowaniu musi się pokrywać\n"
+                         "W mnożeniu zaś te wielkości są odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze drugiej." << std::endl;
+            break;
+        case 3:
+            std::cout << "Funkcja do potęgowania i pierwiastkowania" << std::endl;
+            break;
+        case 4:
+            std::cout << "Przelicznik wartości" << std::endl;
+            break;
+        case 5:
+            std::cout << "Porównywanie liczb" << std::endl;
+            break;
+        case 6:
+            std::cout << "Zaokrąglenie przyjmuje dwie wartości: liczbę do zaokrąglania oraz liczbę miejsc po przecinku, ile oczekujesz otrzymać" << std::endl;
+            break;
+        case 7:
             std::cout << "Funkcja rozwiązuje równania, ale najpierw musisz wybrać typ" << std::endl;
-            goto p_menu;
-        case '8':
-            //przerzut na pola
-            goto p_menu;
-        case '9':
-            //perzut na logarytmy
-            goto p_menu;
-        case 'b':
-            if (comend == "ack") {
-                goto p_menu;
-            }
-        case 'r':
-            if (comend == "eset") {
-                goto start;
-            }
+            break;
+        case 8:
+            std::cout << "Kalkulator pól i objętości" << std::endl;
+            break;
+        case 9:
+            std::cout << "Kalkulator logarytmów" << std::endl;
+            break;
+        case 10:
+            std::cout << "Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych" << std::endl;
+            break;
         default:
             blad();
-            goto help;
-
+            goto p_help;
     }
-
+    goto p_menu;
 }
