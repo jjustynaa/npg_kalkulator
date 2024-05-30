@@ -235,68 +235,67 @@ void matrix() {
             goto matrix;
     }
 }
-    //==========================================================================================
-    //powyżej tego komentarza zostały już usunięte polskie znaki
 
 void cykl_o_tryg() {
-    std::string choose;
-    std::cout << "Chcesz skorzystać z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
-    std::cin >> choose;
-    if (choose.find("cyklome") != std::string::npos) {
-        cykl();
-    } else if (choose.find("trygono") != std::string::npos) {
-        tryg();
-    } else if (choose == "back"){
+  std::string choose;
+  std::cout << "Chcesz skorzystac z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
+  std::cin >> choose;
+  if (choose.find("cyklome") != std::string::npos) {
+    cykl();
+  } else if (choose.find("trygono") != std::string::npos) {
+    tryg();
+  } else if (choose == "back"){
 
-    }else{
-        std::cout << "Funkcja nie znana spróbuj jeszcze raz" << std::endl;
-        cykl_o_tryg();
-    }
+  }else{
+    std::cout << "Funkcja nie znana sprobuj jeszcze raz" << std::endl;
+    cykl_o_tryg();
+  }
 }
 
 void tryg() {
-    std::cout << "Podaj funkcje i liczbe" << std::endl;
+  std::cout << "Podaj funkcje i liczbe" << std::endl;
 
-    double num;
+  double num;
 
-    std::string fun_tryg;
+  std::string fun_tryg;
 
-    std::cin >> fun_tryg >> num;
+  std::cin >> fun_tryg >> num;
 
-    std::string wyb;
+  std::string wyb;
 
-    std::cout << "Wartość podajesz w radjanach czy stopniach?" << std::endl;
+  std::cout << "Wartosc podajesz w radianach czy stopniach?" << std::endl;
 
-    std::cin >> wyb;
+  std::cin >> wyb;
 
-    if (wyb.find("stop") != std::string::npos) {
-        num = num / 57.3;
-    } else if (wyb.find("stop") == std::string::npos && wyb.find("radia") == std::string::npos) {
-        std::cout << "Nieznana komenda spróbuj jeszcze raz" << std::endl;
-        tryg();
-    }
+  if (wyb.find("stop") != std::string::npos) {
+    num = num / 57.3;
+  } else if (wyb.find("stop") == std::string::npos && wyb.find("radia") == std::string::npos) {
+    std::cout << "Nieznana komenda sprobuj jeszcze raz" << std::endl;
+    tryg();
+  }
 
 
-    if (fun_tryg.find("sin") != std::string::npos) {
-        std::cout << "Warotść sinusa podanego kąta wynosi " << sin(num) << std::endl;
-    } else if (fun_tryg.find("cos") != std::string::npos) {
-        std::cout << "Warotść cosinsusa podanego kąta wynosi " << cos(num) << std::endl;
-    } else if (fun_tryg.find("tan") != std::string::npos) {
-        std::cout << "Warotść tangensa podanego kąta wynosi " << tan(num) << std::endl;
-    } else if (fun_tryg.find("ctag") != std::string::npos) {
-        std::cout << "Warotść cotangensa podanego kąta wynosi " << 1 / tan(num) << std::endl;
-    } else if (fun_tryg == "back"){
+  if (fun_tryg.find("sin") != std::string::npos) {
+    std::cout << "Wartosc sinusa podanego kata wynosi " << sin(num) << std::endl;
+  } else if (fun_tryg.find("cos") != std::string::npos) {
+    std::cout << "Wartosc cosinusa podanego kata wynosi " << cos(num) << std::endl;
+  } else if (fun_tryg.find("tan") != std::string::npos) {
+    std::cout << "Wartosc tangensa podanego kata wynosi " << tan(num) << std::endl;
+  } else if (fun_tryg.find("ctag") != std::string::npos) {
+    std::cout << "Wartosc cotangensa podanego kata wynosi " << 1 / tan(num) << std::endl;
+  } else if (fun_tryg == "back"){
 
-    } else {
-        std::cout << "Nieznane polecenie, spróbuj jeszcze raz" << std::endl;
-        tryg();
-    }
+  } else {
+    std::cout << "Nieznane polecenie, sprobuj jeszcze raz" << std::endl;
+    tryg();
+  }
 }
 
 void cykl() {
-    std::cout << "Podaj funkcje i liczbe" << std::endl;
+  std::cout << "Podaj funkcje i liczbe" << std::endl;
 
-    double num;
+  double num;
+//================================================================================================
 
     std::string fun_cyk;
 
