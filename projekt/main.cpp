@@ -187,7 +187,8 @@ int main() {
             std::cout << "Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych" << std::endl;
             break;
         case 11:
-            // std::cout << "help do liczb zespolonych" << std::endl;
+            std::cout << "Za każdym razem w funkcji najperw należy podać część rzeczywistą a następnie część urojoną.\nPierwsza funkcja kalkulatora jeśli w części urojonej otrzyma zero to potraktuje pierwszy argument jako kąt i należy podać go w stopniach\n"
+                         "Jeśli funkcja przyjmuje dwie liczby zespolone to napierw należy podać obie wartości jednej a następnie obie wartości drugiej" << std::endl;
             break;
         case 12:
             // std::cout << "help do calek " << std::endl;
