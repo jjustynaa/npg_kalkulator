@@ -1,43 +1,39 @@
-#include "projekt.hpp"
+#include "main.hpp"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <stdexcept>
 
-// Jesli ktos to czyta to tlumacze te 4 bledy co sa
-// dwa z nich pojawiaja sie przez puste swiche i nimi sie wgl nie przejmujemy
-// dwa pozostale sa bo uzywamy comon configa z PSiO i nie podoba mu sie ze porownujemy cos do NULLa dla charow
-// wiec mozna sprobowac go jakos ladnie upakowac zeby sie nie czepialo ale raczej nic to nie zepsuje
-void czyszczenie(){
+void clear(){
     for (int i = 0; i < 25; i++) {
         std::cout << std::endl;
     }
 }
 
-void blad() {
+void mistake() {
     std::cout << "Nie znana komenda \nsprobuj jeszcze raz" << std::endl;
 }
 
-int repet() {
+int repeat() {
     std::string con;
     std::cout << "Chcesz kontynuowac? [T/N]" << std::endl;
     std::cin >> con;
-    return (con == "T" || con == "t") ? 1 : 0;
+    return (con == "N" || con == "n") ? 0 : 1;
 }
 
 int main() {
 
     start:
-    czyszczenie();
+    clear();
     std::cout << "<<Witaj w kalkulatorze>>\n\nAby przejsc dalej wpisz NEXT" << std::endl;
     std::string t;
     std::cin >> t;
     if (t != "NEXT" && t != "Next" && t != "next") {
-        blad();
+        mistake();
         goto start;
     }
 
-    czyszczenie();
+    clear();
     p_menu:
     std::cout << "Jakiej funkcji chcesz uzyc:\n"
                  " 0. Help\n"
@@ -58,16 +54,22 @@ int main() {
     int fun;
     std::cin >> fun;
 
-    czyszczenie();
+    clear();
     switch (fun) {
         case 1:
-            prosty();
+            simple();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 2:
             matrix();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 3:
-            kalk_poteg();
+            extraction_exponentiation();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 4:
             // Przerzut na przelicznik
@@ -76,7 +78,9 @@ int main() {
             // Przerzut na porownania
             goto p_menu;
         case 6:
-            print_zao();
+            rounding();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 7: {
             char choice;
@@ -102,31 +106,43 @@ int main() {
                     std::cerr << e.what() << std::endl;
                 }
             } else {
-                blad();
+                mistake();
             }
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         }
         case 8:
             area();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 9:
-            logarytmy_by_Natalia();
+            logarithm_user();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 10:
             cykl_o_tryg();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 11:
             complex_choice();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 12:
             calki();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 0:
             goto p_help;
         case 13:
             goto start;
         default:
-            blad();
+            mistake();
             goto p_menu;
     }
 
@@ -153,7 +169,7 @@ int main() {
 
     switch (help_fun) {
         case 1:
-            std::cout << "Kalkulator prosty, ktory obsluguje: dodawanie, odejmowanie, mnozenie, dzielenie, podnoszenie do zadanej potegi oraz obliczanie reszty z dzielenia." << std::endl;
+            std::cout << "Kalkulator prosty, ktory obsluguje: dodawanie, odejmowanie, mnozenie, dzielenie oraz obliczanie reszty z dzielenia." << std::endl;
             break;
         case 2:
             std::cout << "Program dodaje, odejmuje i mnozy macierze\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
@@ -197,9 +213,12 @@ int main() {
         case 14:
             goto p_menu;
         default:
-            blad();
+            mistake();
             goto p_help;
     }
     goto p_menu;
+
+    quit:
+        return 1;
 }
 

@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "projekt.hpp"
+#include "main.hpp"
 
 TEST(Macierze, Dodawanie){
     std::size_t n = 2;

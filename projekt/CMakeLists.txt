@@ -5,7 +5,16 @@ project(projekt)
 set(PROJECT_ID projekt)
 
 set(SOURCE_FILES
-        src/projekt.cpp
+        src/src_matrix.cpp
+        src/src_area.cpp
+        src/src_extraction_exponentiation.cpp
+        src/src_logarithm.cpp
+        src/src_simple.cpp
+        src/src_complex.cpp
+        src/src_integral.cpp
+        src/src_equation.cpp
+        src/src_rounding.cpp
+        src/src_trigonometric.cpp
 )
 
 set(SOURCES_FILES_TESTS

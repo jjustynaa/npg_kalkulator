@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "projekt.hpp"
+#include "main.hpp"
 
 TEST(Zespolone, Dodawanie){
     Complex a (15, 3);
