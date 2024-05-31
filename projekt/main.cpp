@@ -153,8 +153,7 @@ int main() {
 
     switch (help_fun) {
         case 1:
-            std::cout << "Program tworzy funkcje cyklometryczna lub trygonometryczna\nNalezy najpierw wpisac rodzaj funkcji a nastepnie wartosc np.:\nsin( 90\n\n"
-                         "Dodatkowo do wyboru w funkcji trygonometrycznej mozna wybrac czy wpisuje sie kat w radianach czy w stopniach\nFunkcja cyklometryczna podaje wartosc w stopniach." << std::endl;
+            std::cout << "Kalkulator prosty, ktory obsluguje: dodawanie, odejmowanie, mnozenie, dzielenie, podnoszenie do zadanej potegi oraz obliczanie reszty z dzielenia." << std::endl;
             break;
         case 2:
             std::cout << "Program dodaje, odejmuje i mnozy macierze\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
@@ -183,14 +182,15 @@ int main() {
             std::cout << "Kalkulator logarytmow" << std::endl;
             break;
         case 10:
-            std::cout << "Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych" << std::endl;
+            std::cout << "Program tworzy funkcje cyklometryczna lub trygonometryczna\nNalezy najpierw wpisac rodzaj funkcji a nastepnie wartosc np.:\nsin( 90\n\n"
+                         "Dodatkowo do wyboru w funkcji trygonometrycznej mozna wybrac czy wpisuje sie kat w radianach czy w stopniach\nFunkcja cyklometryczna podaje wartosc w stopniach." << std::endl;
             break;
         case 11:
             std::cout << "Za każdym razem w funkcji najperw należy podać część rzeczywistą a następnie część urojoną.\nPierwsza funkcja kalkulatora jeśli w części urojonej otrzyma zero to potraktuje pierwszy argument jako kąt i należy podać go w stopniach\n"
                          "Jeśli funkcja przyjmuje dwie liczby zespolone to napierw należy podać obie wartości jednej a następnie obie wartości drugiej" << std::endl;
             break;
         case 12:
-            // std::cout << "help do calek " << std::endl;
+             std::cout << "Funkcja umozliwia wybor i obliczenie calki oznaczonej z funkcji: liniowej, kwadratowej, sinusa lub cosinusa." << std::endl;
             break;
         case 13:
             goto start;
