@@ -218,11 +218,26 @@ CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_trigonometric.cpp -o CMakeFiles\projekt__debug.dir\src\src_trigonometric.cpp.s
 
+CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj: CMakeFiles/projekt__debug.dir/flags.make
+CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj: CMakeFiles/projekt__debug.dir/includes_CXX.rsp
+CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_accessory.cpp
+CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj: CMakeFiles/projekt__debug.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj -MF CMakeFiles\projekt__debug.dir\src\src_accessory.cpp.obj.d -o CMakeFiles\projekt__debug.dir\src\src_accessory.cpp.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_accessory.cpp
+
+CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_accessory.cpp > CMakeFiles\projekt__debug.dir\src\src_accessory.cpp.i
+
+CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_accessory.cpp -o CMakeFiles\projekt__debug.dir\src\src_accessory.cpp.s
+
 CMakeFiles/projekt__debug.dir/main.cpp.obj: CMakeFiles/projekt__debug.dir/flags.make
 CMakeFiles/projekt__debug.dir/main.cpp.obj: CMakeFiles/projekt__debug.dir/includes_CXX.rsp
 CMakeFiles/projekt__debug.dir/main.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/main.cpp
 CMakeFiles/projekt__debug.dir/main.cpp.obj: CMakeFiles/projekt__debug.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/projekt__debug.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/projekt__debug.dir/main.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt__debug.dir/main.cpp.obj -MF CMakeFiles\projekt__debug.dir\main.cpp.obj.d -o CMakeFiles\projekt__debug.dir\main.cpp.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\main.cpp
 
 CMakeFiles/projekt__debug.dir/main.cpp.i: cmake_force
@@ -245,6 +260,7 @@ projekt__debug_OBJECTS = \
 "CMakeFiles/projekt__debug.dir/src/src_equation.cpp.obj" \
 "CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj" \
 "CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj" \
+"CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj" \
 "CMakeFiles/projekt__debug.dir/main.cpp.obj"
 
 # External object files for target projekt__debug
@@ -260,12 +276,13 @@ projekt__debug.exe: CMakeFiles/projekt__debug.dir/src/src_integral.cpp.obj
 projekt__debug.exe: CMakeFiles/projekt__debug.dir/src/src_equation.cpp.obj
 projekt__debug.exe: CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj
 projekt__debug.exe: CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj
+projekt__debug.exe: CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj
 projekt__debug.exe: CMakeFiles/projekt__debug.dir/main.cpp.obj
 projekt__debug.exe: CMakeFiles/projekt__debug.dir/build.make
 projekt__debug.exe: CMakeFiles/projekt__debug.dir/linkLibs.rsp
 projekt__debug.exe: CMakeFiles/projekt__debug.dir/objects1.rsp
 projekt__debug.exe: CMakeFiles/projekt__debug.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable projekt__debug.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable projekt__debug.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\projekt__debug.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

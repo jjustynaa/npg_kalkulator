@@ -248,7 +248,9 @@ CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: \
  C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master/googletest/include/gtest/gtest-typed-test.h \
  C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master/googletest/include/gtest/gtest_pred_impl.h \
  C:/Users/user/Desktop/npg_kalkulator/projekt/googletest-master/googletest/include/gtest/gtest_prod.h \
- C:/Users/user/Desktop/npg_kalkulator/projekt/include/projekt.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/main.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/area.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/complex.hpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/math.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
@@ -264,4 +266,12 @@ CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/complex
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/equation.hpp \
+ C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/complex \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/extraction_exponentiation.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/integral.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/logarithm.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/matrix.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/rounding.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/simple.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/trigonometric.hpp

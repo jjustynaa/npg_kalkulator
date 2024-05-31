@@ -11,5 +11,6 @@
 #include "rounding.hpp"
 #include "simple.hpp"
 #include "trigonometric.hpp"
+#include "accessory.hpp"
 
 #endif //PROJEKT_MAIN_HPP

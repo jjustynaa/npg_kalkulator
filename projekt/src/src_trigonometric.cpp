@@ -1,4 +1,5 @@
 #include "trigonometric.hpp"
+#include "accessory.hpp"
 
 #include <iostream>
 #include <string>
@@ -16,7 +17,7 @@ void cykl_o_tryg() {
     } else if (choose == "back"){
 
     }else{
-        std::cout << "Funkcja nie znana spróbuj jeszcze raz" << std::endl;
+        mistake();
         cykl_o_tryg();
     }
 }
@@ -39,7 +40,7 @@ void tryg() {
     if (wyb.find("stop") != std::string::npos) {
         num = num / 57.3;
     } else if (wyb.find("stop") == std::string::npos && wyb.find("radia") == std::string::npos) {
-        std::cout << "Nieznana komenda spróbuj jeszcze raz" << std::endl;
+        mistake();
         tryg();
     }
 
@@ -55,7 +56,7 @@ void tryg() {
     } else if (fun_tryg == "back"){
 
     } else {
-        std::cout << "Nieznane polecenie, spróbuj jeszcze raz" << std::endl;
+        mistake();
         tryg();
     }
 }
@@ -84,7 +85,7 @@ void cykl() {
     } else if (fun_cyk == "back"){
 
     } else {
-        std::cout << "Nieznane polecenie, spróbuj jeszcze raz" << std::endl;
+        mistake();
         cykl();
     }
 }

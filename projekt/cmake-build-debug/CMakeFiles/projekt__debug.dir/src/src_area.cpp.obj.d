@@ -2,6 +2,7 @@ CMakeFiles/projekt__debug.dir/src/src_area.cpp.obj: \
  C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_area.cpp \
  C:/Users/user/Desktop/npg_kalkulator/projekt/include/area.hpp \
  C:/Users/user/Desktop/npg_kalkulator/projekt/include/rounding.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/accessory.hpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

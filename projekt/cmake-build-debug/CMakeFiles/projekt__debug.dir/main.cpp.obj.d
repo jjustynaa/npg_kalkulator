@@ -176,4 +176,5 @@ CMakeFiles/projekt__debug.dir/main.cpp.obj: \
  C:/Users/user/Desktop/npg_kalkulator/projekt/include/rounding.hpp \
  C:/Users/user/Desktop/npg_kalkulator/projekt/include/simple.hpp \
  C:/Users/user/Desktop/npg_kalkulator/projekt/include/trigonometric.hpp \
+ C:/Users/user/Desktop/npg_kalkulator/projekt/include/accessory.hpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream

@@ -1,34 +1,17 @@
 #include "main.hpp"
 #include <iostream>
 #include <string>
-#include <vector>
-#include <stdexcept>
-
-void clear(){
-    for (int i = 0; i < 25; i++) {
-        std::cout << std::endl;
-    }
-}
-
-void mistake() {
-    std::cout << "Nie znana komenda \nsprobuj jeszcze raz" << std::endl;
-}
-
-int repeat() {
-    std::string con;
-    std::cout << "Chcesz kontynuowac? [T/N]" << std::endl;
-    std::cin >> con;
-    return (con == "N" || con == "n") ? 0 : 1;
-}
+#include <cctype>
 
 int main() {
 
     start:
     clear();
-    std::cout << "<<Witaj w kalkulatorze>>\n\nAby przejsc dalej wpisz NEXT" << std::endl;
+    std::cout << "<<Witaj w kalkulatorze>>\n\nAby przejsc dalej wpisz NEXT\n\nPo wprowadzonych wartosciach wcisnij ENTER" << std::endl;
     std::string t;
     std::cin >> t;
-    if (t != "NEXT" && t != "Next" && t != "next") {
+    t = lower(t);
+    if (t != "next") {
         mistake();
         goto start;
     }
@@ -41,15 +24,14 @@ int main() {
                  " 2. Kalkulator macierzowy\n"
                  " 3. Potegowanie i pierwiastkowanie\n"
                  " 4. Przelicznik wartosci\n"
-                 " 5. Porownywanie liczb\n"
-                 " 6. Zaokraglenia\n"
-                 " 7. Kalkulator rownan kwadratowych lub rownan trzeciego stopnia\n"
-                 " 8. Kalkulator pol i objetosci\n"
-                 " 9. Kalkulator logarytmow\n"
-                 "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
-                 "11. Kalkulator do liczb zespolonych\n"
-                 "12. Kalkulator do calek oznaczonych\n"
-                 "13. Reset\n" << std::endl;
+                 " 5. Zaokraglenia\n"
+                 " 6. Kalkulator rownan kwadratowych lub rownan trzeciego stopnia\n"
+                 " 7. Kalkulator pol\n"
+                 " 8. Kalkulator logarytmow\n"
+                 " 9. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
+                 "10. Kalkulator do liczb zespolonych\n"
+                 "11. Kalkulator do calek oznaczonych\n"
+                 "12. Reset\n" << std::endl;
 
     int fun;
     std::cin >> fun;
@@ -75,71 +57,43 @@ int main() {
             // Przerzut na przelicznik
             goto p_menu;
         case 5:
-            // Przerzut na porownania
-            goto p_menu;
-        case 6:
             rounding();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
-        case 7: {
-            char choice;
-            std::cout << "Wybierz typ rownania: (1) kwadratowe, (2) szescienne: ";
-            std::cin >> choice;
-            if (choice == '1') {
-                double a, b, c;
-                std::cout << "Podaj wspolczynniki a, b, c: ";
-                std::cin >> a >> b >> c;
-                kwadratowa(a, b, c);
-            } else if (choice == '2') {
-                double a, b, c, d;
-                std::cout << "Podaj wspolczynniki a, b, c, d: ";
-                std::cin >> a >> b >> c >> d;
-                try {
-                    std::vector<double> roots = solveCubic(a, b, c, d);
-                    std::cout << "Pierwiastki rownania: ";
-                    for (double root : roots) {
-                        std::cout << root << " ";
-                    }
-                    std::cout << std::endl;
-                } catch (const std::invalid_argument &e) {
-                    std::cerr << e.what() << std::endl;
-                }
-            } else {
-                mistake();
-            }
+        case 6:
+            equation();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
-        }
-        case 8:
+        case 7:
             area();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
-        case 9:
+        case 8:
             logarithm_user();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
-        case 10:
+        case 9:
             cykl_o_tryg();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
-        case 11:
+        case 10:
             complex_choice();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
-        case 12:
+        case 11:
             calki();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
         case 0:
             goto p_help;
-        case 13:
+        case 12:
             goto start;
         default:
             mistake();
@@ -152,16 +106,15 @@ int main() {
                  " 2. Kalkulator macierzowy\n"
                  " 3. Potegowanie i pierwiastkowanie\n"
                  " 4. Przelicznik wartosci\n"
-                 " 5. Porownywanie liczb\n"
-                 " 6. Zaokraglenia\n"
-                 " 7. Kalkulator rownan kwadratowych lub rownan trzeciego stopnia\n"
-                 " 8. Kalkulator pol i objetosci\n"
-                 " 9. Kalkulator logarytmow\n"
-                 "10. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
-                 "11. Kalkulator do liczb zespolonych\n"
-                 "12. Kalkulator do calek oznaczonych\n"
-                 "13. Powrot na start\n"
-                 "14. Powrot do wyboru kalkulatora \n" << std::endl;
+                 " 5. Zaokraglenia\n"
+                 " 6. Kalkulator rownan kwadratowych lub rownan trzeciego stopnia\n"
+                 " 7. Kalkulator pol\n"
+                 " 8. Kalkulator logarytmow\n"
+                 " 9. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
+                 "10. Kalkulator do liczb zespolonych\n"
+                 "11. Kalkulator do calek oznaczonych\n"
+                 "12. Powrot na start\n"
+                 "13. Powrot do wyboru kalkulatora \n" << std::endl;
 
     int help_fun;
     std::cin >> help_fun;
@@ -172,9 +125,10 @@ int main() {
             std::cout << "Kalkulator prosty, ktory obsluguje: dodawanie, odejmowanie, mnozenie, dzielenie oraz obliczanie reszty z dzielenia." << std::endl;
             break;
         case 2:
-            std::cout << "Program dodaje, odejmuje i mnozy macierze\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
+            std::cout << "Program dodaje, odejmuje, mnozy macierze i liczy wyznacznik macierzy\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
                          "Nalezy pamietac ze wielkosc macierzy w dodawaniu i odejmowaniu musi sie pokrywac\n"
-                         "W mnozeniu zas te wielkosci sa odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze drugiej." << std::endl;
+                         "W mnozeniu zas te wielkosci sa odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze drugiej.\n"
+                         "Obliczanie wyznacznika odbywa sę tylko dla macierzy kwadratowych" << std::endl;
             break;
         case 3:
             std::cout << "help do potegowania i pierwiastkowania" << std::endl;
@@ -183,42 +137,48 @@ int main() {
             std::cout << "help do przelicznika wartosci" << std::endl;
             break;
         case 5:
-            std::cout << "help do porownywania liczb" << std::endl;
-            break;
-        case 6:
             std::cout << "Zaokraglenie przyjmuje dwie wartosci: liczbe do zaokraglania oraz liczbe miejsc po przecinku, ile oczekujesz otrzymac" << std::endl;
             break;
+        case 6:
+            std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ: kwadratowe lub szescienne" << std::endl;
+            break;
         case 7:
-            std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ" << std::endl;
+            std::cout << "Program oblicza pole wybranej figury: prostokat, trojkat, romb i trapez.\n"
+                         "W obliczaniu pola prostokata wystarczy podac dlugosciu obu bokow po odpowiedniej komendzie.\n"
+                         "Pole trojkata mozna obliczyc na 3 sposoby: 1. majac dlugosc boku i jego prostopadla wysokosc, 2. majac wszystkie dlugosci bokow, 3. majac dlugosci dwoch bokow i kat pomiedzy nimi.\n"
+                         "Przy rombie pola mozna obliczyc na 2 sposoby: 1. znajac dlugosc boku i wysokosc, 2. znane sa dlugosci jego przekatnych.\n"
+                         "Natomiast pole trapezu obliczamy znajac dlugosci jego postaw i wysokosc." << std::endl;
             break;
         case 8:
-            std::cout << "Kalkulator pol i objetosci" << std::endl;
-            break;
-        case 9:
             std::cout << "Kalkulator pozwalajacy obliczyc numeryczna wartosc logaytmu" << std::endl;
             break;
-        case 10:
+        case 9:
             std::cout << "Program tworzy funkcje cyklometryczna lub trygonometryczna\nNalezy najpierw wpisac rodzaj funkcji a nastepnie wartosc np.:\nsin( 90\n\n"
                          "Dodatkowo do wyboru w funkcji trygonometrycznej mozna wybrac czy wpisuje sie kat w radianach czy w stopniach\nFunkcja cyklometryczna podaje wartosc w stopniach." << std::endl;
             break;
-        case 11:
+        case 10:
             std::cout << "Za każdym razem w funkcji najperw należy podać część rzeczywistą a następnie część urojoną.\nPierwsza funkcja kalkulatora jeśli w części urojonej otrzyma zero to potraktuje pierwszy argument jako kąt i należy podać go w stopniach\n"
                          "Jeśli funkcja przyjmuje dwie liczby zespolone to napierw należy podać obie wartości jednej a następnie obie wartości drugiej" << std::endl;
             break;
-        case 12:
+        case 11:
              std::cout << "Funkcja umozliwia wybor i obliczenie calki oznaczonej z funkcji: liniowej, kwadratowej, sinusa lub cosinusa." << std::endl;
             break;
-        case 13:
+        case 12:
             goto start;
-        case 14:
+        case 13:
             goto p_menu;
         default:
             mistake();
             goto p_help;
     }
-    goto p_menu;
+    char mark;
+    std::cout << "Chcialbys zobaczyc wytlumaczenie kolejnej funkcji? [T/N]" << std::endl;
+    std::cin >> mark;
+    if(std::tolower(mark) == 't')
+        goto p_help;
+    else
+        goto p_menu;
 
     quit:
         return 1;
 }
-

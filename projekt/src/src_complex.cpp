@@ -39,14 +39,14 @@ Complex sqrt(Complex& cpx){
 void complex_choice(){
     char oper;
     std::vector<double> tym_kont;
-    std::cout << "Możliwe operacje do wykonania:\n1. Przekształcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrót\n"
-                 "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnożenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
-                 "6. Znajdowanie liczby sprzeżonej\n 7.Obliczanie długości liczby zespolonej\n\nKtórą z operacji chcesz wykonać?" << std::endl;
+    std::cout << "Mozliwe operacje do wykonania:\n1. Przeksztalcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrot\n"
+                 "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnozenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
+                 "6. Znajdowanie liczby sprzezonej\n 7.Obliczanie dlugosci liczby zespolonej\n\nKtora z operacji chcesz wykonac?" << std::endl;
     std::cin >> oper;
     if (oper == 1){
         double re;
         double im;
-        std::cout << "Podaj liczbe zespoloną" << std::endl;
+        std::cout << "Podaj liczbe zespolona" << std::endl;
         std::cin >> re;
         std::cin >> im;
         if (im != 0) {
@@ -89,10 +89,6 @@ void complex_choice(){
         }
     } else {
         char wyb;
-        std::cout << "Nie zdefiniowano, chcesz wrócić do menu [T/N]" << std::endl;
-        std::cin >> wyb;
-        if (wyb == 'N'){
-            complex_choice();
-        }
+        std::cout << "Nie zdefiniowano" << std::endl;
     }
 }

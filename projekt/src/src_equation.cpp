@@ -1,8 +1,10 @@
 #include "equation.hpp"
+#include "accessory.hpp"
 
 #include <iostream>
 #include <cmath>
 #include <vector>
+#include <stdexcept>
 
 void kwadratowa(double a, double b, double c){
     if(a == 0){
@@ -77,4 +79,34 @@ std::vector<double> solveCubic(double a, double b, double c, double d) {
     }
 
     return roots;
+}
+
+void equation(){
+    rownania:
+    char choice;
+    std::cout << "Wybierz typ rownania: (1) kwadratowe, (2) szescienne: ";
+    std::cin >> choice;
+    if (choice == '1') {
+        double a, b, c;
+        std::cout << "Rownanie ma postac ax^2 + bx + c\nPodaj wspolczynniki a, b, c: ";
+        std::cin >> a >> b >> c;
+        kwadratowa(a, b, c);
+    } else if (choice == '2') {
+        double a, b, c, d;
+        std::cout << "Rownanie ma postac ax^3 + bx^2 + cx + d\nPodaj wspolczynniki a, b, c, d: ";
+        std::cin >> a >> b >> c >> d;
+        try {
+            std::vector<double> roots = solveCubic(a, b, c, d);
+            std::cout << "Pierwiastki rownania: ";
+            for (double root : roots) {
+                std::cout << root << " ";
+            }
+            std::cout << std::endl;
+        } catch (const std::invalid_argument &e) {
+            std::cerr << e.what() << std::endl;
+        }
+    } else {
+        mistake();
+        goto rownania;
+    }
 }

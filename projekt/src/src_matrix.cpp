@@ -1,4 +1,5 @@
 #include "matrix.hpp"
+#include "accessory.hpp"
 
 #include <iostream>
 #include <vector>
@@ -172,7 +173,7 @@ int determinant(const std::vector<std::vector<int>>& Matrix){
 void determinat_str(){
     std::size_t  r;
     std::size_t  k;
-    std::cout << "Podaj liczbę wierszy i kolumn" << std::endl;
+    std::cout << "Podaj liczbe wierszy i kolumn" << std::endl;
     std::cin >> r;
     std::cin >> k;
     std::vector<std::vector<int>> Matrix = createMatrix(r,k);
@@ -181,7 +182,7 @@ void determinat_str(){
         showMatrix(Matrix, Matrix.size(), Matrix[0].size());
         std::cout << "Wynosi: " << determinant(Matrix) << std::endl;
     }else{
-        std::cout << "Nie można policzyć wyznacznika ponieważ macierz nie jest macierzą kwadratową" << std::endl;
+        std::cout << "Nie mozna policzyc wyznacznika poniewaz macierz nie jest macierza kwadratowa" << std::endl;
     }
 }
 
@@ -206,7 +207,7 @@ void matrix() {
             determinat_str();
             break;
         default:
-            std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
+            mistake();
             goto matrix;
     }
 }

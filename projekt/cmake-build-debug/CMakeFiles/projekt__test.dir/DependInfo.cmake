@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_accessory.cpp" "CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_area.cpp" "CMakeFiles/projekt__test.dir/src/src_area.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/src/src_area.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_complex.cpp" "CMakeFiles/projekt__test.dir/src/src_complex.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/src/src_complex.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_equation.cpp" "CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj.d"
