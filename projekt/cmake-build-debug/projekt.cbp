@@ -401,11 +401,64 @@
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/main.cpp">
 			<Option target="projekt__debug"/>
 		</Unit>
-		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/projekt.cpp">
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_area.cpp">
 			<Option target="projekt__debug"/>
 			<Option target="projekt__test"/>
 		</Unit>
-		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test.cpp">
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_complex.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_equation.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_extraction_exponentiation.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_integral.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_logarithm.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_matrix.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_rounding.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_simple.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_trigonometric.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/main_test.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_macierzy.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_prosty.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_pola.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_zespolone.cpp">
+			<Option target="projekt__debug"/>
 			<Option target="projekt__test"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/CMakeLists.txt">

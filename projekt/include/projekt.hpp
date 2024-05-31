@@ -18,16 +18,12 @@ void cykl();
 void tryg();
 
 //podstawy
-double potegowanie (double liczba, int potega);
-double pierwiastkowanie(double liczba, int stopien);
-void kalk_poteg();
-void print_zao();
-double significant_figure(double n, int sig_digits);
 double addition(double num1, double num2);
 double subtraction(double num1, double num2);
 double division(double num1, double num2);
 double multiplication(double num1, double num2);
 int modulo(int num1, int num2);
+void simple();
 
 //matrix
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col);
@@ -43,6 +39,15 @@ std::vector<std::vector<int>> Matrix_cutter(const std::vector<std::vector<int>>&
 int determinant(const std::vector<std::vector<int>>& Matrix);
 void determinat_str();
 void matrix();
+
+//potegi i pierwiastki
+double exponentiation(double liczba, int potega);
+double extraction(double liczba, int stopien);
+void extraction_exponentiation();
+
+//zaokraglenia
+void rounding();
+double significant_figure(double n, int sig_digits);
 
 //całki
 double calka_liniowa(double a, double b, double x1, double x2);
@@ -104,14 +109,13 @@ void diamond();
 double trapezeArea(double a, double b, double h);
 void trapeze();
 void area();
+
 void calki();
-void prosty();
 
 
 //logarytmy (jak by ktoś nie domyślił się po nazwie)
-double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu);
-
-void logarytmy_by_Natalia();
+double logarithm(double liczba_logarytmowana, double podstawa_logarytmu);
+void logarithm_user();
 
 //przelicznik wartosci
 //void przelicznik();

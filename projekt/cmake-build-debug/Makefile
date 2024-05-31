@@ -262,56 +262,410 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/projekt.obj: src/projekt.cpp.obj
-.PHONY : src/projekt.obj
+src/src_area.obj: src/src_area.cpp.obj
+.PHONY : src/src_area.obj
 
 # target to build an object file
-src/projekt.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/projekt.cpp.obj
-.PHONY : src/projekt.cpp.obj
+src/src_area.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_area.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_area.cpp.obj
+.PHONY : src/src_area.cpp.obj
 
-src/projekt.i: src/projekt.cpp.i
-.PHONY : src/projekt.i
+src/src_area.i: src/src_area.cpp.i
+.PHONY : src/src_area.i
 
 # target to preprocess a source file
-src/projekt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/projekt.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/projekt.cpp.i
-.PHONY : src/projekt.cpp.i
+src/src_area.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_area.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_area.cpp.i
+.PHONY : src/src_area.cpp.i
 
-src/projekt.s: src/projekt.cpp.s
-.PHONY : src/projekt.s
+src/src_area.s: src/src_area.cpp.s
+.PHONY : src/src_area.s
 
 # target to generate assembly for a file
-src/projekt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/projekt.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/projekt.cpp.s
-.PHONY : src/projekt.cpp.s
+src/src_area.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_area.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_area.cpp.s
+.PHONY : src/src_area.cpp.s
 
-test/test.obj: test/test.cpp.obj
-.PHONY : test/test.obj
+src/src_complex.obj: src/src_complex.cpp.obj
+.PHONY : src/src_complex.obj
 
 # target to build an object file
-test/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test.cpp.obj
-.PHONY : test/test.cpp.obj
+src/src_complex.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_complex.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_complex.cpp.obj
+.PHONY : src/src_complex.cpp.obj
 
-test/test.i: test/test.cpp.i
-.PHONY : test/test.i
+src/src_complex.i: src/src_complex.cpp.i
+.PHONY : src/src_complex.i
 
 # target to preprocess a source file
-test/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test.cpp.i
-.PHONY : test/test.cpp.i
+src/src_complex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_complex.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_complex.cpp.i
+.PHONY : src/src_complex.cpp.i
 
-test/test.s: test/test.cpp.s
-.PHONY : test/test.s
+src/src_complex.s: src/src_complex.cpp.s
+.PHONY : src/src_complex.s
 
 # target to generate assembly for a file
-test/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test.cpp.s
-.PHONY : test/test.cpp.s
+src/src_complex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_complex.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_complex.cpp.s
+.PHONY : src/src_complex.cpp.s
+
+src/src_equation.obj: src/src_equation.cpp.obj
+.PHONY : src/src_equation.obj
+
+# target to build an object file
+src/src_equation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_equation.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj
+.PHONY : src/src_equation.cpp.obj
+
+src/src_equation.i: src/src_equation.cpp.i
+.PHONY : src/src_equation.i
+
+# target to preprocess a source file
+src/src_equation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_equation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_equation.cpp.i
+.PHONY : src/src_equation.cpp.i
+
+src/src_equation.s: src/src_equation.cpp.s
+.PHONY : src/src_equation.s
+
+# target to generate assembly for a file
+src/src_equation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_equation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_equation.cpp.s
+.PHONY : src/src_equation.cpp.s
+
+src/src_extraction_exponentiation.obj: src/src_extraction_exponentiation.cpp.obj
+.PHONY : src/src_extraction_exponentiation.obj
+
+# target to build an object file
+src/src_extraction_exponentiation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_extraction_exponentiation.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_extraction_exponentiation.cpp.obj
+.PHONY : src/src_extraction_exponentiation.cpp.obj
+
+src/src_extraction_exponentiation.i: src/src_extraction_exponentiation.cpp.i
+.PHONY : src/src_extraction_exponentiation.i
+
+# target to preprocess a source file
+src/src_extraction_exponentiation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_extraction_exponentiation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_extraction_exponentiation.cpp.i
+.PHONY : src/src_extraction_exponentiation.cpp.i
+
+src/src_extraction_exponentiation.s: src/src_extraction_exponentiation.cpp.s
+.PHONY : src/src_extraction_exponentiation.s
+
+# target to generate assembly for a file
+src/src_extraction_exponentiation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_extraction_exponentiation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_extraction_exponentiation.cpp.s
+.PHONY : src/src_extraction_exponentiation.cpp.s
+
+src/src_integral.obj: src/src_integral.cpp.obj
+.PHONY : src/src_integral.obj
+
+# target to build an object file
+src/src_integral.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_integral.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_integral.cpp.obj
+.PHONY : src/src_integral.cpp.obj
+
+src/src_integral.i: src/src_integral.cpp.i
+.PHONY : src/src_integral.i
+
+# target to preprocess a source file
+src/src_integral.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_integral.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_integral.cpp.i
+.PHONY : src/src_integral.cpp.i
+
+src/src_integral.s: src/src_integral.cpp.s
+.PHONY : src/src_integral.s
+
+# target to generate assembly for a file
+src/src_integral.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_integral.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_integral.cpp.s
+.PHONY : src/src_integral.cpp.s
+
+src/src_logarithm.obj: src/src_logarithm.cpp.obj
+.PHONY : src/src_logarithm.obj
+
+# target to build an object file
+src/src_logarithm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_logarithm.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_logarithm.cpp.obj
+.PHONY : src/src_logarithm.cpp.obj
+
+src/src_logarithm.i: src/src_logarithm.cpp.i
+.PHONY : src/src_logarithm.i
+
+# target to preprocess a source file
+src/src_logarithm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_logarithm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_logarithm.cpp.i
+.PHONY : src/src_logarithm.cpp.i
+
+src/src_logarithm.s: src/src_logarithm.cpp.s
+.PHONY : src/src_logarithm.s
+
+# target to generate assembly for a file
+src/src_logarithm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_logarithm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_logarithm.cpp.s
+.PHONY : src/src_logarithm.cpp.s
+
+src/src_matrix.obj: src/src_matrix.cpp.obj
+.PHONY : src/src_matrix.obj
+
+# target to build an object file
+src/src_matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_matrix.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_matrix.cpp.obj
+.PHONY : src/src_matrix.cpp.obj
+
+src/src_matrix.i: src/src_matrix.cpp.i
+.PHONY : src/src_matrix.i
+
+# target to preprocess a source file
+src/src_matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_matrix.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_matrix.cpp.i
+.PHONY : src/src_matrix.cpp.i
+
+src/src_matrix.s: src/src_matrix.cpp.s
+.PHONY : src/src_matrix.s
+
+# target to generate assembly for a file
+src/src_matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_matrix.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_matrix.cpp.s
+.PHONY : src/src_matrix.cpp.s
+
+src/src_rounding.obj: src/src_rounding.cpp.obj
+.PHONY : src/src_rounding.obj
+
+# target to build an object file
+src/src_rounding.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj
+.PHONY : src/src_rounding.cpp.obj
+
+src/src_rounding.i: src/src_rounding.cpp.i
+.PHONY : src/src_rounding.i
+
+# target to preprocess a source file
+src/src_rounding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_rounding.cpp.i
+.PHONY : src/src_rounding.cpp.i
+
+src/src_rounding.s: src/src_rounding.cpp.s
+.PHONY : src/src_rounding.s
+
+# target to generate assembly for a file
+src/src_rounding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_rounding.cpp.s
+.PHONY : src/src_rounding.cpp.s
+
+src/src_simple.obj: src/src_simple.cpp.obj
+.PHONY : src/src_simple.obj
+
+# target to build an object file
+src/src_simple.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_simple.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_simple.cpp.obj
+.PHONY : src/src_simple.cpp.obj
+
+src/src_simple.i: src/src_simple.cpp.i
+.PHONY : src/src_simple.i
+
+# target to preprocess a source file
+src/src_simple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_simple.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_simple.cpp.i
+.PHONY : src/src_simple.cpp.i
+
+src/src_simple.s: src/src_simple.cpp.s
+.PHONY : src/src_simple.s
+
+# target to generate assembly for a file
+src/src_simple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_simple.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_simple.cpp.s
+.PHONY : src/src_simple.cpp.s
+
+src/src_trigonometric.obj: src/src_trigonometric.cpp.obj
+.PHONY : src/src_trigonometric.obj
+
+# target to build an object file
+src/src_trigonometric.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj
+.PHONY : src/src_trigonometric.cpp.obj
+
+src/src_trigonometric.i: src/src_trigonometric.cpp.i
+.PHONY : src/src_trigonometric.i
+
+# target to preprocess a source file
+src/src_trigonometric.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.i
+.PHONY : src/src_trigonometric.cpp.i
+
+src/src_trigonometric.s: src/src_trigonometric.cpp.s
+.PHONY : src/src_trigonometric.s
+
+# target to generate assembly for a file
+src/src_trigonometric.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.s
+.PHONY : src/src_trigonometric.cpp.s
+
+test/main_test.obj: test/main_test.cpp.obj
+.PHONY : test/main_test.obj
+
+# target to build an object file
+test/main_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/main_test.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/main_test.cpp.obj
+.PHONY : test/main_test.cpp.obj
+
+test/main_test.i: test/main_test.cpp.i
+.PHONY : test/main_test.i
+
+# target to preprocess a source file
+test/main_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/main_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/main_test.cpp.i
+.PHONY : test/main_test.cpp.i
+
+test/main_test.s: test/main_test.cpp.s
+.PHONY : test/main_test.s
+
+# target to generate assembly for a file
+test/main_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/main_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/main_test.cpp.s
+.PHONY : test/main_test.cpp.s
+
+test/test_kalkulator_macierzy.obj: test/test_kalkulator_macierzy.cpp.obj
+.PHONY : test/test_kalkulator_macierzy.obj
+
+# target to build an object file
+test/test_kalkulator_macierzy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj
+.PHONY : test/test_kalkulator_macierzy.cpp.obj
+
+test/test_kalkulator_macierzy.i: test/test_kalkulator_macierzy.cpp.i
+.PHONY : test/test_kalkulator_macierzy.i
+
+# target to preprocess a source file
+test/test_kalkulator_macierzy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.i
+.PHONY : test/test_kalkulator_macierzy.cpp.i
+
+test/test_kalkulator_macierzy.s: test/test_kalkulator_macierzy.cpp.s
+.PHONY : test/test_kalkulator_macierzy.s
+
+# target to generate assembly for a file
+test/test_kalkulator_macierzy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.s
+.PHONY : test/test_kalkulator_macierzy.cpp.s
+
+test/test_kalkulator_prosty.obj: test/test_kalkulator_prosty.cpp.obj
+.PHONY : test/test_kalkulator_prosty.obj
+
+# target to build an object file
+test/test_kalkulator_prosty.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj
+.PHONY : test/test_kalkulator_prosty.cpp.obj
+
+test/test_kalkulator_prosty.i: test/test_kalkulator_prosty.cpp.i
+.PHONY : test/test_kalkulator_prosty.i
+
+# target to preprocess a source file
+test/test_kalkulator_prosty.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.i
+.PHONY : test/test_kalkulator_prosty.cpp.i
+
+test/test_kalkulator_prosty.s: test/test_kalkulator_prosty.cpp.s
+.PHONY : test/test_kalkulator_prosty.s
+
+# target to generate assembly for a file
+test/test_kalkulator_prosty.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.s
+.PHONY : test/test_kalkulator_prosty.cpp.s
+
+test/test_pola.obj: test/test_pola.cpp.obj
+.PHONY : test/test_pola.obj
+
+# target to build an object file
+test/test_pola.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj
+.PHONY : test/test_pola.cpp.obj
+
+test/test_pola.i: test/test_pola.cpp.i
+.PHONY : test/test_pola.i
+
+# target to preprocess a source file
+test/test_pola.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_pola.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_pola.cpp.i
+.PHONY : test/test_pola.cpp.i
+
+test/test_pola.s: test/test_pola.cpp.s
+.PHONY : test/test_pola.s
+
+# target to generate assembly for a file
+test/test_pola.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_pola.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_pola.cpp.s
+.PHONY : test/test_pola.cpp.s
+
+test/test_zespolone.obj: test/test_zespolone.cpp.obj
+.PHONY : test/test_zespolone.obj
+
+# target to build an object file
+test/test_zespolone.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj
+.PHONY : test/test_zespolone.cpp.obj
+
+test/test_zespolone.i: test/test_zespolone.cpp.i
+.PHONY : test/test_zespolone.i
+
+# target to preprocess a source file
+test/test_zespolone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.i
+.PHONY : test/test_zespolone.cpp.i
+
+test/test_zespolone.s: test/test_zespolone.cpp.s
+.PHONY : test/test_zespolone.s
+
+# target to generate assembly for a file
+test/test_zespolone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.s
+.PHONY : test/test_zespolone.cpp.s
 
 # Help Target
 help:
@@ -334,12 +688,51 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... src/projekt.obj
-	@echo ... src/projekt.i
-	@echo ... src/projekt.s
-	@echo ... test/test.obj
-	@echo ... test/test.i
-	@echo ... test/test.s
+	@echo ... src/src_area.obj
+	@echo ... src/src_area.i
+	@echo ... src/src_area.s
+	@echo ... src/src_complex.obj
+	@echo ... src/src_complex.i
+	@echo ... src/src_complex.s
+	@echo ... src/src_equation.obj
+	@echo ... src/src_equation.i
+	@echo ... src/src_equation.s
+	@echo ... src/src_extraction_exponentiation.obj
+	@echo ... src/src_extraction_exponentiation.i
+	@echo ... src/src_extraction_exponentiation.s
+	@echo ... src/src_integral.obj
+	@echo ... src/src_integral.i
+	@echo ... src/src_integral.s
+	@echo ... src/src_logarithm.obj
+	@echo ... src/src_logarithm.i
+	@echo ... src/src_logarithm.s
+	@echo ... src/src_matrix.obj
+	@echo ... src/src_matrix.i
+	@echo ... src/src_matrix.s
+	@echo ... src/src_rounding.obj
+	@echo ... src/src_rounding.i
+	@echo ... src/src_rounding.s
+	@echo ... src/src_simple.obj
+	@echo ... src/src_simple.i
+	@echo ... src/src_simple.s
+	@echo ... src/src_trigonometric.obj
+	@echo ... src/src_trigonometric.i
+	@echo ... src/src_trigonometric.s
+	@echo ... test/main_test.obj
+	@echo ... test/main_test.i
+	@echo ... test/main_test.s
+	@echo ... test/test_kalkulator_macierzy.obj
+	@echo ... test/test_kalkulator_macierzy.i
+	@echo ... test/test_kalkulator_macierzy.s
+	@echo ... test/test_kalkulator_prosty.obj
+	@echo ... test/test_kalkulator_prosty.i
+	@echo ... test/test_kalkulator_prosty.s
+	@echo ... test/test_pola.obj
+	@echo ... test/test_pola.i
+	@echo ... test/test_pola.s
+	@echo ... test/test_zespolone.obj
+	@echo ... test/test_zespolone.i
+	@echo ... test/test_zespolone.s
 .PHONY : help
 
 
