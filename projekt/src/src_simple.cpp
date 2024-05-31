@@ -31,8 +31,7 @@ void simple() {
                  "2. Odejmowanie\n"
                  "3. Mnozenie\n"
                  "4. Dzielenie\n"
-                 "5. Znalezienie reszty z dzielenia\n"
-                 "6. Wyjscie\n" << std::endl;
+                 "5. Znalezienie reszty z dzielenia\n";
     std::cin >> wyb;
 
     switch(wyb) {
@@ -40,17 +39,17 @@ void simple() {
             std::cout << "Podaj liczby, ktore chcesz dodac" << std::endl;
             std::cin >> x >> y;
             std::cout << "Wynik: " << addition(x, y) << std::endl;
-            goto prosty;
+            break;
         case 2:
             std::cout << "Podaj liczby, ktore chcesz odjac" << std::endl;
             std::cin >> x >> y;
             std::cout << "Wynik: " << subtraction(x, y) << std::endl;
-            goto prosty;
+            break;
         case 3:
             std::cout << "Podaj liczby, ktore chcesz pomnozyc" << std::endl;
             std::cin >> x >> y;
             std::cout << "Wynik: " << multiplication(x, y) << std::endl;
-            goto prosty;
+            break;
         case 4:
             dzielenie:
             std::cout << "Podaj liczby, ktore chcesz podzielic" << std::endl;
@@ -61,7 +60,7 @@ void simple() {
             } else {
                 std::cout << "Wynik: " << division(x, y) << std::endl;
             }
-            goto prosty;
+            break;
         case 5:
             int a, b;
             reszta:
@@ -73,8 +72,6 @@ void simple() {
             } else {
                 std::cout << "Wynik: " << modulo(a, b) << std::endl;
             }
-            goto prosty;
-        case 7:
             break;
         default:
             mistake();

@@ -843,6 +843,7 @@ CMakeFiles/projekt__debug.dir/src/src_equation.cpp.obj: C:/Users/user/Desktop/np
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/user/Desktop/npg_kalkulator/projekt/include/accessory.hpp \
   C:/Users/user/Desktop/npg_kalkulator/projekt/include/complex.hpp \
   C:/Users/user/Desktop/npg_kalkulator/projekt/include/equation.hpp
 
@@ -1328,6 +1329,7 @@ CMakeFiles/projekt__debug.dir/src/src_logarithm.cpp.obj: C:/Users/user/Desktop/n
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/user/Desktop/npg_kalkulator/projekt/include/accessory.hpp \
   C:/Users/user/Desktop/npg_kalkulator/projekt/include/logarithm.hpp
 
 CMakeFiles/projekt__debug.dir/src/src_matrix.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_matrix.cpp \
@@ -1808,6 +1810,7 @@ CMakeFiles/projekt__debug.dir/src/src_simple.cpp.obj: C:/Users/user/Desktop/npg_
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/user/Desktop/npg_kalkulator/projekt/include/accessory.hpp \
   C:/Users/user/Desktop/npg_kalkulator/projekt/include/simple.hpp
 
 CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_trigonometric.cpp \
@@ -1981,6 +1984,7 @@ CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj: C:/Users/user/Deskt
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/user/Desktop/npg_kalkulator/projekt/include/accessory.hpp \
   C:/Users/user/Desktop/npg_kalkulator/projekt/include/trigonometric.hpp
 
 

@@ -1,4 +1,5 @@
 #include "equation.hpp"
+#include "accessory.hpp"
 
 #include <iostream>
 #include <cmath>
@@ -81,6 +82,7 @@ std::vector<double> solveCubic(double a, double b, double c, double d) {
 }
 
 void equation(){
+    rownania:
     char choice;
     std::cout << "Wybierz typ rownania: (1) kwadratowe, (2) szescienne: ";
     std::cin >> choice;
@@ -104,6 +106,7 @@ void equation(){
             std::cerr << e.what() << std::endl;
         }
     } else {
-        std::cout << "Nie znana komenda \nsprobuj jeszcze raz" << std::endl;
+        mistake();
+        goto rownania;
     }
 }

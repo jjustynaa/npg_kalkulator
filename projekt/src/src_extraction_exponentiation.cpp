@@ -72,7 +72,7 @@ void extraction_exponentiation(){
             break;
 
         default:
-            std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
+            mistake();
             goto kalk_poteg;
     }
 }

@@ -26,7 +26,7 @@ int main() {
                  " 4. Przelicznik wartosci\n"
                  " 5. Zaokraglenia\n"
                  " 6. Kalkulator rownan kwadratowych lub rownan trzeciego stopnia\n"
-                 " 7. Kalkulator pol i objetosci\n"
+                 " 7. Kalkulator pol\n"
                  " 8. Kalkulator logarytmow\n"
                  " 9. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
                  "10. Kalkulator do liczb zespolonych\n"
@@ -108,7 +108,7 @@ int main() {
                  " 4. Przelicznik wartosci\n"
                  " 5. Zaokraglenia\n"
                  " 6. Kalkulator rownan kwadratowych lub rownan trzeciego stopnia\n"
-                 " 7. Kalkulator pol i objetosci\n"
+                 " 7. Kalkulator pol\n"
                  " 8. Kalkulator logarytmow\n"
                  " 9. Kalkulator do funkcji trygonometrycznych oraz funkcji cyklometrycznych\n"
                  "10. Kalkulator do liczb zespolonych\n"
@@ -125,9 +125,10 @@ int main() {
             std::cout << "Kalkulator prosty, ktory obsluguje: dodawanie, odejmowanie, mnozenie, dzielenie oraz obliczanie reszty z dzielenia." << std::endl;
             break;
         case 2:
-            std::cout << "Program dodaje, odejmuje i mnozy macierze\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
+            std::cout << "Program dodaje, odejmuje, mnozy macierze i liczy wyznacznik macierzy\nNa poczatku nalezy wybrac znak, pozniej wprowadzic odpowiednie macierze\n\n"
                          "Nalezy pamietac ze wielkosc macierzy w dodawaniu i odejmowaniu musi sie pokrywac\n"
-                         "W mnozeniu zas te wielkosci sa odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze drugiej." << std::endl;
+                         "W mnozeniu zas te wielkosci sa odwrotne: wiersze jednej = kolumny drugiej, kolumny pierwszej = wiersze drugiej.\n"
+                         "Obliczanie wyznacznika odbywa sę tylko dla macierzy kwadratowych" << std::endl;
             break;
         case 3:
             std::cout << "help do potegowania i pierwiastkowania" << std::endl;
@@ -142,7 +143,11 @@ int main() {
             std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ: kwadratowe lub szescienne" << std::endl;
             break;
         case 7:
-            std::cout << "Kalkulator pol" << std::endl;
+            std::cout << "Program oblicza pole wybranej figury: prostokat, trojkat, romb i trapez.\n"
+                         "W obliczaniu pola prostokata wystarczy podac dlugosciu obu bokow po odpowiedniej komendzie.\n"
+                         "Pole trojkata mozna obliczyc na 3 sposoby: 1. majac dlugosc boku i jego prostopadla wysokosc, 2. majac wszystkie dlugosci bokow, 3. majac dlugosci dwoch bokow i kat pomiedzy nimi.\n"
+                         "Przy rombie pola mozna obliczyc na 2 sposoby: 1. znajac dlugosc boku i wysokosc, 2. znane sa dlugosci jego przekatnych.\n"
+                         "Natomiast pole trapezu obliczamy znajac dlugosci jego postaw i wysokosc." << std::endl;
             break;
         case 8:
             std::cout << "Kalkulator pozwalajacy obliczyc numeryczna wartosc logaytmu" << std::endl;
