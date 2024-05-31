@@ -1,5 +1,23 @@
 # ninja log v5
-147	1953	7362015124173205	CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj	2aa23dc7020e06ba
-8	1405	7362018670584027	CMakeFiles/projekt__debug.dir/main.cpp.obj	30adeef9c9157044
-1406	37756	7362019033689978	projekt__debug.exe	8375b75b72318c1a
 3158	88515	7368931760613899	CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj	2aa23dc7020e06ba
+479	6335	7387779773378467	CMakeFiles/projekt__debug.dir/main.cpp.obj	1f49141a18ceab2
+1405	30628	7387740812045349	CMakeFiles/projekt__test.dir/test/test.cpp.obj	916e9df1b247eab7
+1406	37756	7362019033689978	projekt__debug.exe	8375b75b72318c1a
+28	9309	7388664505666876	build.ninja	365e63264716176d
+673	279603	7388651764908491	CMakeFiles/projekt__test.dir/src/projekt.cpp.obj	c62b7911a50caaa3
+1427	31086	7387740818187538	googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	b9e7ca4477ace9ba
+1465	48618	7387740993485014	googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	6d215f233a0f2f3a
+679	279747	7388651751440049	CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj	274a859ad72f633e
+48660	72781	7387741235583601	lib/libgtest.a	b0c0bb2221528330
+72782	73644	7387741244380395	lib/libgmock.a	289fb479bdfa782
+7	45895	7387752267374023	CMakeFiles/projekt__test.dir/test/main_test.cpp.obj	2b277c12d3c03fa0
+409736	441350	7388653409561636	projekt__test.exe	2f0b817fb8b06a81
+54	277243	7388651763243837	CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj	7217cb7d318ece93
+204	22961	7387932124171923	CMakeFiles/projekt__test.dir/test/test_rownania.cpp.obj	ad6c2484a3137b29
+277470	409611	7388653093108355	CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj	9023dd7fba02c62
+113	25591	7388664971238468	CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj	a987270e3fe198c9
+98	25735	7388664971895508	CMakeFiles/projekt__test.dir/src/projekt.cpp.obj	c62b7911a50caaa3
+107	25780	7388664972086305	CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj	9023dd7fba02c62
+25702	34653	7388665062754737	CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj	274a859ad72f633e
+25739	34702	7388665063246565	CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj	7217cb7d318ece93
+34703	44916	7388665164664645	projekt__test.exe	62384c02b40631ff

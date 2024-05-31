@@ -51,17 +51,52 @@ build cmake_object_order_depends_target_projekt__debug: phony || CMakeFiles/proj
 
 build CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/projekt.cpp || cmake_object_order_depends_target_projekt__debug
   DEP_FILE = CMakeFiles\projekt__debug.dir\src\projekt.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
   OBJECT_DIR = CMakeFiles\projekt__debug.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
 
 build CMakeFiles/projekt__debug.dir/main.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/main.cpp || cmake_object_order_depends_target_projekt__debug
   DEP_FILE = CMakeFiles\projekt__debug.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
   OBJECT_DIR = CMakeFiles\projekt__debug.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir
+
+build CMakeFiles/projekt__debug.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/main_test.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\test\main_test.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
+
+build CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_kalkulator_prosty.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_kalkulator_prosty.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
+
+build CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_zespolone.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_zespolone.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
+
+build CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_kalkulator_macierzy.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_kalkulator_macierzy.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
+
+build CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_pola.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_pola.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
 
 
 # =============================================================================
@@ -71,7 +106,7 @@ build CMakeFiles/projekt__debug.dir/main.cpp.obj: CXX_COMPILER__projekt__debug_u
 #############################################
 # Link the executable projekt__debug.exe
 
-build projekt__debug.exe: CXX_EXECUTABLE_LINKER__projekt__debug_Debug CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj CMakeFiles/projekt__debug.dir/main.cpp.obj
+build projekt__debug.exe: CXX_EXECUTABLE_LINKER__projekt__debug_Debug CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj CMakeFiles/projekt__debug.dir/main.cpp.obj CMakeFiles/projekt__debug.dir/test/main_test.cpp.obj CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projekt__debug.dir
@@ -92,15 +127,43 @@ build cmake_object_order_depends_target_projekt__test: phony || cmake_object_ord
 
 build CMakeFiles/projekt__test.dir/src/projekt.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/projekt.cpp || cmake_object_order_depends_target_projekt__test
   DEP_FILE = CMakeFiles\projekt__test.dir\src\projekt.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -IC:/Users/ASUS/Desktop/kalkulator/projekt/../googletest-master/googlemock/include -IC:/Users/ASUS/Desktop/kalkulator/projekt/../googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
   OBJECT_DIR = CMakeFiles\projekt__test.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
 
-build CMakeFiles/projekt__test.dir/test/test.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test.cpp || cmake_object_order_depends_target_projekt__test
-  DEP_FILE = CMakeFiles\projekt__test.dir\test\test.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -IC:/Users/ASUS/Desktop/kalkulator/projekt/../googletest-master/googlemock/include -IC:/Users/ASUS/Desktop/kalkulator/projekt/../googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest
+build CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_kalkulator_prosty.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_kalkulator_prosty.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
+build CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_zespolone.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_zespolone.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
+build CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_kalkulator_macierzy.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_kalkulator_macierzy.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
+build CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_pola.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_pola.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
+build CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/main_test.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\main_test.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
   OBJECT_DIR = CMakeFiles\projekt__test.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
 
@@ -112,7 +175,7 @@ build CMakeFiles/projekt__test.dir/test/test.cpp.obj: CXX_COMPILER__projekt__tes
 #############################################
 # Link the executable projekt__test.exe
 
-build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/projekt__test.dir/src/projekt.cpp.obj CMakeFiles/projekt__test.dir/test/test.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
+build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/projekt__test.dir/src/projekt.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj CMakeFiles/projekt__test.dir/test/main_test.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projekt__test.dir
@@ -127,7 +190,7 @@ build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/p
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -138,7 +201,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\ASUS\Desktop\kalkulator\projekt -BC:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\ASUS\Desktop\kalkulator\projekt -BC:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -156,7 +219,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -168,7 +231,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -180,7 +243,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -197,7 +260,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for edit_cache
 
 build googletest-master/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -208,7 +271,7 @@ build googletest-master/edit_cache: phony googletest-master/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build googletest-master/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\ASUS\Desktop\kalkulator\projekt -BC:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\ASUS\Desktop\kalkulator\projekt -BC:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -226,7 +289,7 @@ build googletest-master/list_install_components: phony
 # Utility command for install
 
 build googletest-master/CMakeFiles/install.util: CUSTOM_COMMAND googletest-master/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -238,7 +301,7 @@ build googletest-master/install: phony googletest-master/CMakeFiles/install.util
 # Utility command for install/local
 
 build googletest-master/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-master/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -250,7 +313,7 @@ build googletest-master/install/local: phony googletest-master/CMakeFiles/instal
 # Utility command for install/strip
 
 build googletest-master/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-master/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -259,7 +322,7 @@ build googletest-master/install/strip: phony googletest-master/CMakeFiles/instal
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/ASUS/Desktop/kalkulator/googletest-master/CMakeLists.txt
+# C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -271,10 +334,10 @@ build googletest-master/install/strip: phony googletest-master/CMakeFiles/instal
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+build googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = googletest-master\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
-  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -IC:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/include -IC:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -IC:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -IC:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
   OBJECT_DIR = googletest-master\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = googletest-master\googlemock\CMakeFiles\gmock.dir\src
 
@@ -303,10 +366,10 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug googletest-master/g
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+build googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = googletest-master\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
-  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
   OBJECT_DIR = googletest-master\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = googletest-master\googlemock\CMakeFiles\gmock_main.dir\src
 
@@ -331,7 +394,7 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug googletes
 # Utility command for edit_cache
 
 build googletest-master/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -342,7 +405,7 @@ build googletest-master/googlemock/edit_cache: phony googletest-master/googlemoc
 # Utility command for rebuild_cache
 
 build googletest-master/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\ASUS\Desktop\kalkulator\projekt -BC:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\ASUS\Desktop\kalkulator\projekt -BC:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -360,7 +423,7 @@ build googletest-master/googlemock/list_install_components: phony
 # Utility command for install
 
 build googletest-master/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND googletest-master/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -372,7 +435,7 @@ build googletest-master/googlemock/install: phony googletest-master/googlemock/C
 # Utility command for install/local
 
 build googletest-master/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-master/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -384,7 +447,7 @@ build googletest-master/googlemock/install/local: phony googletest-master/google
 # Utility command for install/strip
 
 build googletest-master/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-master/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -393,7 +456,7 @@ build googletest-master/googlemock/install/strip: phony googletest-master/google
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/CMakeLists.txt
+# C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -405,10 +468,10 @@ build googletest-master/googlemock/install/strip: phony googletest-master/google
 
 build cmake_object_order_depends_target_gtest: phony || googletest-master/googletest/CMakeFiles/gtest.dir
 
-build googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+build googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = googletest-master\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
-  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -IC:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/include -IC:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -IC:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -IC:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
   OBJECT_DIR = googletest-master\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = googletest-master\googletest\CMakeFiles\gtest.dir\src
 
@@ -437,10 +500,10 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug googletest-master/g
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+build googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = googletest-master\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
-  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wall -Wextra -Werror -Wconversion -Wpedantic -pedantic-errors -Wno-unused-private-field -Wno-multichar
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
   OBJECT_DIR = googletest-master\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = googletest-master\googletest\CMakeFiles\gtest_main.dir\src
 
@@ -465,7 +528,7 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug googletes
 # Utility command for edit_cache
 
 build googletest-master/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -476,7 +539,7 @@ build googletest-master/googletest/edit_cache: phony googletest-master/googletes
 # Utility command for rebuild_cache
 
 build googletest-master/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\ASUS\Desktop\kalkulator\projekt -BC:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\ASUS\Desktop\kalkulator\projekt -BC:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -494,7 +557,7 @@ build googletest-master/googletest/list_install_components: phony
 # Utility command for install
 
 build googletest-master/googletest/CMakeFiles/install.util: CUSTOM_COMMAND googletest-master/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -506,7 +569,7 @@ build googletest-master/googletest/install: phony googletest-master/googletest/C
 # Utility command for install/local
 
 build googletest-master/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-master/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -518,7 +581,7 @@ build googletest-master/googletest/install/local: phony googletest-master/google
 # Utility command for install/strip
 
 build googletest-master/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-master/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Users\ASUS\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\ASUS\Desktop\kalkulator\projekt\cmake-build-debug\googletest-master\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -586,14 +649,14 @@ build googletest-master/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython3.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython/Support.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/ASUS/Desktop/kalkulator/googletest-master/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/cmake/gmock.pc.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/cmake/gmock_main.pc.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/Config.cmake.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/gtest.pc.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/gtest_main.pc.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/internal_utils.cmake C$:/Users/ASUS/Desktop/kalkulator/projekt/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/SetCommonConfig.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython3.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/ASUS/Desktop/kalkulator/projekt/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/SetCommonConfig.cmake C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/cmake/gmock.pc.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/cmake/gmock_main.pc.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/cmake/Config.cmake.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/cmake/gtest.pc.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/cmake/gtest_main.pc.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython3.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython/Support.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/ASUS/AppData/Local/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/ASUS/Desktop/kalkulator/googletest-master/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/cmake/gmock.pc.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googlemock/cmake/gmock_main.pc.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/Config.cmake.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/gtest.pc.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/gtest_main.pc.in C$:/Users/ASUS/Desktop/kalkulator/googletest-master/googletest/cmake/internal_utils.cmake C$:/Users/ASUS/Desktop/kalkulator/projekt/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/SetCommonConfig.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython3.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/ASUS/Desktop/kalkulator/projekt/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/SetCommonConfig.cmake C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/cmake/gmock.pc.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/cmake/gmock_main.pc.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/CMakeLists.txt C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/cmake/Config.cmake.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/cmake/gtest.pc.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/cmake/gtest_main.pc.in C$:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################
