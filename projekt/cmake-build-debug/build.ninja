@@ -91,6 +91,13 @@ build CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj: CXX_C
   OBJECT_DIR = CMakeFiles\projekt__debug.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
 
+build CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_pola.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_pola.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target projekt__debug
@@ -99,7 +106,7 @@ build CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj: CXX_C
 #############################################
 # Link the executable projekt__debug.exe
 
-build projekt__debug.exe: CXX_EXECUTABLE_LINKER__projekt__debug_Debug CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj CMakeFiles/projekt__debug.dir/main.cpp.obj CMakeFiles/projekt__debug.dir/test/main_test.cpp.obj CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj
+build projekt__debug.exe: CXX_EXECUTABLE_LINKER__projekt__debug_Debug CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj CMakeFiles/projekt__debug.dir/main.cpp.obj CMakeFiles/projekt__debug.dir/test/main_test.cpp.obj CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projekt__debug.dir
@@ -146,6 +153,13 @@ build CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj: CXX_CO
   OBJECT_DIR = CMakeFiles\projekt__test.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
 
+build CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_pola.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_pola.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
 build CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/main_test.cpp || cmake_object_order_depends_target_projekt__test
   DEP_FILE = CMakeFiles\projekt__test.dir\test\main_test.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
@@ -161,7 +175,7 @@ build CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt
 #############################################
 # Link the executable projekt__test.exe
 
-build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/projekt__test.dir/src/projekt.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__test.dir/test/main_test.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
+build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/projekt__test.dir/src/projekt.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj CMakeFiles/projekt__test.dir/test/main_test.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projekt__test.dir
