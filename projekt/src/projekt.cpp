@@ -777,3 +777,7 @@ void logarytmy_by_Natalia(){
     std::cin >> ll >> base;
     std::cout << "Wynik logarytmu to" << logarytmy(ll,base);
 }
+//
+//void przelicznik(){
+//    std::cout << "Wybierz jaki rodzaj jednostek chcesz prezliczyć." << std::endl << "1. Pr";
+//}

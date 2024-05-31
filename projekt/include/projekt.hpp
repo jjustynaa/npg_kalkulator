@@ -101,4 +101,8 @@ float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu );
 
 void logarytmy_by_Natalia();
 
+//przelicznik wartosci
+//void przelicznik();
+
+
 #endif //PROJEKT_PROJEKT_HPP

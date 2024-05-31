@@ -38,12 +38,16 @@ endif()
 
 add_executable(${EXEC_DEBUG} ${SOURCE_FILES} main.${lang_src_extension}
         test/main_test.cpp
-        test/test_kalkulator_prosty.cpp)
+        test/test_kalkulator_prosty.cpp
+        test/test_zespolone.cpp
+        test/test_kalkulator_macierzy.cpp)
 
 if(EXISTS ${PROJECT_SOURCE_DIR}/test)
     set(EXEC_TEST ${PROJECT_ID}__test)
     add_executable(${EXEC_TEST} ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/test_kalkulator_prosty.cpp
-            test/main_test.cpp)
+            test/main_test.cpp
+            test/test_zespolone.cpp
+            test/test_kalkulator_macierzy.cpp)
 
     # == Uwzględnij pliki frameworku Google Testing Framework (GTF) ==
 

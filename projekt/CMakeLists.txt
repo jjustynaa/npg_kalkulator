@@ -10,6 +10,8 @@ set(SOURCE_FILES
 
 set(SOURCES_FILES_TESTS
         test/test_kalkulator_prosty.cpp
-        )
+        test/test_zespolone.cpp
+        test/test_kalkulator_macierzy.cpp
+)
 
 include(SetCommonConfig.cmake)

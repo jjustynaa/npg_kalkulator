@@ -2,6 +2,6 @@
 -- PROJECT: projekt
 -- Using AddressSanitizer (ASan).
 -- Could NOT find Python3 (missing: Python3_EXECUTABLE Interpreter) 
--- Configuring done (66.9s)
--- Generating done (2.7s)
+-- Configuring done (21.5s)
+-- Generating done (2.5s)
 -- Build files have been written to: C:/Users/ASUS/Desktop/kalkulator/projekt/cmake-build-debug
