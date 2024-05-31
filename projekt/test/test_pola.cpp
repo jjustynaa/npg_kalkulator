@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "projekt.hpp"
+#include "main.hpp"
 
 TEST(KalkulatorPola, Prostokat){
     double a, b;

@@ -1,4 +1,4 @@
-#include "projekt.hpp"
+#include "extraction_exponentiation.hpp"
 
 double exponentiation(double liczba, int potega){
     double wynik = 1.0;

@@ -1,4 +1,4 @@
-#include "projekt.hpp"
+#include "complex.hpp"
 
 double Complex::clasic_to_tryg() const {
     if (Im >= 0 && cpx_lg() != 0) {

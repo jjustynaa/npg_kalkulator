@@ -537,7 +537,6 @@ test/main_test.obj: test/main_test.cpp.obj
 
 # target to build an object file
 test/main_test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/main_test.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/main_test.cpp.obj
 .PHONY : test/main_test.cpp.obj
 
@@ -546,7 +545,6 @@ test/main_test.i: test/main_test.cpp.i
 
 # target to preprocess a source file
 test/main_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/main_test.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/main_test.cpp.i
 .PHONY : test/main_test.cpp.i
 
@@ -555,7 +553,6 @@ test/main_test.s: test/main_test.cpp.s
 
 # target to generate assembly for a file
 test/main_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/main_test.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/main_test.cpp.s
 .PHONY : test/main_test.cpp.s
 
@@ -564,7 +561,6 @@ test/test_kalkulator_macierzy.obj: test/test_kalkulator_macierzy.cpp.obj
 
 # target to build an object file
 test/test_kalkulator_macierzy.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj
 .PHONY : test/test_kalkulator_macierzy.cpp.obj
 
@@ -573,7 +569,6 @@ test/test_kalkulator_macierzy.i: test/test_kalkulator_macierzy.cpp.i
 
 # target to preprocess a source file
 test/test_kalkulator_macierzy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.i
 .PHONY : test/test_kalkulator_macierzy.cpp.i
 
@@ -582,7 +577,6 @@ test/test_kalkulator_macierzy.s: test/test_kalkulator_macierzy.cpp.s
 
 # target to generate assembly for a file
 test/test_kalkulator_macierzy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.s
 .PHONY : test/test_kalkulator_macierzy.cpp.s
 
@@ -591,7 +585,6 @@ test/test_kalkulator_prosty.obj: test/test_kalkulator_prosty.cpp.obj
 
 # target to build an object file
 test/test_kalkulator_prosty.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj
 .PHONY : test/test_kalkulator_prosty.cpp.obj
 
@@ -600,7 +593,6 @@ test/test_kalkulator_prosty.i: test/test_kalkulator_prosty.cpp.i
 
 # target to preprocess a source file
 test/test_kalkulator_prosty.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.i
 .PHONY : test/test_kalkulator_prosty.cpp.i
 
@@ -609,7 +601,6 @@ test/test_kalkulator_prosty.s: test/test_kalkulator_prosty.cpp.s
 
 # target to generate assembly for a file
 test/test_kalkulator_prosty.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.s
 .PHONY : test/test_kalkulator_prosty.cpp.s
 
@@ -618,7 +609,6 @@ test/test_pola.obj: test/test_pola.cpp.obj
 
 # target to build an object file
 test/test_pola.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj
 .PHONY : test/test_pola.cpp.obj
 
@@ -627,7 +617,6 @@ test/test_pola.i: test/test_pola.cpp.i
 
 # target to preprocess a source file
 test/test_pola.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_pola.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_pola.cpp.i
 .PHONY : test/test_pola.cpp.i
 
@@ -636,7 +625,6 @@ test/test_pola.s: test/test_pola.cpp.s
 
 # target to generate assembly for a file
 test/test_pola.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_pola.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_pola.cpp.s
 .PHONY : test/test_pola.cpp.s
 
@@ -645,7 +633,6 @@ test/test_zespolone.obj: test/test_zespolone.cpp.obj
 
 # target to build an object file
 test/test_zespolone.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj
 .PHONY : test/test_zespolone.cpp.obj
 
@@ -654,7 +641,6 @@ test/test_zespolone.i: test/test_zespolone.cpp.i
 
 # target to preprocess a source file
 test/test_zespolone.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.i
 .PHONY : test/test_zespolone.cpp.i
 
@@ -663,7 +649,6 @@ test/test_zespolone.s: test/test_zespolone.cpp.s
 
 # target to generate assembly for a file
 test/test_zespolone.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.s
 .PHONY : test/test_zespolone.cpp.s
 

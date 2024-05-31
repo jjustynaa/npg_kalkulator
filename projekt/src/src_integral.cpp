@@ -1,4 +1,4 @@
-#include "projekt.hpp"
+#include "integral.hpp"
 
 double calka_liniowa(double a, double b, double x1, double x2){
     double dx = 0.0001;

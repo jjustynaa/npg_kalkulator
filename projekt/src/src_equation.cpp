@@ -1,4 +1,4 @@
-#include "projekt.hpp"
+#include "equation.hpp"
 
 void kwadratowa(double a, double b, double c){
     if(a == 0){

@@ -1,4 +1,4 @@
-#include "projekt.hpp"
+#include "matrix.hpp"
 
 //funkcja tworzaca macierz o okreslonym rozmarze
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
@@ -6,7 +6,7 @@ std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
 
     for(std::size_t i = 0; i < rows; i++)
         for(std::size_t j = 0; j < col; j++) {
-            std::cout << "[ " << i+1 << ", " << j+1 << "]: ";
+            std::cout << "[ " << i+1 << ", " << j+1 << "]:";
             std::cin >> matrix[i][j];
         }
 

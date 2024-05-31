@@ -1,4 +1,4 @@
-#include "projekt.hpp"
+#include "trigonometric.hpp"
 
 void cykl_o_tryg() {
     std::string choose;

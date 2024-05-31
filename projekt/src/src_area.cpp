@@ -1,4 +1,4 @@
-#include "projekt.hpp"
+#include "area.hpp"
 
 bool does_triangle_exist(double a, double b, double c){
     if (a + b > c) return true;

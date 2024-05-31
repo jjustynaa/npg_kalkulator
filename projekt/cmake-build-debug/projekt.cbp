@@ -442,23 +442,18 @@
 			<Option target="projekt__test"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/main_test.cpp">
-			<Option target="projekt__debug"/>
 			<Option target="projekt__test"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_macierzy.cpp">
-			<Option target="projekt__debug"/>
 			<Option target="projekt__test"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_prosty.cpp">
-			<Option target="projekt__debug"/>
 			<Option target="projekt__test"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_pola.cpp">
-			<Option target="projekt__debug"/>
 			<Option target="projekt__test"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_zespolone.cpp">
-			<Option target="projekt__debug"/>
 			<Option target="projekt__test"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/CMakeLists.txt">

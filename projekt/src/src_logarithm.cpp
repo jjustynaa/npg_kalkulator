@@ -1,4 +1,4 @@
-#include "projekt.hpp"
+#include "logarithm.hpp"
 
 double logarithm(double liczba_logarytmowana, double podstawa_logarytmu ){
     double wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
