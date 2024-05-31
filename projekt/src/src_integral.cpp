@@ -1,4 +1,5 @@
 #include "integral.hpp"
+#include "accessory.hpp"
 
 #include <iostream>
 #include <string>
@@ -68,7 +69,6 @@ double calka_cos(double x1, double x2){
     }
 }
 
-
 //obsługa całek:
 void calki() {
     calki:
@@ -105,7 +105,7 @@ void calki() {
             break;
         }
         default:
-            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
+            mistake();
             goto calki;
     }
 }
