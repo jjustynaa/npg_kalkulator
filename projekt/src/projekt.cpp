@@ -535,8 +535,7 @@ double calka_cos(double x1, double x2){
 //obsługa całek:
 void calki() {
     calki:
-    std::cout << "Wybierz rodzaj calki:\nL - calka liniowa\nK - calka kwadratowa\nS - calka z sinusa\nC - calka z cosinusa" << std::endl;
-
+        std::cout << "Wybierz rodzaj calki:\nL - calka z funkcji liniowej\nK - calka z funkcji kwadratowej\nS - calka z sinusa\nC - calka z cosinusa" << std::endl;
     char mark;
     std::cin >> mark;
     switch (std::tolower(mark)) {
