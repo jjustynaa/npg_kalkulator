@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <stdexcept>
 #include <algorithm>
 #include <cctype>
 
@@ -17,10 +16,16 @@ void mistake() {
 }
 
 int repeat() {
-    std::string con;
+    char con;
     std::cout << "Chcesz kontynuowac? [T/N]" << std::endl;
     std::cin >> con;
-    return (con == "N" || con == "n") ? 0 : 1;
+    return (std::tolower(con) == 'n') ? 0 : 1;
+}
+
+std::string lower(std::string word){
+    std::transform(word.begin(), word.end(), word.begin(),
+                   [](unsigned char c){ return std::tolower(c); });
+    return word;
 }
 
 int main() {
@@ -30,8 +35,7 @@ int main() {
     std::cout << "<<Witaj w kalkulatorze>>\n\nAby przejsc dalej wpisz NEXT\n\nPo wprowadzonych wartosciach wcisnij ENTER" << std::endl;
     std::string t;
     std::cin >> t;
-    std::transform(t.begin(), t.end(), t.begin(),
-                   [](unsigned char c){ return std::tolower(c); });
+    t = lower(t);
     if (t != "next") {
         mistake();
         goto start;
@@ -82,36 +86,11 @@ int main() {
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
-        case 6: {
-            char choice;
-            std::cout << "Wybierz typ rownania: (1) kwadratowe, (2) szescienne: ";
-            std::cin >> choice;
-            if (choice == '1') {
-                double a, b, c;
-                std::cout << "Podaj wspolczynniki a, b, c: ";
-                std::cin >> a >> b >> c;
-                kwadratowa(a, b, c);
-            } else if (choice == '2') {
-                double a, b, c, d;
-                std::cout << "Podaj wspolczynniki a, b, c, d: ";
-                std::cin >> a >> b >> c >> d;
-                try {
-                    std::vector<double> roots = solveCubic(a, b, c, d);
-                    std::cout << "Pierwiastki rownania: ";
-                    for (double root : roots) {
-                        std::cout << root << " ";
-                    }
-                    std::cout << std::endl;
-                } catch (const std::invalid_argument &e) {
-                    std::cerr << e.what() << std::endl;
-                }
-            } else {
-                mistake();
-            }
+        case 6:
+            equation();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
-        }
         case 7:
             area();
             if (!repeat()) goto quit;
@@ -185,10 +164,10 @@ int main() {
             std::cout << "Zaokraglenie przyjmuje dwie wartosci: liczbe do zaokraglania oraz liczbe miejsc po przecinku, ile oczekujesz otrzymac" << std::endl;
             break;
         case 6:
-            std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ" << std::endl;
+            std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ: kwadratowe lub szescienne" << std::endl;
             break;
         case 7:
-            std::cout << "Kalkulator pol i objetosci" << std::endl;
+            std::cout << "Kalkulator pol" << std::endl;
             break;
         case 8:
             std::cout << "Kalkulator pozwalajacy obliczyc numeryczna wartosc logaytmu" << std::endl;
