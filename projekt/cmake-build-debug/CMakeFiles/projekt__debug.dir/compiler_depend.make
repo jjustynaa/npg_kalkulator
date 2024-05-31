@@ -1492,6 +1492,7 @@ CMakeFiles/projekt__debug.dir/src/src_matrix.cpp.obj: C:/Users/user/Desktop/npg_
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/user/Desktop/npg_kalkulator/projekt/include/accessory.hpp \
   C:/Users/user/Desktop/npg_kalkulator/projekt/include/matrix.hpp
 
 CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_rounding.cpp \
