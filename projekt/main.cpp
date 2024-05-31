@@ -18,7 +18,7 @@ int repeat() {
     std::string con;
     std::cout << "Chcesz kontynuowac? [T/N]" << std::endl;
     std::cin >> con;
-    return (con == "T" || con == "t") ? 1 : 0;
+    return (con == "N" || con == "n") ? 0 : 1;
 }
 
 int main() {
@@ -58,12 +58,18 @@ int main() {
     switch (fun) {
         case 1:
             simple();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 2:
             matrix();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 3:
             extraction_exponentiation();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 4:
             // Przerzut na przelicznik
@@ -73,6 +79,8 @@ int main() {
             goto p_menu;
         case 6:
             rounding();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 7: {
             char choice;
@@ -100,22 +108,34 @@ int main() {
             } else {
                 mistake();
             }
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         }
         case 8:
             area();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 9:
             logarithm_user();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 10:
             cykl_o_tryg();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 11:
             complex_choice();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 12:
             calki();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 0:
             goto p_help;
@@ -197,5 +217,8 @@ int main() {
             goto p_help;
     }
     goto p_menu;
+
+    quit:
+        return 1;
 }
 

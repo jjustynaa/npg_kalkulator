@@ -1,5 +1,9 @@
 #include "equation.hpp"
 
+#include <iostream>
+#include <cmath>
+#include <vector>
+
 void kwadratowa(double a, double b, double c){
     if(a == 0){
         std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;

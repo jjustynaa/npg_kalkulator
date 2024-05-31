@@ -1,5 +1,9 @@
 #include "integral.hpp"
 
+#include <iostream>
+#include <string>
+#include <cmath>
+
 double calka_liniowa(double a, double b, double x1, double x2){
     double dx = 0.0001;
     double wynik = 0;

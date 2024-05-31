@@ -1,5 +1,10 @@
 #include "trigonometric.hpp"
 
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <iomanip>
+
 void cykl_o_tryg() {
     std::string choose;
     std::cout << "Chcesz skorzystać z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;

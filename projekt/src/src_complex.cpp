@@ -1,5 +1,12 @@
 #include "complex.hpp"
 
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include <iomanip>
+#include <complex>
+
+
 double Complex::clasic_to_tryg() const {
     if (Im >= 0 && cpx_lg() != 0) {
         return acos(Re / cpx_lg());

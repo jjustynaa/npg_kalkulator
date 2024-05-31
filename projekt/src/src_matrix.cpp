@@ -1,5 +1,9 @@
 #include "matrix.hpp"
 
+#include <iostream>
+#include <vector>
+#include <iomanip>
+
 //funkcja tworzaca macierz o okreslonym rozmarze
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
     std::vector<std::vector<int>> matrix(rows, std::vector<int>(col));

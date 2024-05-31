@@ -1,5 +1,8 @@
 #include "extraction_exponentiation.hpp"
 
+#include <iostream>
+#include <cmath>
+
 double exponentiation(double liczba, int potega){
     double wynik = 1.0;
     if (potega < 0){
