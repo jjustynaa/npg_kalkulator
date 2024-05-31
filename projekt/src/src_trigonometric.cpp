@@ -8,7 +8,7 @@
 
 void cykl_o_tryg() {
     std::string choose;
-    std::cout << "Chcesz skorzystać z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
+    std::cout << "Chcesz skorzystac z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
     std::cin >> choose;
     if (choose.find("cyklome") != std::string::npos) {
         cykl();

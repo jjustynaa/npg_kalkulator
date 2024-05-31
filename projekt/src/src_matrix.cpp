@@ -180,6 +180,7 @@ void determinat_str(){
     std::cin >> r;
     std::cin >> k;
     if(r == k){
+        std::cout << "Wprowadz macierz: " << std::endl;
         std::vector<std::vector<int>> Matrix = createMatrix(r,k);
         std::cout << "Wyznacznik macierzy:" << std::endl;
         showMatrix(Matrix, Matrix.size(), Matrix[0].size());
