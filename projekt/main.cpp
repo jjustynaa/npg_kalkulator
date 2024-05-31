@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 #include <stdexcept>
+#include <algorithm>
+#include <cctype>
 
 void clear(){
     for (int i = 0; i < 25; i++) {
@@ -28,7 +30,9 @@ int main() {
     std::cout << "<<Witaj w kalkulatorze>>\n\nAby przejsc dalej wpisz NEXT\n\nPo wprowadzonych wartosciach wcisnij ENTER" << std::endl;
     std::string t;
     std::cin >> t;
-    if (t != "NEXT" && t != "Next" && t != "next") {
+    std::transform(t.begin(), t.end(), t.begin(),
+                   [](unsigned char c){ return std::tolower(c); });
+    if (t != "next") {
         mistake();
         goto start;
     }
