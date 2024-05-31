@@ -27,7 +27,6 @@ double addition(double num1, double num2);
 double subtraction(double num1, double num2);
 double division(double num1, double num2);
 double multiplication(double num1, double num2);
-double exponential(double num1, double num2);
 int modulo(int num1, int num2);
 
 //matrix
@@ -113,5 +112,9 @@ void prosty();
 double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu);
 
 void logarytmy_by_Natalia();
+
+//przelicznik wartosci
+//void przelicznik();
+
 
 #endif //PROJEKT_PROJEKT_HPP

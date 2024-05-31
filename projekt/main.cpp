@@ -37,8 +37,8 @@ int main() {
         goto start;
     }
 
-    p_menu:
     czyszczenie();
+    p_menu:
     std::cout << "Jakiej funkcji chcesz uzyc:\n"
                  " 0. Help\n"
                  " 1. Kalkulator prosty \n"
@@ -62,22 +62,22 @@ int main() {
     switch (fun) {
         case 1:
             prosty();
-            break;
+            goto p_menu;
         case 2:
             matrix();
-            break;
+            goto p_menu;
         case 3:
             kalk_poteg();
-            break;
+            goto p_menu;
         case 4:
             // Przerzut na przelicznik
-            break;
+            goto p_menu;
         case 5:
             // Przerzut na porownania
-            break;
+            goto p_menu;
         case 6:
             print_zao();
-            break;
+            goto p_menu;
         case 7: {
             char choice;
             std::cout << "Wybierz typ rownania: (1) kwadratowe, (2) szescienne: ";
@@ -104,23 +104,23 @@ int main() {
             } else {
                 blad();
             }
-            break;
+            goto p_menu;
         }
         case 8:
             area();
-            break;
+            goto p_menu;
         case 9:
             logarytmy_by_Natalia();
-            break;
+            goto p_menu;
         case 10:
             cykl_o_tryg();
-            break;
+            goto p_menu;
         case 11:
             complex_choice();
-            break;
+            goto p_menu;
         case 12:
             calki();
-            break;
+            goto p_menu;
         case 0:
             goto p_help;
         case 13:
