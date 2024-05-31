@@ -97,7 +97,7 @@ std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
 
     for(std::size_t i = 0; i < rows; i++)
         for(std::size_t j = 0; j < col; j++) {
-            std::cout << "[ " << i+1 << ", " << j+1 << "]:";
+            std::cout << "[ " << i+1 << ", " << j+1 << "]: ";
             std::cin >> matrix[i][j];
         }
 
@@ -213,10 +213,69 @@ void multiMatrix_user(){
     showMatrix(new_matrix ,rows1 ,col2);
 }
 
+//wyznaczniki macierzy
+//funkcja sprawdzająca czy macierz jest kwadratowa
+bool sq_matrix(std::vector<std::vector<int>> Matrix){
+    if (Matrix.size() == Matrix[0].size()) {
+        return true;
+    }else {
+        return false;
+    }}
+
+//funkcja zmniejszająca macierz
+std::vector<std::vector<int>> Matrix_cutter(const std::vector<std::vector<int>>& Matrix, std::size_t row_to_cut, std::size_t col_to_cut){
+    std::vector<std::vector<int>> Cutted_Matrix;
+    for(std::size_t i = 0; i < Matrix.size(); i++){
+        if (i != row_to_cut - 1){
+            std::vector<int> row;
+            for (std::size_t j = 0; j < Matrix[0].size(); j++){
+                if (j != col_to_cut - 1){
+                    row.push_back(Matrix[i][j]);
+                }
+            }
+            Cutted_Matrix.push_back(row);
+        }
+    }
+    return Cutted_Matrix;
+}
+
+//funckaj licząca wartość wyznacznika
+int determinant(const std::vector<std::vector<int>>& Matrix){
+    if (Matrix.size() == 1){
+        return Matrix[0][0];
+    } else if (Matrix.size() == 2) {
+        return Matrix[0][0] * Matrix[1][1] - Matrix[0][1] * Matrix[1][0];
+    } else {
+        int deter = 0;
+        for (std::size_t i = 0; i < Matrix.size(); ++i) {
+            std::vector<std::vector<int>> subMatrix = Matrix_cutter(Matrix, 1, i+1);
+            deter += (i % 2 == 0 ? 1 : -1) * Matrix[0][i] * determinant(subMatrix);
+        }
+        return deter;
+    }
+}
+
+//funkcja do opisu do wyznacznika
+void determinat_str(){
+    std::size_t  r;
+    std::size_t  k;
+    std::cout << "Podaj liczbę wierszy i kolumn" << std::endl;
+    std::cin >> r;
+    std::cin >> k;
+    std::vector<std::vector<int>> Matrix = createMatrix(r,k);
+    if(sq_matrix(Matrix)){
+        std::cout << "Wyznacznik macierzy:" << std::endl;
+        showMatrix(Matrix, Matrix.size(), Matrix[0].size());
+        std::cout << "Wynosi: " << determinant(Matrix) << std::endl;
+    }else{
+        std::cout << "Nie można policzyć wyznacznika ponieważ macierz nie jest macierzą kwadratową" << std::endl;
+    }
+}
+
 //menu funkcji macierz
 void matrix() {
     matrix:
-    std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy" << std::endl;
+    std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy\n| wyznacznik macierzy" << std::endl;
 
     char mark;
     std::cin >> mark;
@@ -229,6 +288,9 @@ void matrix() {
             break;
         case '*':
             multiMatrix_user();
+            break;
+        case '|':
+            determinat_str();
             break;
         default:
             std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
@@ -327,6 +389,14 @@ void print_zao(){
     std::cout << "Liczba po zaokrągleniu wynosi: " << std::fixed << std::setprecision(m_p_p) << num << std::endl;
 }
 
+double signifant_figure(double n, int sig_digits){
+    if (n == 0)
+        return 0;
+    double exponent = std::floor(log10(abs(n)));
+    double multiplier = pow(10, (sig_digits - 1 - exponent));
+    return std::round(n * multiplier) / multiplier;
+}
+
 void kwadratowa(double a, double b, double c){
     if(a == 0){
         std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;
@@ -400,6 +470,113 @@ std::vector<double> solveCubic(double a, double b, double c, double d) {
     }
 
     return roots;
+}
+
+
+double calka_liniowa(double a, double b, double x1, double x2){
+    double dx = 0.0001;
+    double wynik = 0;
+    if (x1 > x2){
+        return -1;
+    } else if (x1 == x2){
+        return 0;
+    } else{
+        while (x1 < x2){
+            wynik += (x1 * a + b) * dx;
+            x1 += dx;
+        }
+        return wynik;
+    }
+}
+
+double calka_kwadratowa(double a, double b, double c, double x1, double x2){
+    double dx = 0.0001;
+    double wynik = 0;
+    if (x1 > x2){
+        return -1;
+    } else if (x1 == x2){
+        return 0;
+    } else{
+        while (x1 < x2){
+            wynik += (pow(x1, 2) * a + x1 * b + c) * dx;
+            x1 += dx;
+        }
+        return wynik;
+    }
+}
+
+double calka_sin(double x1, double x2){
+    double dx = 0.0001;
+    double wynik = 0;
+    if (x1 > x2){
+        return -1;
+    } else if (x1 == x2){
+        return 0;
+    } else{
+        while (x1 < x2){
+            wynik += sin(x1) * dx;
+            x1 += dx;
+        }
+        return wynik;
+    }
+}
+
+double calka_cos(double x1, double x2){
+    double dx = 0.0001;
+    double wynik = 0;
+    if (x1 > x2){
+        return -1;
+    } else if (x1 == x2){
+        return 0;
+    } else{
+        while (x1 < x2){
+            wynik += cos(x1) * dx;
+            x1 += dx;
+        }
+        return wynik;
+    }
+}
+
+
+//obsługa całek:
+void calki() {
+    calki:
+        std::cout << "Wybierz rodzaj calki:\nL - calka z funkcji liniowej\nK - calka z funkcji kwadratowej\nS - calka z sinusa\nC - calka z cosinusa" << std::endl;
+    char mark;
+    std::cin >> mark;
+    switch (std::tolower(mark)) {
+        case 'l': {
+            double a, b, x1, x2;
+            std::cout << "Podaj kolejno: wspolczynnik a, wspolczynnik b, poczatek oraz koniec przedzialu calkowania" << std::endl;
+            std::cin >> a >> b >> x1 >> x2;
+            std::cout << "Wynik: " << calka_liniowa(a, b, x1, x2) << std::endl;
+            break;
+        }
+        case 'k': {
+            double a, b, c, x1, x2;
+            std::cout << "Podaj kolejno: wspolczynnik a, wspolczynnik b, wspolczynnik c, poczatek oraz koniec przedzialu calkowania" << std::endl;
+            std::cin >> a >> b >> c >> x1 >> x2;
+            std::cout << "Wynik: " << calka_kwadratowa(a, b, c, x1, x2) << std::endl;
+            break;
+        }
+        case 's': {
+            double x1, x2;
+            std::cout << "Podaj kolejno: poczatek oraz koniec przedzialu calkowania" << std::endl;
+            std::cin >> x1 >> x2;
+            std::cout << "Wynik: " << calka_sin(x1, x2) << std::endl;
+            break;
+        }
+        case 'c': {
+            double x1, x2;
+            std::cout << "Podaj kolejno: poczatek oraz koniec przedzialu calkowania" << std::endl;
+            std::cin >> x1 >> x2;
+            std::cout << "Wynik: " << calka_cos(x1, x2) << std::endl;
+            break;
+        }
+        default:
+            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
+            goto calki;
+    }
 }
 
 double Complex::clasic_to_tryg() const {
@@ -503,11 +680,13 @@ double triangleArea1(double a, double h){
 
 double triangleArea2(double a, double b, double c){
     double p = (a + b + c) / 2;
-    return sqrt(p * (p - a) * (p - b) * (p - c));
+    double area = sqrt(p * (p - a) * (p - b) * (p - c));
+    return signifant_figure(area, 8);
 }
 
 double triangleArea3(double a, double b, double angle){
-    return a * b * sin(angle) / 2;
+    double area = a * b * sin(angle*3.14159/180) / 2;
+    return signifant_figure(area, 8);
 }
 
 void triangle(){
@@ -766,18 +945,82 @@ void area(){
     }
 }
 
-float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu ){
-    float wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
+double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu ){
+    double wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
     return wynik;
 }
 
 void logarytmy_by_Natalia(){
     std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
-    float ll, base;
+    double ll, base;
     std::cin >> ll >> base;
     std::cout << "Wynik logarytmu to" << logarytmy(ll,base);
 }
+
 //
 //void przelicznik(){
 //    std::cout << "Wybierz jaki rodzaj jednostek chcesz prezliczyć." << std::endl << "1. Pr";
 //}
+
+void prosty() {
+    prosty:
+    int wyb;
+    double x, y;
+    std::cout << "Jakie dzialanie chcesz wykonac? \n"
+                 "1. Dodawanie\n"
+                 "2. Odejmowanie\n"
+                 "3. Mnozenie\n"
+                 "4. Dzielenie\n"
+                 "5. Potegowanie\n"
+                 "6. Znalezienie reszty z dzielenia\n"
+                 "7. Wyjscie\n" << std::endl;
+    std::cin >> wyb;
+
+    switch(wyb) {
+        case 1:
+            std::cout << "Podaj liczby, ktore chcesz dodac" << std::endl;
+            std::cin >> x >> y;
+            std::cout << "Wynik: " << addition(x, y) << std::endl;
+            goto prosty;
+        case 2:
+            std::cout << "Podaj liczby, ktore chcesz odjac" << std::endl;
+            std::cin >> x >> y;
+            std::cout << "Wynik: " << subtraction(x, y) << std::endl;
+            goto prosty;
+        case 3:
+            std::cout << "Podaj liczby, ktore chcesz pomnozyc" << std::endl;
+            std::cin >> x >> y;
+            std::cout << "Wynik: " << multiplication(x, y) << std::endl;
+            goto prosty;
+        case 4:
+            std::cout << "Podaj liczby, ktore chcesz podzielic" << std::endl;
+            std::cin >> x >> y;
+            if (y == 0) {
+                std::cout << "Blad: dzielenie przez zero!" << std::endl;
+            } else {
+                std::cout << "Wynik: " << division(x, y) << std::endl;
+            }
+            goto prosty;
+        case 5:
+            std::cout << "Podaj podstawe i wykladnik" << std::endl;
+            std::cin >> x >> y;
+            std::cout << "Wynik: " << exponential(x, y) << std::endl;
+            goto prosty;
+        case 6:
+            int a, b;
+            std::cout << "Podaj liczby, ktore chcesz podzielic i obliczyc reszte" << std::endl;
+            std::cin >> a >> b;
+            if (b == 0) {
+                std::cout << "Blad: dzielenie przez zero!" << std::endl;
+            } else {
+                std::cout << "Wynik: " << modulo(a, b) << std::endl;
+            }
+            goto prosty;
+        case 7:
+            break;
+        default:
+            std::cout << "Nieprawidlowy wybor. Sprobuj ponownie." << std::endl;
+            goto prosty;
+    }
+}
+

@@ -22,12 +22,12 @@ double potegowanie (double liczba, int potega);
 double pierwiastkowanie(double liczba, int stopien);
 void kalk_poteg();
 void print_zao();
+double signifant_figure(double n, int sig_digits);
 double addition(double num1, double num2);
 double subtraction(double num1, double num2);
 double division(double num1, double num2);
 double multiplication(double num1, double num2);
 int modulo(int num1, int num2);
-
 
 //matrix
 std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col);
@@ -38,7 +38,17 @@ std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> mat
 void substractMatrix_user();
 std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2);
 void multiMatrix_user();
+bool sq_matrix(std::vector<std::vector<int>> Matrix);
+std::vector<std::vector<int>> Matrix_cutter(const std::vector<std::vector<int>>& Matrix, std::size_t row_to_cut, std::size_t col_to_cut);
+int determinant(const std::vector<std::vector<int>>& Matrix);
+void determinat_str();
 void matrix();
+
+//całki
+double calka_liniowa(double a, double b, double x1, double x2);
+double calka_kwadratowa(double a, double b, double c, double x1, double x2);
+double calka_sin(double x1, double x2);
+double calka_cos(double x1, double x2);
 
 //zespolone
 class Complex {
@@ -94,10 +104,12 @@ void diamond();
 double trapezeArea(double a, double b, double h);
 void trapeze();
 void area();
+void calki();
+void prosty();
 
 
 //logarytmy (jak by ktoś nie domyślił się po nazwie)
-float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu );
+double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu);
 
 void logarytmy_by_Natalia();
 
