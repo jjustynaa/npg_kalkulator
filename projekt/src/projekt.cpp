@@ -99,7 +99,7 @@ std::vector<std::vector<int>> createMatrix(std::size_t rows, std::size_t col) {
 
     for(std::size_t i = 0; i < rows; i++)
         for(std::size_t j = 0; j < col; j++) {
-            std::cout << "[ " << i+1 << ", " << j+1 << "]:";
+            std::cout << "[ " << i+1 << ", " << j+1 << "]: ";
             std::cin >> matrix[i][j];
         }
 
@@ -215,10 +215,69 @@ void multiMatrix_user(){
     showMatrix(new_matrix ,rows1 ,col2);
 }
 
+//wyznaczniki macierzy
+//funkcja sprawdzająca czy macierz jest kwadratowa
+bool sq_matrix(std::vector<std::vector<int>> Matrix){
+    if (Matrix.size() == Matrix[0].size()) {
+        return true;
+    }else {
+        return false;
+    }}
+
+//funkcja zmniejszająca macierz
+std::vector<std::vector<int>> Matrix_cutter(const std::vector<std::vector<int>>& Matrix, std::size_t row_to_cut, std::size_t col_to_cut){
+    std::vector<std::vector<int>> Cutted_Matrix;
+    for(std::size_t i = 0; i < Matrix.size(); i++){
+        if (i != row_to_cut - 1){
+            std::vector<int> row;
+            for (std::size_t j = 0; j < Matrix[0].size(); j++){
+                if (j != col_to_cut - 1){
+                    row.push_back(Matrix[i][j]);
+                }
+            }
+            Cutted_Matrix.push_back(row);
+        }
+    }
+    return Cutted_Matrix;
+}
+
+//funckaj licząca wartość wyznacznika
+int determinant(const std::vector<std::vector<int>>& Matrix){
+    if (Matrix.size() == 1){
+        return Matrix[0][0];
+    } else if (Matrix.size() == 2) {
+        return Matrix[0][0] * Matrix[1][1] - Matrix[0][1] * Matrix[1][0];
+    } else {
+        int deter = 0;
+        for (std::size_t i = 0; i < Matrix.size(); ++i) {
+            std::vector<std::vector<int>> subMatrix = Matrix_cutter(Matrix, 1, i+1);
+            deter += (i % 2 == 0 ? 1 : -1) * Matrix[0][i] * determinant(subMatrix);
+        }
+        return deter;
+    }
+}
+
+//funkcja do opisu do wyznacznika
+void determinat_str(){
+    std::size_t  r;
+    std::size_t  k;
+    std::cout << "Podaj liczbę wierszy i kolumn" << std::endl;
+    std::cin >> r;
+    std::cin >> k;
+    std::vector<std::vector<int>> Matrix = createMatrix(r,k);
+    if(sq_matrix(Matrix)){
+        std::cout << "Wyznacznik macierzy:" << std::endl;
+        showMatrix(Matrix, Matrix.size(), Matrix[0].size());
+        std::cout << "Wynosi: " << determinant(Matrix) << std::endl;
+    }else{
+        std::cout << "Nie można policzyć wyznacznika ponieważ macierz nie jest macierzą kwadratową" << std::endl;
+    }
+}
+
 //menu funkcji macierz
 void matrix() {
     matrix:
-    std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy" << std::endl;
+    std::cout <<"Wybierz dzialanie programu:\n+ dodawanie macierzy\n- odejmowanie macierzy\n* mnozenie macierzy\n| wyznacznik macierzy" << std::endl;
 
     char mark;
     std::cin >> mark;
@@ -231,6 +290,9 @@ void matrix() {
             break;
         case '*':
             multiMatrix_user();
+            break;
+        case '|':
+            determinat_str();
             break;
         default:
             std::cout << "Nie znana komenda \nspróbuj jeszcze raz" << std::endl;
@@ -404,7 +466,7 @@ std::vector<double> solveCubic(double a, double b, double c, double d) {
     return roots;
 }
 
-// całeczki 
+
 double calka_liniowa(double a, double b, double x1, double x2){
     double dx = 0.0001;
     double wynik = 0;
@@ -512,7 +574,6 @@ void calki() {
     }
 }
 
-
 double Complex::clasic_to_tryg() const {
     if (Im >= 0 && cpx_lg() != 0) {
         return acos(Re / cpx_lg());
@@ -603,7 +664,6 @@ void complex_choice(){
     }
 }
 
-
 bool does_triangle_exist(double a, double b, double c){
     if (a + b > c) return true;
     return false;
@@ -619,7 +679,7 @@ double triangleArea2(double a, double b, double c){
 }
 
 double triangleArea3(double a, double b, double angle){
-    return a * b * sin(angle) / 2;
+    return ceil(a * b * sin(angle*3.14159/180) / 2);
 }
 
 void triangle(){
@@ -878,14 +938,14 @@ void area(){
     }
 }
 
-float logarytmy(float liczba_logarytmowana, float podstawa_logarytmu ){
-    float wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
+double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu ){
+    double wynik = log(liczba_logarytmowana) / log(podstawa_logarytmu);
     return wynik;
 }
 
 void logarytmy_by_Natalia(){
     std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
-    float ll, base;
+    double ll, base;
     std::cin >> ll >> base;
     std::cout << "Wynik logarytmu to" << logarytmy(ll,base);
 }
