@@ -262,6 +262,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/src_accessory.obj: src/src_accessory.cpp.obj
+.PHONY : src/src_accessory.obj
+
+# target to build an object file
+src/src_accessory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj
+.PHONY : src/src_accessory.cpp.obj
+
+src/src_accessory.i: src/src_accessory.cpp.i
+.PHONY : src/src_accessory.i
+
+# target to preprocess a source file
+src/src_accessory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_accessory.cpp.i
+.PHONY : src/src_accessory.cpp.i
+
+src/src_accessory.s: src/src_accessory.cpp.s
+.PHONY : src/src_accessory.s
+
+# target to generate assembly for a file
+src/src_accessory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_accessory.cpp.s
+.PHONY : src/src_accessory.cpp.s
+
 src/src_area.obj: src/src_area.cpp.obj
 .PHONY : src/src_area.obj
 
@@ -673,6 +700,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/src_accessory.obj
+	@echo ... src/src_accessory.i
+	@echo ... src/src_accessory.s
 	@echo ... src/src_area.obj
 	@echo ... src/src_area.i
 	@echo ... src/src_area.s

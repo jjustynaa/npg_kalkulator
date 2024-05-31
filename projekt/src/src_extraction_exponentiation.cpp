@@ -1,4 +1,5 @@
 #include "extraction_exponentiation.hpp"
+#include "accessory.hpp"
 
 #include <iostream>
 #include <cmath>
@@ -40,28 +41,33 @@ double extraction(double liczba, int stopien){
 
 void extraction_exponentiation(){
     kalk_poteg:
-    std::cout <<"Wprowadz co chcesz zrobić\n* - potegowanie\ns - pierwiastkowanie" << std::endl;
+    std::cout <<"Wprowadz co chcesz zrobic\n* - potegowanie\ns - pierwiastkowanie" << std::endl;
 
     char znak;
     std::cin >> znak;
     switch(znak){
         case '*':
-            std::cout << "Podaj wartość jaką chcesz podnieść do potęgi" << std::endl;
+            std::cout << "Podaj wartosc jaka chcesz podniesc do potegi" << std::endl;
             double liczba;
             std::cin >> liczba;
-            std::cout << "Podaj stopień do jakiego chcesz podnieść wcześniejszą wartość" << std::endl;
+            std::cout << "Podaj stopien do jakiego chcesz podniesc wczesniejszą wartosc" << std::endl;
             int stopien;
             std::cin >> stopien;
             std::cout << exponentiation(liczba, stopien) << std::endl;
             break;
 
         case 's':
-            std::cout << "Podaj wartość jaką chcesz pierwiastkowac" << std::endl;
+            pierwiastkowanie:
+            std::cout << "Podaj wartosc jaka chcesz pierwiastkowac" << std::endl;
             double wartosc;
             std::cin >> wartosc;
-            std::cout << "Podaj stopień piewiastka" << std::endl;
+            std::cout << "Podaj stopien piewiastka" << std::endl;
             int pierw;
             std::cin >> pierw;
+            if( (pierw % 2 == 0 ) && (wartosc < 0)) {
+                mistake_value();
+                goto pierwiastkowanie;
+            }
             std::cout << extraction(wartosc, pierw) << std::endl;
             break;
 

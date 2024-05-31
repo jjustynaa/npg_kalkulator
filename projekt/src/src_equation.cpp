@@ -86,12 +86,12 @@ void equation(){
     std::cin >> choice;
     if (choice == '1') {
         double a, b, c;
-        std::cout << "Podaj wspolczynniki a, b, c: ";
+        std::cout << "Rownanie ma postac ax^2 + bx + c\nPodaj wspolczynniki a, b, c: ";
         std::cin >> a >> b >> c;
         kwadratowa(a, b, c);
     } else if (choice == '2') {
         double a, b, c, d;
-        std::cout << "Podaj wspolczynniki a, b, c, d: ";
+        std::cout << "Rownanie ma postac ax^3 + bx^2 + cx + d\nPodaj wspolczynniki a, b, c, d: ";
         std::cin >> a >> b >> c >> d;
         try {
             std::vector<double> roots = solveCubic(a, b, c, d);

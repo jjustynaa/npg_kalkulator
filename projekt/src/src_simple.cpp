@@ -1,4 +1,5 @@
 #include "simple.hpp"
+#include "accessory.hpp"
 #include <iostream>
 
 double addition(double num1, double num2) {
@@ -51,20 +52,24 @@ void simple() {
             std::cout << "Wynik: " << multiplication(x, y) << std::endl;
             goto prosty;
         case 4:
+            dzielenie:
             std::cout << "Podaj liczby, ktore chcesz podzielic" << std::endl;
             std::cin >> x >> y;
             if (y == 0) {
-                std::cout << "Blad: dzielenie przez zero!" << std::endl;
+                mistake_value();
+                goto dzielenie;
             } else {
                 std::cout << "Wynik: " << division(x, y) << std::endl;
             }
             goto prosty;
         case 5:
             int a, b;
+            reszta:
             std::cout << "Podaj liczby, ktore chcesz podzielic i obliczyc reszte" << std::endl;
             std::cin >> a >> b;
             if (b == 0) {
-                std::cout << "Blad: dzielenie przez zero!" << std::endl;
+                mistake_value();
+                goto reszta;
             } else {
                 std::cout << "Wynik: " << modulo(a, b) << std::endl;
             }
@@ -72,7 +77,7 @@ void simple() {
         case 7:
             break;
         default:
-            std::cout << "Nieprawidlowy wybor. Sprobuj ponownie." << std::endl;
+            mistake();
             goto prosty;
     }
 }

@@ -89,10 +89,6 @@ void complex_choice(){
         }
     } else {
         char wyb;
-        std::cout << "Nie zdefiniowano, chcesz wrócić do menu [T/N]" << std::endl;
-        std::cin >> wyb;
-        if (wyb == 'N'){
-            complex_choice();
-        }
+        std::cout << "Nie zdefiniowano" << std::endl;
     }
 }

@@ -218,11 +218,26 @@ CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_trigonometric.cpp -o CMakeFiles\projekt__test.dir\src\src_trigonometric.cpp.s
 
+CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj: CMakeFiles/projekt__test.dir/flags.make
+CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj: CMakeFiles/projekt__test.dir/includes_CXX.rsp
+CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_accessory.cpp
+CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj: CMakeFiles/projekt__test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj -MF CMakeFiles\projekt__test.dir\src\src_accessory.cpp.obj.d -o CMakeFiles\projekt__test.dir\src\src_accessory.cpp.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_accessory.cpp
+
+CMakeFiles/projekt__test.dir/src/src_accessory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt__test.dir/src/src_accessory.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_accessory.cpp > CMakeFiles\projekt__test.dir\src\src_accessory.cpp.i
+
+CMakeFiles/projekt__test.dir/src/src_accessory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt__test.dir/src/src_accessory.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Desktop\npg_kalkulator\projekt\src\src_accessory.cpp -o CMakeFiles\projekt__test.dir\src\src_accessory.cpp.s
+
 CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj: CMakeFiles/projekt__test.dir/flags.make
 CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj: CMakeFiles/projekt__test.dir/includes_CXX.rsp
 CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_prosty.cpp
 CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj: CMakeFiles/projekt__test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj -MF CMakeFiles\projekt__test.dir\test\test_kalkulator_prosty.cpp.obj.d -o CMakeFiles\projekt__test.dir\test\test_kalkulator_prosty.cpp.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\test\test_kalkulator_prosty.cpp
 
 CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.i: cmake_force
@@ -237,7 +252,7 @@ CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj: CMakeFiles/projekt__te
 CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj: CMakeFiles/projekt__test.dir/includes_CXX.rsp
 CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_zespolone.cpp
 CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj: CMakeFiles/projekt__test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj -MF CMakeFiles\projekt__test.dir\test\test_zespolone.cpp.obj.d -o CMakeFiles\projekt__test.dir\test\test_zespolone.cpp.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\test\test_zespolone.cpp
 
 CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.i: cmake_force
@@ -252,7 +267,7 @@ CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj: CMakeFiles/p
 CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj: CMakeFiles/projekt__test.dir/includes_CXX.rsp
 CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_macierzy.cpp
 CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj: CMakeFiles/projekt__test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj -MF CMakeFiles\projekt__test.dir\test\test_kalkulator_macierzy.cpp.obj.d -o CMakeFiles\projekt__test.dir\test\test_kalkulator_macierzy.cpp.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\test\test_kalkulator_macierzy.cpp
 
 CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.i: cmake_force
@@ -267,7 +282,7 @@ CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: CMakeFiles/projekt__test.di
 CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: CMakeFiles/projekt__test.dir/includes_CXX.rsp
 CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_pola.cpp
 CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: CMakeFiles/projekt__test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj -MF CMakeFiles\projekt__test.dir\test\test_pola.cpp.obj.d -o CMakeFiles\projekt__test.dir\test\test_pola.cpp.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\test\test_pola.cpp
 
 CMakeFiles/projekt__test.dir/test/test_pola.cpp.i: cmake_force
@@ -282,7 +297,7 @@ CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CMakeFiles/projekt__test.di
 CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CMakeFiles/projekt__test.dir/includes_CXX.rsp
 CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: C:/Users/user/Desktop/npg_kalkulator/projekt/test/main_test.cpp
 CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CMakeFiles/projekt__test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/projekt__test.dir/test/main_test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/projekt__test.dir/test/main_test.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt__test.dir/test/main_test.cpp.obj -MF CMakeFiles\projekt__test.dir\test\main_test.cpp.obj.d -o CMakeFiles\projekt__test.dir\test\main_test.cpp.obj -c C:\Users\user\Desktop\npg_kalkulator\projekt\test\main_test.cpp
 
 CMakeFiles/projekt__test.dir/test/main_test.cpp.i: cmake_force
@@ -305,6 +320,7 @@ projekt__test_OBJECTS = \
 "CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj" \
 "CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj" \
 "CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj" \
+"CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj" \
 "CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj" \
 "CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj" \
 "CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj" \
@@ -324,6 +340,7 @@ projekt__test.exe: CMakeFiles/projekt__test.dir/src/src_integral.cpp.obj
 projekt__test.exe: CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj
 projekt__test.exe: CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj
 projekt__test.exe: CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj
+projekt__test.exe: CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj
 projekt__test.exe: CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj
 projekt__test.exe: CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj
 projekt__test.exe: CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj
@@ -335,7 +352,7 @@ projekt__test.exe: lib/libgtest.a
 projekt__test.exe: CMakeFiles/projekt__test.dir/linkLibs.rsp
 projekt__test.exe: CMakeFiles/projekt__test.dir/objects1.rsp
 projekt__test.exe: CMakeFiles/projekt__test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable projekt__test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\user\Desktop\npg_kalkulator\projekt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable projekt__test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\projekt__test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

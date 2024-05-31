@@ -401,6 +401,10 @@
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/main.cpp">
 			<Option target="projekt__debug"/>
 		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_accessory.cpp">
+			<Option target="projekt__debug"/>
+			<Option target="projekt__test"/>
+		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_area.cpp">
 			<Option target="projekt__debug"/>
 			<Option target="projekt__test"/>

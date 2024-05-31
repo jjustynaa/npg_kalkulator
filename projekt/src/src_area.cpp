@@ -1,5 +1,6 @@
 #include "area.hpp"
 #include "rounding.hpp"
+#include "accessory.hpp"
 
 #include <iostream>
 #include <string>
@@ -43,14 +44,14 @@ void triangle(){
             std::cout << "Dlugosc boku:\n";
             std::cin >> a;
             if (a <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok11;
             }
         wysokosc11:
             std::cout << "Dlugosc wysokosci:\n";
             std::cin >> h;
             if (h <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto wysokosc11;
             }
             area = triangleArea1(a, h);
@@ -63,21 +64,21 @@ void triangle(){
             std::cout << "Dlugosc pierwszego boku:\n";
             std::cin >> a;
             if (a <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok21;
             }
         bok22:
             std::cout << "Dlugosc drugiego boku:\n";
             std::cin >> b;
             if (b <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok22;
             }
         bok23:
             std::cout << "Dlugosc trzeciego boku:\n";
             std::cin >> c;
             if (c <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok23;
             }
 
@@ -97,29 +98,28 @@ void triangle(){
             std::cout << "Dlugosc pierwszego boku:\n";
             std::cin >> a;
             if (a <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok31;
             }
         bok32:
             std::cout << "Dlugosc drugiego boku:\n";
             std::cin >> b;
             if (b <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok32;
             }
         miara:
             std::cout << "Miara kata:\n";
             std::cin >> angle;
             if ((angle <= 0) || (angle > 180)){
-                std::cout << "Podano nieprawidlowa miare. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto miara;
             }
 
             area = triangleArea3(a, b, angle);
             break;
         default:
-            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
-            //blad();
+            mistake();
             goto triangle;
     }
 
@@ -139,14 +139,14 @@ void rectangular(){
     std::cout << "Dlugosc pierwszego boku:\n";
     std::cin >> a;
     if (a <= 0 ){
-        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        mistake_value();
         goto bok1;
     }
     bok2:
     std::cout << "Dlugosc drugiego boku:\n";
     std::cin >> b;
     if (b <= 0 ){
-        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        mistake_value();
         goto bok2;
     }
     area = rectangularArea(a, b);
@@ -180,14 +180,14 @@ void diamond(){
             std::cout << "Dlugosc boku:\n";
             std::cin >> a;
             if (a <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok11;
             }
         wysokosc11:
             std::cout << "Dlugosc wysokosci:\n";
             std::cin >> h;
             if (h <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto wysokosc11;
             }
             area = diamondArea1(a, h);
@@ -199,22 +199,21 @@ void diamond(){
             std::cout << "Dlugosc pierwszej przekatnej:\n";
             std::cin >> a;
             if (a <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok21;
             }
         bok22:
             std::cout << "Dlugosc drugiej przekatnej:\n";
             std::cin >> h;
             if (h <= 0 ){
-                std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+                mistake_value();
                 goto bok22;
             }
             area = diamondArea2(a, h);
             break;
 
         default:
-            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
-            //blad();
+            mistake();
             goto diamond;
     }
     std::cout << "Pole rombu wynosi: " << area << std::endl;
@@ -234,21 +233,21 @@ void trapeze(){
     std::cout << "Dlugosc pierwszej podstawy:\n";
     std::cin >> a;
     if (a <= 0 ){
-        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        mistake_value();
         goto bok1;
     }
     bok2:
     std::cout << "Dlugosc drugiej podstawy:\n";
     std::cin >> b;
     if (b <= 0 ){
-        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        mistake_value();
         goto bok2;
     }
     wysokosc:
     std::cout << "Dlugosc wysokosci:\n";
     std::cin >> h;
     if (h <= 0 ){
-        std::cout << "Podano nieprawidlowa dlugosc. Sprobuj ponownie." << std::endl;
+        mistake_value();
         goto wysokosc;
     }
     area = trapezeArea(a, b, h);
@@ -275,8 +274,7 @@ void area(){
             trapeze();
             break;
         default:
-            std::cout << "Wybrano nieprawidlowa operacje" << std::endl;
-            //blad();
+            mistake();
             goto area;
     }
 }

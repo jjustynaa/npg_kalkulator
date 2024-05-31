@@ -15,6 +15,7 @@ set(SOURCE_FILES
         src/src_equation.cpp
         src/src_rounding.cpp
         src/src_trigonometric.cpp
+        src/src_accessory.cpp
 )
 
 set(SOURCES_FILES_TESTS

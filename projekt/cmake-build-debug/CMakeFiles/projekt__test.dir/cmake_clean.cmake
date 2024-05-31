@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj"
+  "CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj.d"
   "CMakeFiles/projekt__test.dir/src/src_area.cpp.obj"
   "CMakeFiles/projekt__test.dir/src/src_area.cpp.obj.d"
   "CMakeFiles/projekt__test.dir/src/src_complex.cpp.obj"

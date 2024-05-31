@@ -10,6 +10,6 @@ CMake Deprecation Warning:
 
 -- PROJECT: projekt
 -- Using AddressSanitizer (ASan).
--- Configuring done (0.7s)
--- Generating done (0.2s)
+-- Configuring done (1.2s)
+-- Generating done (0.3s)
 -- Build files have been written to: C:/Users/user/Desktop/npg_kalkulator/projekt/cmake-build-debug
