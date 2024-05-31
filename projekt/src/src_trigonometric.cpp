@@ -8,7 +8,7 @@
 
 void cykl_o_tryg() {
     std::string choose;
-    std::cout << "Chcesz skorzystać z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
+    std::cout << "Chcesz skorzystac z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
     std::cin >> choose;
     if (choose.find("cyklome") != std::string::npos) {
         cykl();
@@ -33,7 +33,7 @@ void tryg() {
 
     std::string wyb;
 
-    std::cout << "Wartość podajesz w radjanach czy stopniach?" << std::endl;
+    std::cout << "Wartosz podajesz w radianach czy stopniach?" << std::endl;
 
     std::cin >> wyb;
 
@@ -46,13 +46,13 @@ void tryg() {
 
 
     if (fun_tryg.find("sin") != std::string::npos) {
-        std::cout << "Warotść sinusa podanego kąta wynosi " << sin(num) << std::endl;
+        std::cout << "Wartosc sinusa podanego kata wynosi " << sin(num) << std::endl;
     } else if (fun_tryg.find("cos") != std::string::npos) {
-        std::cout << "Warotść cosinsusa podanego kąta wynosi " << cos(num) << std::endl;
+        std::cout << "Wartosc cosinsusa podanego kata wynosi " << cos(num) << std::endl;
     } else if (fun_tryg.find("tan") != std::string::npos) {
-        std::cout << "Warotść tangensa podanego kąta wynosi " << tan(num) << std::endl;
+        std::cout << "Wartosc tangensa podanego kata wynosi " << tan(num) << std::endl;
     } else if (fun_tryg.find("ctag") != std::string::npos) {
-        std::cout << "Warotść cotangensa podanego kąta wynosi " << 1 / tan(num) << std::endl;
+        std::cout << "Wartosc cotangensa podanego kata wynosi " << 1 / tan(num) << std::endl;
     } else if (fun_tryg == "back"){
 
     } else {

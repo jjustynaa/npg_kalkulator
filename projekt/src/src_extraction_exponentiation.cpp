@@ -50,7 +50,7 @@ void extraction_exponentiation(){
             std::cout << "Podaj wartosc jaka chcesz podniesc do potegi" << std::endl;
             double liczba;
             std::cin >> liczba;
-            std::cout << "Podaj stopien do jakiego chcesz podniesc wczesniejszą wartosc" << std::endl;
+            std::cout << "Podaj stopien do jakiego chcesz podniesc wczesniejsza wartosc" << std::endl;
             int stopien;
             std::cin >> stopien;
             std::cout << exponentiation(liczba, stopien) << std::endl;

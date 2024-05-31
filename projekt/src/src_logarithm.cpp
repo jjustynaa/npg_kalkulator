@@ -14,7 +14,7 @@ void logarithm_user(){
     std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
     double ll, base;
     std::cin >> ll >> base;
-    if(base == 1 or base < 0 or ll < 0){
+    if(base == 1 or base <= 0 or ll < 0){
         mistake_value();
         goto logaritm;
     }

@@ -7,9 +7,6 @@
 #include <stdexcept>
 
 void kwadratowa(double a, double b, double c){
-    if(a == 0){
-        std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;
-    }
     double delta = b * b - 4 * a * c;
     if(delta > 0){
         double x1 = (sqrt(delta) - b) / (2 * a);
@@ -26,29 +23,22 @@ void kwadratowa(double a, double b, double c){
 }
 
 void kwadratowa(Complex a, Complex b, Complex c){
-    if (a.cpx_lg() == 0){
-        std::cout << "Wspolczynnik a nie moze byc zerem"<< std::endl;
-    } else {
-        Complex four(4, 0); // 4 jako liczba zespolona
-        Complex two(2, 0); // 2 jako liczba zespolona
-        //liczenie delty
-        Complex delta = (b * b) - (four * a * c);
-        Complex sqrt_delta = sqrt(delta);
-        // Oblicz pierwiastki równania
-        Complex minus_b = inerface_complex(b);
-        Complex x1 = (minus_b + sqrt_delta) / (two * a);
-        Complex x2 = (minus_b - sqrt_delta) / (two * a);
-        std::cout << "x1 = " << x1.Re << " + " << x1.Im << "i";
-        std::cout << " x2 = " << x2.Re << " + " << x2.Im << "i" << std::endl;
-    }
+    Complex four(4, 0); // 4 jako liczba zespolona
+    Complex two(2, 0); // 2 jako liczba zespolona
+    //liczenie delty
+    Complex delta = (b * b) - (four * a * c);
+    Complex sqrt_delta = sqrt(delta);
+    // Oblicz pierwiastki równania
+    Complex minus_b = inerface_complex(b);
+    Complex x1 = (minus_b + sqrt_delta) / (two * a);
+    Complex x2 = (minus_b - sqrt_delta) / (two * a);
+    std::cout << "x1 = " << x1.Re << " + " << x1.Im << "i";
+    std::cout << " x2 = " << x2.Re << " + " << x2.Im << "i" << std::endl;
+
 }
 
 std::vector<double> solveCubic(double a, double b, double c, double d) {
     std::vector<double> roots;
-
-    if (a == 0) {
-        throw std::invalid_argument("To nie jest rownanie trzeciego stopnia");
-    }
 
     // Reduce the cubic equation to the form t^3 + pt + q = 0
     double p = (3 * a * c - b * b) / (3 * a * a);
@@ -87,14 +77,26 @@ void equation(){
     std::cout << "Wybierz typ rownania: (1) kwadratowe, (2) szescienne: ";
     std::cin >> choice;
     if (choice == '1') {
+        kwadratowe:
         double a, b, c;
         std::cout << "Rownanie ma postac ax^2 + bx + c\nPodaj wspolczynniki a, b, c: ";
         std::cin >> a >> b >> c;
+        if(a == 0){
+            mistake_value();
+            std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;
+            goto kwadratowe;
+        }
         kwadratowa(a, b, c);
     } else if (choice == '2') {
+        szescienne:
         double a, b, c, d;
         std::cout << "Rownanie ma postac ax^3 + bx^2 + cx + d\nPodaj wspolczynniki a, b, c, d: ";
         std::cin >> a >> b >> c >> d;
+        if(a == 0){
+            mistake_value();
+            std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;
+            goto szescienne;
+        }
         try {
             std::vector<double> roots = solveCubic(a, b, c, d);
             std::cout << "Pierwiastki rownania: ";

@@ -129,12 +129,14 @@ void multiMatrix_user(){
 
 //wyznaczniki macierzy
 //funkcja sprawdzająca czy macierz jest kwadratowa
+/*
 bool sq_matrix(std::vector<std::vector<int>> Matrix){
     if (Matrix.size() == Matrix[0].size()) {
         return true;
     }else {
         return false;
     }}
+*/
 
 //funkcja zmniejszająca macierz
 std::vector<std::vector<int>> Matrix_cutter(const std::vector<std::vector<int>>& Matrix, std::size_t row_to_cut, std::size_t col_to_cut){
@@ -171,18 +173,22 @@ int determinant(const std::vector<std::vector<int>>& Matrix){
 
 //funkcja do opisu do wyznacznika
 void determinat_str(){
+    czy_kwadratowa:
     std::size_t  r;
     std::size_t  k;
     std::cout << "Podaj liczbe wierszy i kolumn" << std::endl;
     std::cin >> r;
     std::cin >> k;
-    std::vector<std::vector<int>> Matrix = createMatrix(r,k);
-    if(sq_matrix(Matrix)){
+    if(r == k){
+        std::cout << "Wprowadz macierz: " << std::endl;
+        std::vector<std::vector<int>> Matrix = createMatrix(r,k);
         std::cout << "Wyznacznik macierzy:" << std::endl;
         showMatrix(Matrix, Matrix.size(), Matrix[0].size());
         std::cout << "Wynosi: " << determinant(Matrix) << std::endl;
     }else{
+        mistake_value();
         std::cout << "Nie mozna policzyc wyznacznika poniewaz macierz nie jest macierza kwadratowa" << std::endl;
+        goto czy_kwadratowa;
     }
 }
 

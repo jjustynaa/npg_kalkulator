@@ -9,7 +9,7 @@ void clear(){
 }
 
 void mistake() {
-    std::cout << "Nie znana komenda \nsprobuj jeszcze raz" << std::endl;
+    std::cout << "Nie znana komenda \nSprobuj jeszcze raz" << std::endl;
 }
 
 void mistake_value(){

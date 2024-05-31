@@ -7,7 +7,7 @@ int main() {
 
     start:
     clear();
-    std::cout << "<<Witaj w kalkulatorze>>\n\nAby przejsc dalej wpisz NEXT\n\nPo wprowadzonych wartosciach wcisnij ENTER" << std::endl;
+    std::cout << "<<Witaj w kalkulatorze>>\n\nAby przejsc dalej wpisz NEXT\n\nAby zatwierdzic komende i (pozniej) wartosci liczbowe po kazdej wcisnij ENTER" << std::endl;
     std::string t;
     std::cin >> t;
     t = lower(t);
@@ -157,8 +157,8 @@ int main() {
                          "Dodatkowo do wyboru w funkcji trygonometrycznej mozna wybrac czy wpisuje sie kat w radianach czy w stopniach\nFunkcja cyklometryczna podaje wartosc w stopniach." << std::endl;
             break;
         case 10:
-            std::cout << "Za każdym razem w funkcji najperw należy podać część rzeczywistą a następnie część urojoną.\nPierwsza funkcja kalkulatora jeśli w części urojonej otrzyma zero to potraktuje pierwszy argument jako kąt i należy podać go w stopniach\n"
-                         "Jeśli funkcja przyjmuje dwie liczby zespolone to napierw należy podać obie wartości jednej a następnie obie wartości drugiej" << std::endl;
+            std::cout << "Za kazdym razem w funkcji najpierw nalezy podac czesc rzeczywistą a następnie cześć urojona.\nPierwsza funkcja kalkulatora jesli w częsci urojonej otrzyma zero to potraktuje pierwszy argument jako kat i nalezy podac go w stopniach\n"
+                         "Jesli funkcja przyjmuje dwie liczby zespolone to napierw nalezy podac obie wartosci jednej a nastepnie obie wartosci drugiej" << std::endl;
             break;
         case 11:
              std::cout << "Funkcja umozliwia wybor i obliczenie calki oznaczonej z funkcji: liniowej, kwadratowej, sinusa lub cosinusa." << std::endl;
