@@ -391,6 +391,14 @@ void print_zao(){
     std::cout << "Liczba po zaokrągleniu wynosi: " << std::fixed << std::setprecision(m_p_p) << num << std::endl;
 }
 
+double signifant_figure(double n, int sig_digits){
+    if (n == 0)
+        return 0;
+    double exponent = std::floor(log10(abs(n)));
+    double multiplier = pow(10, (sig_digits - 1 - exponent));
+    return std::round(n * multiplier) / multiplier;
+}
+
 void kwadratowa(double a, double b, double c){
     if(a == 0){
         std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;
@@ -675,12 +683,12 @@ double triangleArea1(double a, double h){
 double triangleArea2(double a, double b, double c){
     double p = (a + b + c) / 2;
     double area = sqrt(p * (p - a) * (p - b) * (p - c));
-    return std::round(area * 10000.0) / 10000.0;
+    return signifant_figure(area, 8);
 }
 
 double triangleArea3(double a, double b, double angle){
     double area = a * b * sin(angle*3.14159/180) / 2;
-    return std::round(area * 10000.0) / 10000.0;
+    return signifant_figure(area, 8);
 }
 
 void triangle(){
