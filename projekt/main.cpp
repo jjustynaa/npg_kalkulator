@@ -179,7 +179,7 @@ int main() {
             std::cout << "Kalkulator pol i objetosci" << std::endl;
             break;
         case 9:
-            std::cout << "Kalkulator logarytmow" << std::endl;
+            std::cout << "Kalkulator pozwalajacy obliczyc numeryczna wartosc logaytmu" << std::endl;
             break;
         case 10:
             std::cout << "Program tworzy funkcje cyklometryczna lub trygonometryczna\nNalezy najpierw wpisac rodzaj funkcji a nastepnie wartosc np.:\nsin( 90\n\n"
