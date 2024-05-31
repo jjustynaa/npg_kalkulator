@@ -106,6 +106,8 @@ double trapezeArea(double a, double b, double h);
 void trapeze();
 void area();
 void calki();
+void prosty();
+
 
 //logarytmy (jak by ktoś nie domyślił się po nazwie)
 double logarytmy(double liczba_logarytmowana, double podstawa_logarytmu);

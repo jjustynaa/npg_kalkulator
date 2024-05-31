@@ -61,8 +61,7 @@ int main() {
     czyszczenie();
     switch (fun) {
         case 1:
-            std::cout << "1";
-            // Wstaw funkcje kalkulatora prostego
+            prosty();
             break;
         case 2:
             matrix();
