@@ -674,11 +674,13 @@ double triangleArea1(double a, double h){
 
 double triangleArea2(double a, double b, double c){
     double p = (a + b + c) / 2;
-    return sqrt(p * (p - a) * (p - b) * (p - c));
+    double area = sqrt(p * (p - a) * (p - b) * (p - c));
+    return std::round(area * 10000.0) / 10000.0;
 }
 
 double triangleArea3(double a, double b, double angle){
-    return ceil(a * b * sin(angle*3.14159/180) / 2);
+    double area = a * b * sin(angle*3.14159/180) / 2;
+    return std::round(area * 10000.0) / 10000.0;
 }
 
 void triangle(){
