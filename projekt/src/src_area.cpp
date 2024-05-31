@@ -3,7 +3,6 @@
 #include "accessory.hpp"
 
 #include <iostream>
-#include <string>
 #include <cmath>
 
 bool does_triangle_exist(double a, double b, double c){
@@ -256,21 +255,21 @@ void trapeze(){
 
 void area(){
     area:
-    std::cout <<"Wybierz dzialanie programu:\nP obliczanie pola prostokata\nT obliczanie pola trojkata\nR obliczanie pola rombu\nN obliczanie pola trapezu" << std::endl;
+    std::cout <<"Wybierz dzialanie programu:\n1. obliczanie pola prostokata\n2. obliczanie pola trojkata\n3. obliczanie pola rombu\n4. obliczanie pola trapezu" << std::endl;
 
-    char mark;
+    int mark;
     std::cin >> mark;
-    switch( std::tolower(mark) ){
-        case 'p':
+    switch(mark){
+        case 1:
             rectangular();
             break;
-        case 't':
+        case 2:
             triangle();
             break;
-        case 'r':
+        case 3:
             diamond();
             break;
-        case 'n':
+        case 4:
             trapeze();
             break;
         default:
