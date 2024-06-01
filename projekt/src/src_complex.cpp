@@ -1,4 +1,5 @@
 #include "complex.hpp"
+#include "accessory.hpp"
 
 #include <iostream>
 #include <cmath>
@@ -39,6 +40,7 @@ Complex sqrt(Complex& cpx){
 void complex_choice(){
     int oper;
     std::vector<double> tym_kont;
+    choice:
     std::cout << "Mozliwe operacje do wykonania:\n1. Przeksztalcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrot\n"
                  "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnozenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
                  "6. Znajdowanie liczby sprzezonej\n7. Obliczanie dlugosci liczby zespolonej\n\nKtora z operacji chcesz wykonac?" << std::endl;
@@ -90,7 +92,7 @@ void complex_choice(){
             std::cout << comple.cpx_lg();
         }
     } else {
-        char wyb;
-        std::cout << "Nie zdefiniowano" << std::endl;
+        mistake();
+        goto choice;
     }
 }
