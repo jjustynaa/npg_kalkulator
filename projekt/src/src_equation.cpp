@@ -74,12 +74,12 @@ std::vector<double> solveCubic(double a, double b, double c, double d) {
 void equation(){
     rownania:
     char choice;
-    std::cout << "Wybierz typ rownania: (1) kwadratowe, (2) szescienne: ";
+    std::cout << "Wybierz typ rownania: (1) kwadratowe, (2) szescienne:" << std::endl;
     std::cin >> choice;
     if (choice == '1') {
         kwadratowe:
         double a, b, c;
-        std::cout << "Rownanie ma postac ax^2 + bx + c\nPodaj wspolczynniki a, b, c: ";
+        std::cout << "Rownanie ma postac ax^2 + bx + c\nPodaj kolejno wspolczynniki a, b, c:" << std::endl;
         std::cin >> a >> b >> c;
         if(a == 0){
             mistake_value();
@@ -90,11 +90,11 @@ void equation(){
     } else if (choice == '2') {
         szescienne:
         double a, b, c, d;
-        std::cout << "Rownanie ma postac ax^3 + bx^2 + cx + d\nPodaj wspolczynniki a, b, c, d: ";
+        std::cout << "Rownanie ma postac ax^3 + bx^2 + cx + d\nPodaj kolejno wspolczynniki a, b, c, d: " << std::endl;
         std::cin >> a >> b >> c >> d;
         if(a == 0){
             mistake_value();
-            std::cout << "Wspolczynnik przy x^3 nie moze byc zerem"<< std::endl;
+            std::cout << "Wspolczynnik przy x^3 nie moze byc zerem" << std::endl;
             goto szescienne;
         }
         try {

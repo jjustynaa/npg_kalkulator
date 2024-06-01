@@ -47,10 +47,10 @@ void extraction_exponentiation(){
     std::cin >> znak;
     switch(znak){
         case '*':
-            std::cout << "Podaj wartosc jaka chcesz podniesc do potegi" << std::endl;
+            std::cout << "Podaj wartosc jaka chcesz podniesc do potegi:" << std::endl;
             double liczba;
             std::cin >> liczba;
-            std::cout << "Podaj stopien do jakiego chcesz podniesc wczesniejsza wartosc" << std::endl;
+            std::cout << "Podaj stopien do jakiego chcesz podniesc wczesniejsza wartosc:" << std::endl;
             int stopien;
             std::cin >> stopien;
             std::cout << exponentiation(liczba, stopien) << std::endl;
@@ -58,10 +58,10 @@ void extraction_exponentiation(){
 
         case 's':
             pierwiastkowanie:
-            std::cout << "Podaj wartosc jaka chcesz pierwiastkowac" << std::endl;
+            std::cout << "Podaj wartosc jaka chcesz pierwiastkowac:" << std::endl;
             double wartosc;
             std::cin >> wartosc;
-            std::cout << "Podaj stopien piewiastka" << std::endl;
+            std::cout << "Podaj stopien piewiastka:" << std::endl;
             int pierw;
             std::cin >> pierw;
             if( (pierw % 2 == 0 ) && (wartosc < 0)) {

@@ -10,13 +10,23 @@ double logarithm(double liczba_logarytmowana, double podstawa_logarytmu ){
 }
 
 void logarithm_user(){
-    logaritm:
-    std::cout << "Podaj liczbe do zlogarytmowanie i podstawe logarytmu:" << std::endl;
     double ll, base;
-    std::cin >> ll >> base;
-    if(base == 1 or base <= 0 or ll < 0){
+
+    logarithm_ll:
+    std::cout << "Podaj liczbe do zlogarytmowanie:" << std::endl;
+    std::cin >> ll;
+    if(ll < 0){
         mistake_value();
-        goto logaritm;
+        goto logarithm_ll;
     }
-    std::cout << "Wynik logarytmu to" << logarithm(ll,base);
+
+    logarithm_base:
+    std::cout << "Podaj podstawe logarytmu:" << std::endl;
+    std::cin >> base;
+    if(base == 1 or base <= 0){
+        mistake_value();
+        goto logarithm_base;
+    }
+
+    std::cout << "Wynik logarytmu to " << logarithm(ll,base) << std::endl;
 }

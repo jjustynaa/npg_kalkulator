@@ -30,7 +30,7 @@ void triangle(){
     std::cout << "Wybierz jakim sposobem chcialbys obliczyc pole trojkata\n1 - dlugosc boku i wysokosci na niej opuszczonej\n"
                  "2 - znane sa wszystkie dlugosci bokow trojkata\n3 - posiadamy dlugosci dwoch bokow i miare kata pomiedzy nimi" << std::endl;
     int mark;
-    std::cout << "Wybierz cyfre:\n";
+    std::cout << "Wybierz cyfre:" << std::endl;
     std::cin >> mark;
 
     double a, b, c, h, angle;
@@ -40,14 +40,14 @@ void triangle(){
         case 1:
             std::cout << "Obliczanie pola przez podanie boku i wysokosci." << std::endl;
         bok11:
-            std::cout << "Dlugosc boku:\n";
+            std::cout << "Dlugosc boku:" << std::endl;
             std::cin >> a;
             if (a <= 0 ){
                 mistake_value();
                 goto bok11;
             }
         wysokosc11:
-            std::cout << "Dlugosc wysokosci:\n";
+            std::cout << "Dlugosc wysokosci:" << std::endl;
             std::cin >> h;
             if (h <= 0 ){
                 mistake_value();
@@ -60,21 +60,21 @@ void triangle(){
         triangle2:
             std::cout << "Obliczanie pola przez podanie dlugosci wszystkich bokow." << std::endl;
         bok21:
-            std::cout << "Dlugosc pierwszego boku:\n";
+            std::cout << "Dlugosc pierwszego boku:" << std::endl;
             std::cin >> a;
             if (a <= 0 ){
                 mistake_value();
                 goto bok21;
             }
         bok22:
-            std::cout << "Dlugosc drugiego boku:\n";
+            std::cout << "Dlugosc drugiego boku:" << std::endl;
             std::cin >> b;
             if (b <= 0 ){
                 mistake_value();
                 goto bok22;
             }
         bok23:
-            std::cout << "Dlugosc trzeciego boku:\n";
+            std::cout << "Dlugosc trzeciego boku:" << std::endl;
             std::cin >> c;
             if (c <= 0 ){
                 mistake_value();
@@ -94,21 +94,21 @@ void triangle(){
         case 3:
             std::cout << "Obliczanie pola przez podanie dlugosci dwoch bokow i kata pomiedzy nimi." << std::endl;
         bok31:
-            std::cout << "Dlugosc pierwszego boku:\n";
+            std::cout << "Dlugosc pierwszego boku:" << std::endl;
             std::cin >> a;
             if (a <= 0 ){
                 mistake_value();
                 goto bok31;
             }
         bok32:
-            std::cout << "Dlugosc drugiego boku:\n";
+            std::cout << "Dlugosc drugiego boku:" << std::endl;
             std::cin >> b;
             if (b <= 0 ){
                 mistake_value();
                 goto bok32;
             }
         miara:
-            std::cout << "Miara kata:\n";
+            std::cout << "Miara kata:" << std::endl;
             std::cin >> angle;
             if ((angle <= 0) || (angle > 180)){
                 mistake_value();
@@ -135,14 +135,14 @@ void rectangular(){
     double area;
     std::cout << "Podaj dlugosci bokow prostokata: " << std::endl;
     bok1:
-    std::cout << "Dlugosc pierwszego boku:\n";
+    std::cout << "Dlugosc pierwszego boku:" << std::endl;
     std::cin >> a;
     if (a <= 0 ){
         mistake_value();
         goto bok1;
     }
     bok2:
-    std::cout << "Dlugosc drugiego boku:\n";
+    std::cout << "Dlugosc drugiego boku:" << std::endl;
     std::cin >> b;
     if (b <= 0 ){
         mistake_value();
@@ -166,7 +166,7 @@ void diamond(){
                  "2 - znane sa dlugosci przekatnych rombu" << std::endl;
 
     int mark;
-    std::cout << "Wybierz cyfre:\n";
+    std::cout << "Wybierz cyfre:" << std::endl;
     std::cin >> mark;
 
     double a, h;
@@ -176,14 +176,14 @@ void diamond(){
         case 1:
             std::cout << "Obliczanie pola przez podanie boku i wysokosci." << std::endl;
         bok11:
-            std::cout << "Dlugosc boku:\n";
+            std::cout << "Dlugosc boku:" << std::endl;
             std::cin >> a;
             if (a <= 0 ){
                 mistake_value();
                 goto bok11;
             }
         wysokosc11:
-            std::cout << "Dlugosc wysokosci:\n";
+            std::cout << "Dlugosc wysokosci:" << std::endl;
             std::cin >> h;
             if (h <= 0 ){
                 mistake_value();
@@ -195,14 +195,14 @@ void diamond(){
         case 2:
             std::cout << "Obliczanie pola przez podanie dlugosci przekatnych." << std::endl;
         bok21:
-            std::cout << "Dlugosc pierwszej przekatnej:\n";
+            std::cout << "Dlugosc pierwszej przekatnej:" << std::endl;
             std::cin >> a;
             if (a <= 0 ){
                 mistake_value();
                 goto bok21;
             }
         bok22:
-            std::cout << "Dlugosc drugiej przekatnej:\n";
+            std::cout << "Dlugosc drugiej przekatnej:" << std::endl;
             std::cin >> h;
             if (h <= 0 ){
                 mistake_value();
@@ -229,21 +229,21 @@ void trapeze(){
     double area;
     std::cout << "Podaj dlugosci podstaw trapezu: " << std::endl;
     bok1:
-    std::cout << "Dlugosc pierwszej podstawy:\n";
+    std::cout << "Dlugosc pierwszej podstawy:" << std::endl;
     std::cin >> a;
     if (a <= 0 ){
         mistake_value();
         goto bok1;
     }
     bok2:
-    std::cout << "Dlugosc drugiej podstawy:\n";
+    std::cout << "Dlugosc drugiej podstawy:" << std::endl;
     std::cin >> b;
     if (b <= 0 ){
         mistake_value();
         goto bok2;
     }
     wysokosc:
-    std::cout << "Dlugosc wysokosci:\n";
+    std::cout << "Dlugosc wysokosci:" << std::endl;
     std::cin >> h;
     if (h <= 0 ){
         mistake_value();
