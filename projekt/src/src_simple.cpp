@@ -26,7 +26,7 @@ void simple() {
     prosty:
     int wyb;
     double x, y;
-    std::cout << "Jakie dzialanie chcesz wykonac? \n"
+    std::cout << "Jakie dzialanie chcesz wykonac?\n"
                  "1. Dodawanie\n"
                  "2. Odejmowanie\n"
                  "3. Mnozenie\n"
@@ -36,7 +36,7 @@ void simple() {
 
     switch(wyb) {
         case 1:
-            std::cout << "Podaj liczby, ktore chcesz dodac: " << std::endl;
+            std::cout << "Podaj liczby, ktore chcesz dodac:" << std::endl;
             std::cout << "Pierwsza liczba:" << std::endl;
             std::cin >> x;
             std::cout << "Druga liczba:" << std::endl;
