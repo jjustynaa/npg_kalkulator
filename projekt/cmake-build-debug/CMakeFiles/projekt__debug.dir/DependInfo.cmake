@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_rounding.cpp" "CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj" "gcc" "CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_simple.cpp" "CMakeFiles/projekt__debug.dir/src/src_simple.cpp.obj" "gcc" "CMakeFiles/projekt__debug.dir/src/src_simple.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_trigonometric.cpp" "CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj" "gcc" "CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj.d"
+  "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_value_conventer.cpp" "CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.obj" "gcc" "CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_rounding.cpp" "CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_simple.cpp" "CMakeFiles/projekt__test.dir/src/src_simple.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/src/src_simple.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_trigonometric.cpp" "CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj.d"
+  "C:/Users/user/Desktop/npg_kalkulator/projekt/src/src_value_conventer.cpp" "CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/test/main_test.cpp" "CMakeFiles/projekt__test.dir/test/main_test.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/test/main_test.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_macierzy.cpp" "CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj.d"
   "C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_prosty.cpp" "CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj" "gcc" "CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj.d"
