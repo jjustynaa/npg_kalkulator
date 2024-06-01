@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ASUS/Desktop/kalkulator/projekt
+# Install script for directory: C:/Users/user/Desktop/npg_kalkulator/projekt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/ASUS/Desktop/kalkulator/projekt/cmake-build-debug/googletest-master/cmake_install.cmake")
+  include("C:/Users/user/Desktop/npg_kalkulator/projekt/cmake-build-debug/googletest-master/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/ASUS/Desktop/kalkulator/projekt/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/user/Desktop/npg_kalkulator/projekt/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

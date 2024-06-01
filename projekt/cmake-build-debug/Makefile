@@ -658,6 +658,30 @@ test/test_kalkulator_prosty.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.s
 .PHONY : test/test_kalkulator_prosty.cpp.s
 
+test/test_logarytmy.obj: test/test_logarytmy.cpp.obj
+.PHONY : test/test_logarytmy.obj
+
+# target to build an object file
+test/test_logarytmy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_logarytmy.cpp.obj
+.PHONY : test/test_logarytmy.cpp.obj
+
+test/test_logarytmy.i: test/test_logarytmy.cpp.i
+.PHONY : test/test_logarytmy.i
+
+# target to preprocess a source file
+test/test_logarytmy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_logarytmy.cpp.i
+.PHONY : test/test_logarytmy.cpp.i
+
+test/test_logarytmy.s: test/test_logarytmy.cpp.s
+.PHONY : test/test_logarytmy.s
+
+# target to generate assembly for a file
+test/test_logarytmy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_logarytmy.cpp.s
+.PHONY : test/test_logarytmy.cpp.s
+
 test/test_pola.obj: test/test_pola.cpp.obj
 .PHONY : test/test_pola.obj
 
@@ -681,6 +705,30 @@ test/test_pola.s: test/test_pola.cpp.s
 test/test_pola.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_pola.cpp.s
 .PHONY : test/test_pola.cpp.s
+
+test/test_przelicznik_wartosci.obj: test/test_przelicznik_wartosci.cpp.obj
+.PHONY : test/test_przelicznik_wartosci.obj
+
+# target to build an object file
+test/test_przelicznik_wartosci.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_przelicznik_wartosci.cpp.obj
+.PHONY : test/test_przelicznik_wartosci.cpp.obj
+
+test/test_przelicznik_wartosci.i: test/test_przelicznik_wartosci.cpp.i
+.PHONY : test/test_przelicznik_wartosci.i
+
+# target to preprocess a source file
+test/test_przelicznik_wartosci.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_przelicznik_wartosci.cpp.i
+.PHONY : test/test_przelicznik_wartosci.cpp.i
+
+test/test_przelicznik_wartosci.s: test/test_przelicznik_wartosci.cpp.s
+.PHONY : test/test_przelicznik_wartosci.s
+
+# target to generate assembly for a file
+test/test_przelicznik_wartosci.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_przelicznik_wartosci.cpp.s
+.PHONY : test/test_przelicznik_wartosci.cpp.s
 
 test/test_zespolone.obj: test/test_zespolone.cpp.obj
 .PHONY : test/test_zespolone.obj
@@ -772,9 +820,15 @@ help:
 	@echo ... test/test_kalkulator_prosty.obj
 	@echo ... test/test_kalkulator_prosty.i
 	@echo ... test/test_kalkulator_prosty.s
+	@echo ... test/test_logarytmy.obj
+	@echo ... test/test_logarytmy.i
+	@echo ... test/test_logarytmy.s
 	@echo ... test/test_pola.obj
 	@echo ... test/test_pola.i
 	@echo ... test/test_pola.s
+	@echo ... test/test_przelicznik_wartosci.obj
+	@echo ... test/test_przelicznik_wartosci.i
+	@echo ... test/test_przelicznik_wartosci.s
 	@echo ... test/test_zespolone.obj
 	@echo ... test/test_zespolone.i
 	@echo ... test/test_zespolone.s

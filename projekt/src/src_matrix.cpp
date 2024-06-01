@@ -176,8 +176,9 @@ void determinat_str(){
     czy_kwadratowa:
     std::size_t  r;
     std::size_t  k;
-    std::cout << "Podaj liczbe wierszy i kolumn" << std::endl;
+    std::cout << "Podaj liczbe wierszy:" << std::endl;
     std::cin >> r;
+    std::cout << "Podaj liczbe kolumn:" << std::endl;
     std::cin >> k;
     if(r == k){
         std::cout << "Wprowadz macierz: " << std::endl;

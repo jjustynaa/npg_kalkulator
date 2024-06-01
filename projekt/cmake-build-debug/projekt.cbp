@@ -458,7 +458,13 @@
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_kalkulator_prosty.cpp">
 			<Option target="projekt__test"/>
 		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_logarytmy.cpp">
+			<Option target="projekt__test"/>
+		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_pola.cpp">
+			<Option target="projekt__test"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_przelicznik_wartosci.cpp">
 			<Option target="projekt__test"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Desktop/npg_kalkulator/projekt/test/test_zespolone.cpp">

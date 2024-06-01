@@ -32,9 +32,8 @@ void kwadratowa(Complex a, Complex b, Complex c){
     Complex minus_b = inerface_complex(b);
     Complex x1 = (minus_b + sqrt_delta) / (two * a);
     Complex x2 = (minus_b - sqrt_delta) / (two * a);
-    std::cout << "x1 = " << x1.Re << " + " << x1.Im << "i";
-    std::cout << " x2 = " << x2.Re << " + " << x2.Im << "i" << std::endl;
-
+    std::cout << "x1 = " << x1.Re << " + " << x1.Im << "i" << std::endl;
+    std::cout << "x2 = " << x2.Re << " + " << x2.Im << "i" << std::endl;
 }
 
 std::vector<double> solveCubic(double a, double b, double c, double d) {
@@ -79,7 +78,7 @@ void equation(){
     if (choice == '1') {
         kwadratowe:
         double a, b, c;
-        std::cout << "Rownanie ma postac ax^2 + bx + c\nPodaj kolejno wspolczynniki a, b, c:" << std::endl;
+        std::cout << "Rownanie ma postac ax^2 + bx + c = 0\nPodaj kolejno wspolczynniki a, b, c:" << std::endl;
         std::cin >> a >> b >> c;
         if(a == 0){
             mistake_value();
@@ -90,7 +89,7 @@ void equation(){
     } else if (choice == '2') {
         szescienne:
         double a, b, c, d;
-        std::cout << "Rownanie ma postac ax^3 + bx^2 + cx + d\nPodaj kolejno wspolczynniki a, b, c, d: " << std::endl;
+        std::cout << "Rownanie ma postac ax^3 + bx^2 + cx + d = 0\nPodaj kolejno wspolczynniki a, b, c, d: " << std::endl;
         std::cin >> a >> b >> c >> d;
         if(a == 0){
             mistake_value();

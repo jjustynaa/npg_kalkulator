@@ -78,6 +78,7 @@ void calki() {
     switch (std::tolower(mark)) {
         case 'l': {
             double a, b, x1, x2;
+            std::cout << "Calka z funkcji liniowej y = ax + b" << std::endl;
             std::cout << "Podaj kolejno: wspolczynnik a, wspolczynnik b, poczatek oraz koniec przedzialu calkowania" << std::endl;
             std::cin >> a >> b >> x1 >> x2;
             std::cout << "Wynik: " << calka_liniowa(a, b, x1, x2) << std::endl;
@@ -85,6 +86,7 @@ void calki() {
         }
         case 'k': {
             double a, b, c, x1, x2;
+            std::cout << "Calka z funkcji kwadratowej y = ax^2 + bx + c" << std::endl;
             std::cout << "Podaj kolejno: wspolczynnik a, wspolczynnik b, wspolczynnik c, poczatek oraz koniec przedzialu calkowania" << std::endl;
             std::cin >> a >> b >> c >> x1 >> x2;
             std::cout << "Wynik: " << calka_kwadratowa(a, b, c, x1, x2) << std::endl;
@@ -92,6 +94,7 @@ void calki() {
         }
         case 's': {
             double x1, x2;
+            std::cout << "Calka z sinusa" << std::endl;
             std::cout << "Podaj kolejno: poczatek oraz koniec przedzialu calkowania" << std::endl;
             std::cin >> x1 >> x2;
             std::cout << "Wynik: " << calka_sin(x1, x2) << std::endl;
@@ -99,6 +102,7 @@ void calki() {
         }
         case 'c': {
             double x1, x2;
+            std::cout << "Calka z cosinusa" << std::endl;
             std::cout << "Podaj kolejno: poczatek oraz koniec przedzialu calkowania" << std::endl;
             std::cin >> x1 >> x2;
             std::cout << "Wynik: " << calka_cos(x1, x2) << std::endl;

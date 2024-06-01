@@ -20,11 +20,11 @@ int main() {
     p_menu:
     std::cout << "Jakiej funkcji chcesz uzyc:\n"
                  " 0. Help\n"
-                 " 1. Kalkulator prosty \n"
+                 " 1. Kalkulator prosty\n"
                  " 2. Kalkulator macierzowy\n"
                  " 3. Potegowanie i pierwiastkowanie\n"
                  " 4. Przelicznik wartosci\n"
-                 " 5. Zaokraglenia\n"
+                 " 5. Zaokraglenia i cyfry znaczace\n"
                  " 6. Kalkulator rownan kwadratowych lub rownan trzeciego stopnia\n"
                  " 7. Kalkulator pol\n"
                  " 8. Kalkulator logarytmow\n"
@@ -59,7 +59,7 @@ int main() {
             clear();
             goto p_menu;
         case 5:
-            rounding();
+            round_significant();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
@@ -104,11 +104,11 @@ int main() {
 
     p_help:
     std::cout << "Ktora funkcje wytlumaczyc:\n"
-                 " 1. Kalkulator prosty \n"
+                 " 1. Kalkulator prosty\n"
                  " 2. Kalkulator macierzowy\n"
                  " 3. Potegowanie i pierwiastkowanie\n"
                  " 4. Przelicznik wartosci\n"
-                 " 5. Zaokraglenia\n"
+                 " 5. Zaokraglenia i cyfry znaczace\n"
                  " 6. Kalkulator rownan kwadratowych lub rownan trzeciego stopnia\n"
                  " 7. Kalkulator pol\n"
                  " 8. Kalkulator logarytmow\n"
@@ -144,10 +144,12 @@ int main() {
                          "Po zdecydowaniu sie na jedna z tych trzech opcji nalezy wybrac dokladny rodzaj jednostek do przeliczenia, a nastepnie wpisac wartosc, ktora nalezy przeliczyc" << std::endl;
             break;
         case 5:
-            std::cout << "Zaokraglenie przyjmuje dwie wartosci: liczbe do zaokraglania oraz liczbe miejsc po przecinku, ile oczekujesz otrzymac" << std::endl;
+            std::cout << "Zaokraglenie przyjmuje dwie wartosci: liczbe do zaokraglania oraz liczbe miejsc po przecinku, ile oczekujesz otrzymac\n"
+                         "Cyfry znaczace - podaj liczbe i ilosc cyfr, ile chcesz uzyskac w wyniku koncowym (cyfry liczone sa od pierwszej wartosci niezerowej od lewej strony" << std::endl;
             break;
         case 6:
-            std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ: kwadratowe lub szescienne" << std::endl;
+            std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ: kwadratowe - okreslone rownaniem 'ax^2 + bx + c', w tym rodzaju rownania mozesz rowniez uzywac wspoczynnikow zespolonych\n"
+                         " lub szescienne - 'ax^3 + bx^2 + cx + d - funkcja bez obslugi zepsolonych wspolczynnikow" << std::endl;
             break;
         case 7:
             std::cout << "Program oblicza pole wybranej figury: prostokat, trojkat, romb i trapez.\n"
@@ -157,10 +159,11 @@ int main() {
                          "Natomiast pole trapezu obliczamy znajac dlugosci jego postaw i wysokosc." << std::endl;
             break;
         case 8:
-            std::cout << "Kalkulator pozwalajacy obliczyc numeryczna wartosc logaytmu" << std::endl;
+            std::cout << "Kalkulator pozwalajacy obliczyc numeryczna wartosc logaytmu\n"
+                         "Uzytkownik wpisuje logarytmowana liczbe i podstawe logarytmu" << std::endl;
             break;
         case 9:
-            std::cout << "Program tworzy funkcje cyklometryczna lub trygonometryczna\nNalezy najpierw wpisac rodzaj funkcji a nastepnie wartosc np.:\nsin( 90\n\n"
+            std::cout << "Program tworzy funkcje cyklometryczna lub trygonometryczna\nNalezy najpierw wpisac rodzaj funkcji a nastepnie wartosc\n\n"
                          "Dodatkowo do wyboru w funkcji trygonometrycznej mozna wybrac czy wpisuje sie kat w radianach czy w stopniach\nFunkcja cyklometryczna podaje wartosc w stopniach." << std::endl;
             break;
         case 10:
