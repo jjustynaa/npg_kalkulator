@@ -127,3 +127,11 @@ TEST(PrzelicznikCzasu, sNAmin) {
 
     EXPECT_EQ(result, 0.0667);
 }
+
+TEST(Przelicznik, CyfryZnaczace){
+    double n = 2.137;
+    int dig = 2;
+    double result = significant_figure(n,dig);
+
+    EXPECT_EQ(result, 2.1);
+}
