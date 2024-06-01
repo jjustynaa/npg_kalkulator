@@ -12,3 +12,15 @@
 25739	34702	7388665063246565	CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj	7217cb7d318ece93
 107	25780	7388664972086305	CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj	9023dd7fba02c62
 113	25591	7388664971238468	CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj	a987270e3fe198c9
+426	33426	7389351466108689	CMakeFiles/projekt__debug.dir/src/src_complex.cpp.obj	e26341c3d35248d6
+121	33732	7389351465570625	CMakeFiles/projekt__debug.dir/src/src_logarithm.cpp.obj	84c1ec04db1a81f3
+7	33779	7389351466088689	CMakeFiles/projekt__debug.dir/src/src_extraction_exponentiation.cpp.obj	bd2c85066e943bdc
+33482	36977	7389351501995063	CMakeFiles/projekt__debug.dir/src/src_simple.cpp.obj	f79dc4a9183696d7
+33779	37275	7389351505354808	CMakeFiles/projekt__debug.dir/src/src_area.cpp.obj	eaa65000310c22ea
+33768	38830	7389351520933312	CMakeFiles/projekt__debug.dir/src/src_matrix.cpp.obj	faa78ad8c5fd15af
+37275	39270	7389351525314249	CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj	e4c6d1527cc3d5c2
+36978	40260	7389351535196975	CMakeFiles/projekt__debug.dir/src/src_equation.cpp.obj	7cdad2292fb4ea84
+39271	40845	7389351540936961	CMakeFiles/projekt__debug.dir/src/src_integral.cpp.obj	8ab5b1a30bc4304e
+38831	41004	7389351541900550	CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj	46dedfe61bbee9c0
+40867	42391	7389351554952917	CMakeFiles/projekt__debug.dir/src/value_conventer.cpp.obj	93194f4e8ee37583
+40284	45548	7389351585230296	CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj	209dc14d56cca6bc
