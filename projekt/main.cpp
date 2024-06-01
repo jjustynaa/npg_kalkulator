@@ -59,7 +59,7 @@ int main() {
             clear();
             goto p_menu;
         case 5:
-            rounding();
+            round_significant();
             if (!repeat()) goto quit;
             clear();
             goto p_menu;
