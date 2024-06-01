@@ -37,7 +37,7 @@ Complex sqrt(Complex& cpx){
 }
 
 void complex_choice(){
-    char oper;
+    int oper;
     std::vector<double> tym_kont;
     std::cout << "Mozliwe operacje do wykonania:\n1. Przeksztalcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrot\n"
                  "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnozenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
