@@ -1,35 +1,6 @@
 #include "value_conventer.hpp"
 #include <iostream>
 
-void value_conventer(){
-
-    value_conventer_start:
-    std::cout << "Wybierz jaki rodzaj przelicznika cię interesuje.\n Wpisz liczbę odpowiadajaca twojemu wyborowi\n"
-                 "1. Predkosci\n"
-                 "2. Dlugosci\n"
-                 "3. Czasu\n" << std::endl;
-    int choice;
-    std::cin >> choice;
-
-    double result;
-    switch (choice) {
-        case 1:
-            result = conventer_speed();
-            std::cout << "Wynik konwersji: " << result << std::endl;
-            break;
-        case 2:
-            result = conventer_length();
-            std::cout << "Wynik konwersji: " << result << std::endl;
-            break;
-        case 3:
-            result = conventer_time();
-            std::cout << "Wynik konwersji: " << result << std::endl;
-            break;
-        default:
-            std::cout << "Nieprawidlowy wybor. Sprobuj jeszcze raz" << std::endl;
-            goto value_conventer_start;
-    }
-}
 double conventer_speed(){
     conventer_speed_start:
     std::cout << "Wybierz konwersje predkosci:\n"
@@ -53,7 +24,7 @@ double conventer_speed(){
             std::cout << value << " m/s to " << result << " km/h" << std::endl;
             return result;
         default:
-            std::cout << "Nieprawidlowy wybor. Spróbuj ponownie" << std::endl;
+            std::cout << "Nieprawidlowy wybor. Sprobuj ponownie" << std::endl;
             goto conventer_speed_start;
     }
 }
@@ -167,5 +138,35 @@ double conventer_time() {
         default:
             std::cout << "Nieprawidlowy wybor. Sprobuj ponownie." << std::endl;
             goto conventer_time_start;
+    }
+}
+
+void value_conventer(){
+
+    value_conventer_start:
+    std::cout << "Wybierz jaki rodzaj przelicznika cie interesuje.\n Wpisz liczbe odpowiadajaca twojemu wyborowi\n"
+                 "1. Predkosci\n"
+                 "2. Dlugosci\n"
+                 "3. Czasu\n" << std::endl;
+    int choice;
+    std::cin >> choice;
+
+    double result;
+    switch (choice) {
+        case 1:
+            result = conventer_speed();
+            std::cout << "Wynik konwersji: " << result << std::endl;
+            break;
+        case 2:
+            result = conventer_length();
+            std::cout << "Wynik konwersji: " << result << std::endl;
+            break;
+        case 3:
+            result = conventer_time();
+            std::cout << "Wynik konwersji: " << result << std::endl;
+            break;
+        default:
+            std::cout << "Nieprawidlowy wybor. Sprobuj jeszcze raz" << std::endl;
+            goto value_conventer_start;
     }
 }
