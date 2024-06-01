@@ -94,7 +94,7 @@ void equation(){
         std::cin >> a >> b >> c >> d;
         if(a == 0){
             mistake_value();
-            std::cout << "Wspolczynnik przy x^2 nie moze byc zerem"<< std::endl;
+            std::cout << "Wspolczynnik przy x^3 nie moze byc zerem"<< std::endl;
             goto szescienne;
         }
         try {

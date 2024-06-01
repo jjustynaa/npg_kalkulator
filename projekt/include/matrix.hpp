@@ -12,7 +12,7 @@ std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> mat
 void substractMatrix_user();
 std::vector<std::vector<int>> multiMatrix(std::vector<std::vector<int>> matrix1, std::vector<std::vector<int>> matrix2, std::size_t rows1, std::size_t rows2, std::size_t col2);
 void multiMatrix_user();
-bool sq_matrix(std::vector<std::vector<int>> Matrix);
+//bool sq_matrix(std::vector<std::vector<int>> Matrix);
 std::vector<std::vector<int>> Matrix_cutter(const std::vector<std::vector<int>>& Matrix, std::size_t row_to_cut, std::size_t col_to_cut);
 int determinant(const std::vector<std::vector<int>>& Matrix);
 void determinat_str();
