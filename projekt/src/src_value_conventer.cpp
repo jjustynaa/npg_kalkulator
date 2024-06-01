@@ -13,17 +13,33 @@ double conventer_speed(){
     double value, result;
     switch (choice) {
         case 1:
+            speed1:
             std::cout << "Podaj predkosc w km/h:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto speed1;
+            }
+
             result = value / 3.6;
             std::cout << value << " km/h to " << result << " m/s" << std::endl;
             break;
+
         case 2:
+            speed2:
             std::cout << "Podaj predkosc w m/s:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto speed2;
+            }
+
             result = value * 3.6;
             std::cout << value << " m/s to " << result << " km/h" << std::endl;
             break;
+
         default:
             mistake();
             goto conventer_speed_start;
@@ -47,54 +63,119 @@ double conventer_length() {
 
     double value, result;
     switch (choice) {
+
         case 1:
+            length1:
             std::cout << "Podaj dlugosc w km:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto length1;
+            }
+
             result = value * 0.621371;
             std::cout << value << " km to " << result << " mile" << std::endl;
             break;
+
         case 2:
+            length2:
             std::cout << "Podaj dlugosc w milach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto length2;
+            }
+
             result = value / 0.621371;
             std::cout << value << " mile to " << result << " km" << std::endl;
             break;
+
         case 3:
+            length3:
             std::cout << "Podaj dlugosc w km:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto length3;
+            }
+
             result = value * 1000;
             std::cout << value << " km to " << result << " m" << std::endl;
             break;
+
         case 4:
+            length4:
             std::cout << "Podaj dlugosc w metrach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto length4;
+            }
+
             result = value / 1000;
             std::cout << value << " m to " << result << " km" << std::endl;
             break;
+
         case 5:
+            length5:
             std::cout << "Podaj dlugosc w km:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto length5;
+            }
+
             result = value * 100000;
             std::cout << value << " km to " << result << " cm" << std::endl;
             break;
+
         case 6:
+            length6:
             std::cout << "Podaj dlugosc w centymetrach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto length6;
+            }
+
             result = value / 100000;
             std::cout << value << " cm to " << result << " km" << std::endl;
             break;
+
         case 7:
+            length7:
             std::cout << "Podaj dlugosc w metrach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto length7;
+            }
+
             result = value * 100;
             std::cout << value << " m to " << result << " cm" << std::endl;
             break;
+
         case 8:
+            length8:
             std::cout << "Podaj dlugosc w centymetrach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto length8;
+            }
+
             result = value / 100;
             std::cout << value << " cm to " << result << " m" << std::endl;
             break;
+
         default:
             mistake();
             goto conventer_length_start;
@@ -115,29 +196,61 @@ double conventer_time() {
     double value, result;
     switch (choice) {
         case 1:
+            time1:
             std::cout << "Podaj czas w godzinach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto time1;
+            }
+
             result = value * 60;
             std::cout << value << " h to " << result << " min" << std::endl;
             break;
+
         case 2:
+            time2:
             std::cout << "Podaj czas w minutach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto time2;
+            }
+
             result = value / 60;
             std::cout << value << " min to " << result << " h" << std::endl;
             break;
+
         case 3:
+            time3:
             std::cout << "Podaj czas w minutach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto time3;
+            }
+
             result = value * 60;
             std::cout << value << " min to " << result << " sek" << std::endl;
             break;
+
         case 4:
+            time4:
             std::cout << "Podaj czas w sekundach:" << std::endl;
             std::cin >> value;
+
+            if (value < 0){
+                mistake_value();
+                goto time4;
+            }
+
             result = value / 60;
             std::cout << value << " sek to " << result << " min" << std::endl;
             break;
+
         default:
             mistake();
             goto conventer_time_start;
