@@ -1,4 +1,5 @@
 #include "value_conventer.hpp"
+#include "accessory.hpp"
 #include <iostream>
 
 double conventer_speed(){
@@ -24,7 +25,7 @@ double conventer_speed(){
             std::cout << value << " m/s to " << result << " km/h" << std::endl;
             return result;
         default:
-            std::cout << "Nieprawidlowy wybor. Sprobuj ponownie" << std::endl;
+            mistake();
             goto conventer_speed_start;
     }
 }
@@ -94,7 +95,7 @@ double conventer_length() {
             std::cout << value << " cm to " << result << " m" << std::endl;
             return result;
         default:
-            std::cout << "Nieprawidlowy wybor. Sprobuj ponownie" << std::endl;
+            mistake();
             goto conventer_length_start;
     }
 }
@@ -136,7 +137,7 @@ double conventer_time() {
             std::cout << value << " sek to " << result << " min" << std::endl;
             return result;
         default:
-            std::cout << "Nieprawidlowy wybor. Sprobuj ponownie." << std::endl;
+            mistake();
             goto conventer_time_start;
     }
 }
@@ -166,7 +167,7 @@ void value_conventer(){
             std::cout << "Wynik konwersji: " << result << std::endl;
             break;
         default:
-            std::cout << "Nieprawidlowy wybor. Sprobuj jeszcze raz" << std::endl;
+            mistake();
             goto value_conventer_start;
     }
 }

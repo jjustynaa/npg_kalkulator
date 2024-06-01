@@ -559,6 +559,33 @@ src/src_trigonometric.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.s
 .PHONY : src/src_trigonometric.cpp.s
 
+src/src_value_conventer.obj: src/src_value_conventer.cpp.obj
+.PHONY : src/src_value_conventer.obj
+
+# target to build an object file
+src/src_value_conventer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj
+.PHONY : src/src_value_conventer.cpp.obj
+
+src/src_value_conventer.i: src/src_value_conventer.cpp.i
+.PHONY : src/src_value_conventer.i
+
+# target to preprocess a source file
+src/src_value_conventer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.i
+.PHONY : src/src_value_conventer.cpp.i
+
+src/src_value_conventer.s: src/src_value_conventer.cpp.s
+.PHONY : src/src_value_conventer.s
+
+# target to generate assembly for a file
+src/src_value_conventer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__debug.dir\build.make CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.s
+.PHONY : src/src_value_conventer.cpp.s
+
 test/main_test.obj: test/main_test.cpp.obj
 .PHONY : test/main_test.obj
 
@@ -733,6 +760,9 @@ help:
 	@echo ... src/src_trigonometric.obj
 	@echo ... src/src_trigonometric.i
 	@echo ... src/src_trigonometric.s
+	@echo ... src/src_value_conventer.obj
+	@echo ... src/src_value_conventer.i
+	@echo ... src/src_value_conventer.s
 	@echo ... test/main_test.obj
 	@echo ... test/main_test.i
 	@echo ... test/main_test.s
