@@ -250,7 +250,7 @@ double conventer_time() {
             result = value / 60;
             std::cout << value << " sek to " << result << " min" << std::endl;
             break;
-            
+
         default:
             mistake();
             goto conventer_time_start;

@@ -133,10 +133,15 @@ int main() {
                          "Obliczanie wyznacznika odbywa sę tylko dla macierzy kwadratowych" << std::endl;
             break;
         case 3:
-            std::cout << "help do potegowania i pierwiastkowania" << std::endl;
+            std::cout << "Funkcja oblicza potegi oraz pierwiastki liczb zmienno przecinkowych, wynik podaje z dokladnoscia do czterech miejsc po przecinku\n"
+                         "Pierwsze co nalezy zrobic to wybrac czy chcemy aby funkcja obliczyla pierwastek czy potege.\n"
+                         "Pierwsza wpisywana przez nas wartosc to liczba ktora program ma podniesc do potegi, badz spierwiastkowac.\n"
+                         "Druga wpisywana wartosc to stopien do jakiego ma byc podniesiona liczba, badz stopien pierwiastka"<< std::endl;
             break;
         case 4:
-            std::cout << "help do przelicznika wartosci" << std::endl;
+            std::cout << "Program przelicza wartosci z danych jednostek na inne. Musisz wybrac jakiego rodzaju wartosci cie interesuja\n"
+                         "Program obsluguje wartosci predkosci, dlugosci oraz czasu\n"
+                         "Po zdecydowaniu sie na jedna z tych trzech opcji nalezy wybrac dokladny rodzaj jednostek do przeliczenia, a nastepnie wpisac wartosc, ktora nalezy przeliczyc" << std::endl;
             break;
         case 5:
             std::cout << "Zaokraglenie przyjmuje dwie wartosci: liczbe do zaokraglania oraz liczbe miejsc po przecinku, ile oczekujesz otrzymac" << std::endl;
