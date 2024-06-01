@@ -21,7 +21,7 @@ double triangleArea2(double a, double b, double c){
 }
 
 double triangleArea3(double a, double b, double angle){
-    double area = a * b * sin(angle*3.14159/180) / 2;
+    double area = a * b * sin(angle * 3.14159 / 180) / 2;
     return significant_figure(area, 8);
 }
 
