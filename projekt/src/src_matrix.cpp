@@ -41,20 +41,20 @@ std::vector<std::vector<int>> addMatrix (std::vector<std::vector<int>> matrix1, 
 void addMatrix_user(){
     std::size_t rows;
     std::size_t col;
-    std::cout <<"Podaj rozmiar wierszy:\n";
+    std::cout <<"Podaj rozmiar wierszy:" << std::endl;
     std::cin >> rows;
-    std::cout <<"Podaj rozmiar kolumn:\n";
+    std::cout <<"Podaj rozmiar kolumn:" << std::endl;
     std::cin >> col;
 
-    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:" << std::endl;
     std::vector<std::vector<int>> matrix1 = createMatrix(rows, col);
-    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:" << std::endl;
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
     std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
     new_matrix = addMatrix(matrix1, matrix2, rows, col);
 
-    std::cout << "\nWynik wykonanego dzialania:\n";
+    std::cout << "\nWynik wykonanego dzialania:" << std::endl;
     showMatrix(new_matrix ,rows ,col);
 }
 
@@ -70,21 +70,21 @@ std::vector<std::vector<int>> substractMatrix (std::vector<std::vector<int>> mat
 void substractMatrix_user(){
     std::size_t rows;
     std::size_t col;
-    std::cout <<"Podaj rozmiar wierszy:\n";
+    std::cout <<"Podaj rozmiar wierszy:" << std::endl;
     std::cin >> rows;
-    std::cout <<"Podaj rozmiar kolumn:\n";
+    std::cout <<"Podaj rozmiar kolumn:" << std::endl;
     std::cin >> col;
     std::cout << "Pamietaj zeby podac macierze w odpowiedniej kolejnosci, odejmowanie nie jest dzialaniem przemiennym" << std::endl;
 
-    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:" << std::endl;
     std::vector<std::vector<int>> matrix1 = createMatrix(rows, col);
-    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:" << std::endl;
     std::vector<std::vector<int>> matrix2 = createMatrix(rows, col);
 
     std::vector<std::vector<int>> new_matrix (rows, std::vector<int>(col));
     new_matrix = substractMatrix(matrix1, matrix2, rows, col);
 
-    std::cout << "\nWynik wykonanego dzialania:\n";
+    std::cout << "\nWynik wykonanego dzialania:" << std::endl;
     showMatrix(new_matrix ,rows ,col);
 }
 
@@ -108,22 +108,22 @@ void multiMatrix_user(){
     std::size_t col1;
     std::size_t rows2;
     std::size_t col2;
-    std::cout <<"Podaj rozmiar wierszy pierwszej macierzy:\n";
+    std::cout <<"Podaj rozmiar wierszy pierwszej macierzy:" << std::endl;
     std::cin >> rows1;
     col2 = rows1;
-    std::cout <<"Podaj rozmiar kolumn pierwszej macierzy:\n";
+    std::cout <<"Podaj rozmiar kolumn pierwszej macierzy:" << std::endl;
     std::cin >> col1;
     rows2 = col1;
 
-    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do pierwszej macierzy:" << std::endl;
     std::vector<std::vector<int>> matrix1 = createMatrix(rows1, col1);
-    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:\n";
+    std::cout <<"\nWpisywanie wartosci do drugiej macierzy:" << std::endl;
     std::vector<std::vector<int>> matrix2 = createMatrix(rows2, col2);
 
     std::vector<std::vector<int>> new_matrix (rows1, std::vector<int>(col2));
     new_matrix = multiMatrix(matrix1, matrix2, rows1, rows2, col2);
 
-    std::cout << "\nWynik wykonanego dzialania:\n";
+    std::cout << "\nWynik wykonanego dzialania:" << std::endl;
     showMatrix(new_matrix ,rows1 ,col2);
 }
 

@@ -27,7 +27,7 @@ void print_complex(Complex cpx){
     if (cpx.Phi != 7321) {
         std::cout << std::fixed << std::setprecision(3) << cpx.Re << " + i" << cpx.Im << "\ncos(" << cpx.Phi << ") + isin(" << cpx.Phi << ")" << std::endl;
     } else
-        std::cout << "Niezdefiniowano";
+        std::cout << "Niezdefiniowano" << std::endl;
 }
 
 Complex sqrt(Complex& cpx){
@@ -41,12 +41,12 @@ void complex_choice(){
     std::vector<double> tym_kont;
     std::cout << "Mozliwe operacje do wykonania:\n1. Przeksztalcenie liczby zespolonej z postaci trygonometrycznej do postaci kanoniczej i na odwrot\n"
                  "2. Dodawanie liczb zespolonych\n3. Odejmowanie liczb zespolonych\n4. Mnozenie liczb zespolonych\n5. Dzielenie liczb zespolonych\n"
-                 "6. Znajdowanie liczby sprzezonej\n 7.Obliczanie dlugosci liczby zespolonej\n\nKtora z operacji chcesz wykonac?" << std::endl;
+                 "6. Znajdowanie liczby sprzezonej\n7.Obliczanie dlugosci liczby zespolonej\n\nKtora z operacji chcesz wykonac?" << std::endl;
     std::cin >> oper;
     if (oper == 1){
         double re;
         double im;
-        std::cout << "Podaj liczbe zespolona" << std::endl;
+        std::cout << "Podaj liczbe zespolona (Re, Im):" << std::endl;
         std::cin >> re;
         std::cin >> im;
         if (im != 0) {
@@ -58,10 +58,12 @@ void complex_choice(){
             print_complex(zes);
         }
     } else if (oper == 2 || oper == 3 || oper == 4 || oper == 5){
-        std::cout << "Podaj liczby zespolone" << std::endl;
+        std::cout << "Podaj liczby zespolone:" << std::endl;
         double re_1, im_1, re_2, im_2;
+        std::cout << "Pierwsza liczba zespolona (Re, Im):" << std::endl;
         std::cin >> re_1;
         std::cin >> im_1;
+        std::cout << "Druga liczba zespolona (Re, Im):" << std::endl;
         std::cin >> re_2;
         std::cin >> im_2;
         Complex comp_1(re_1, im_1);
@@ -78,7 +80,7 @@ void complex_choice(){
     } else if (oper == 6 || oper == 7){
         double re;
         double im;
-        std::cout << "Podaj liczby zespolone" << std::endl;
+        std::cout << "Podaj liczbe zespolona (Re, Im):" << std::endl;
         std::cin >> re;
         std::cin >> im;
         Complex comple(re, im);

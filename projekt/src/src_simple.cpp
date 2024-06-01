@@ -31,29 +31,41 @@ void simple() {
                  "2. Odejmowanie\n"
                  "3. Mnozenie\n"
                  "4. Dzielenie\n"
-                 "5. Znalezienie reszty z dzielenia\n";
+                 "5. Znalezienie reszty z dzielenia" << std::endl;
     std::cin >> wyb;
 
     switch(wyb) {
         case 1:
-            std::cout << "Podaj liczby, ktore chcesz dodac" << std::endl;
-            std::cin >> x >> y;
+            std::cout << "Podaj liczby, ktore chcesz dodac: " << std::endl;
+            std::cout << "Pierwsza liczba:" << std::endl;
+            std::cin >> x;
+            std::cout << "Druga liczba:" << std::endl;
+            std::cin >> y;
             std::cout << "Wynik: " << addition(x, y) << std::endl;
             break;
         case 2:
-            std::cout << "Podaj liczby, ktore chcesz odjac" << std::endl;
-            std::cin >> x >> y;
+            std::cout << "Podaj liczby, ktore chcesz odjac:" << std::endl;
+            std::cout << "Pierwsza liczba:" << std::endl;
+            std::cin >> x;
+            std::cout << "Druga liczba:" << std::endl;
+            std::cin >> y;
             std::cout << "Wynik: " << subtraction(x, y) << std::endl;
             break;
         case 3:
-            std::cout << "Podaj liczby, ktore chcesz pomnozyc" << std::endl;
-            std::cin >> x >> y;
+            std::cout << "Podaj liczby, ktore chcesz pomnozyc:" << std::endl;
+            std::cout << "Pierwsza liczba:" << std::endl;
+            std::cin >> x;
+            std::cout << "Druga liczba:" << std::endl;
+            std::cin >> y;
             std::cout << "Wynik: " << multiplication(x, y) << std::endl;
             break;
         case 4:
+            std::cout << "Podaj liczby, ktore chcesz podzielic:" << std::endl;
+            std::cout << "Pierwsza liczba:" << std::endl;
+            std::cin >> x;
             dzielenie:
-            std::cout << "Podaj liczby, ktore chcesz podzielic" << std::endl;
-            std::cin >> x >> y;
+            std::cout << "Druga liczba:" << std::endl;
+            std::cin >> y;
             if (y == 0) {
                 mistake_value();
                 goto dzielenie;
@@ -63,9 +75,12 @@ void simple() {
             break;
         case 5:
             int a, b;
+            std::cout << "Podaj liczby, ktore chcesz podzielic i obliczyc reszte:" << std::endl;
+            std::cout << "Pierwsza liczba:" << std::endl;
+            std::cin >> x;
             reszta:
-            std::cout << "Podaj liczby, ktore chcesz podzielic i obliczyc reszte" << std::endl;
-            std::cin >> a >> b;
+            std::cout << "Druga liczba:" << std::endl;
+            std::cin >> y;
             if (b == 0) {
                 mistake_value();
                 goto reszta;
