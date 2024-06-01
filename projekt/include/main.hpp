@@ -12,5 +12,6 @@
 #include "simple.hpp"
 #include "trigonometric.hpp"
 #include "accessory.hpp"
+#include "value_conventer.hpp"
 
 #endif //PROJEKT_MAIN_HPP

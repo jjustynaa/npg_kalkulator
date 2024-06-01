@@ -54,7 +54,9 @@ int main() {
             clear();
             goto p_menu;
         case 4:
-            // Przerzut na przelicznik
+            value_conventer();
+            if (!repeat()) goto quit;
+            clear();
             goto p_menu;
         case 5:
             rounding();
