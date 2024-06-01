@@ -13,13 +13,12 @@ void cykl_o_tryg() {
     if (lower(choose) == "cyklo") {
         cykl();
     }
-    else if (lower(choose) == "trygo") {
-        tryg();
-    }
-        else if (choose == "back"){}
-            else{
-                mistake();
-                cykl_o_tryg();
+    else
+        if (lower(choose) == "trygo")
+            tryg();
+        else {
+            mistake();
+            cykl_o_tryg();
     }
 }
 
@@ -36,9 +35,9 @@ void tryg() {
     std::cout << "Liczbe podajesz w radianach (RAD) czy stopniach (STO)?" << std::endl;
     std::cin >> wyb;
 
-    if (lower(wyb) == "RAD") {
+    if (lower(wyb) == "rad") {
         num = num / (360 / 2 / 3.1415);
-    } else if (lower(wyb) == "STO") {}
+    } else if (lower(wyb) == "sto") {}
     else {
         mistake();
         tryg();
