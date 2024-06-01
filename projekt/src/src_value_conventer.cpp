@@ -1,6 +1,7 @@
 #include "value_conventer.hpp"
 #include "accessory.hpp"
 #include <iostream>
+#include <cmath>
 
 double conventer_speed(){
     conventer_speed_start:
@@ -13,7 +14,7 @@ double conventer_speed(){
     double value, result;
     switch (choice) {
         case 1:
-            speed1:
+        speed1:
             std::cout << "Podaj predkosc w km/h:" << std::endl;
             std::cin >> value;
 
@@ -23,11 +24,12 @@ double conventer_speed(){
             }
 
             result = value / 3.6;
+            result = std::round(result * 10000.0) / 10000.0;
             std::cout << value << " km/h to " << result << " m/s" << std::endl;
             break;
 
         case 2:
-            speed2:
+        speed2:
             std::cout << "Podaj predkosc w m/s:" << std::endl;
             std::cin >> value;
 
@@ -37,6 +39,7 @@ double conventer_speed(){
             }
 
             result = value * 3.6;
+            result = std::round(result * 10000.0) / 10000.0;
             std::cout << value << " m/s to " << result << " km/h" << std::endl;
             break;
 
@@ -75,6 +78,7 @@ double conventer_length() {
             }
 
             result = value * 0.621371;
+            result = std::round(result * 10000.0) / 10000.0;
             std::cout << value << " km to " << result << " mile" << std::endl;
             break;
 
@@ -89,6 +93,7 @@ double conventer_length() {
             }
 
             result = value / 0.621371;
+            result = std::round(result * 10000.0) / 10000.0;
             std::cout << value << " mile to " << result << " km" << std::endl;
             break;
 
@@ -206,6 +211,7 @@ double conventer_time() {
             }
 
             result = value * 60;
+            result = std::round(result * 10000.0) / 10000.0;
             std::cout << value << " h to " << result << " min" << std::endl;
             break;
 
@@ -220,6 +226,7 @@ double conventer_time() {
             }
 
             result = value / 60;
+            result = std::round(result * 10000.0) / 10000.0;
             std::cout << value << " min to " << result << " h" << std::endl;
             break;
 
@@ -234,6 +241,7 @@ double conventer_time() {
             }
 
             result = value * 60;
+            result = std::round(result * 10000.0) / 10000.0;
             std::cout << value << " min to " << result << " sek" << std::endl;
             break;
 
@@ -248,6 +256,7 @@ double conventer_time() {
             }
 
             result = value / 60;
+            result = std::round(result * 10000.0) / 10000.0;
             std::cout << value << " sek to " << result << " min" << std::endl;
             break;
 

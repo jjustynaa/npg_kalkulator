@@ -24,6 +24,8 @@ set(SOURCES_FILES_TESTS
         test/test_zespolone.cpp
         test/test_kalkulator_macierzy.cpp
         test/test_pola.cpp
+        test/test_przelicznik_wartosci.cpp
+        test/test_logarytmy.cpp
 )
 
 include(SetCommonConfig.cmake)

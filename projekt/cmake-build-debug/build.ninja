@@ -49,8 +49,85 @@ cmake_ninja_workdir = C$:/Users/ASUS/Desktop/kalkulator/projekt/cmake-build-debu
 
 build cmake_object_order_depends_target_projekt__debug: phony || CMakeFiles/projekt__debug.dir
 
-build CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/projekt.cpp || cmake_object_order_depends_target_projekt__debug
-  DEP_FILE = CMakeFiles\projekt__debug.dir\src\projekt.cpp.obj.d
+build CMakeFiles/projekt__debug.dir/src/src_matrix.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_matrix.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_matrix.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_area.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_area.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_area.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_extraction_exponentiation.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_extraction_exponentiation.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_extraction_exponentiation.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_logarithm.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_logarithm.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_logarithm.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_simple.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_simple.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_simple.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_complex.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_complex.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_complex.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_integral.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_integral.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_integral.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_equation.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_equation.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_equation.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_rounding.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_rounding.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_trigonometric.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_trigonometric.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_accessory.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_accessory.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
+  OBJECT_DIR = CMakeFiles\projekt__debug.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\src
+
+build CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_value_conventer.cpp || cmake_object_order_depends_target_projekt__debug
+  DEP_FILE = CMakeFiles\projekt__debug.dir\src\src_value_conventer.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
   OBJECT_DIR = CMakeFiles\projekt__debug.dir
@@ -63,41 +140,6 @@ build CMakeFiles/projekt__debug.dir/main.cpp.obj: CXX_COMPILER__projekt__debug_u
   OBJECT_DIR = CMakeFiles\projekt__debug.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir
 
-build CMakeFiles/projekt__debug.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/main_test.cpp || cmake_object_order_depends_target_projekt__debug
-  DEP_FILE = CMakeFiles\projekt__debug.dir\test\main_test.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
-  OBJECT_DIR = CMakeFiles\projekt__debug.dir
-  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
-
-build CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_kalkulator_prosty.cpp || cmake_object_order_depends_target_projekt__debug
-  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_kalkulator_prosty.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
-  OBJECT_DIR = CMakeFiles\projekt__debug.dir
-  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
-
-build CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_zespolone.cpp || cmake_object_order_depends_target_projekt__debug
-  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_zespolone.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
-  OBJECT_DIR = CMakeFiles\projekt__debug.dir
-  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
-
-build CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_kalkulator_macierzy.cpp || cmake_object_order_depends_target_projekt__debug
-  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_kalkulator_macierzy.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
-  OBJECT_DIR = CMakeFiles\projekt__debug.dir
-  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
-
-build CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj: CXX_COMPILER__projekt__debug_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_pola.cpp || cmake_object_order_depends_target_projekt__debug
-  DEP_FILE = CMakeFiles\projekt__debug.dir\test\test_pola.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include
-  OBJECT_DIR = CMakeFiles\projekt__debug.dir
-  OBJECT_FILE_DIR = CMakeFiles\projekt__debug.dir\test
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target projekt__debug
@@ -106,7 +148,7 @@ build CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj: CXX_COMPILER__projek
 #############################################
 # Link the executable projekt__debug.exe
 
-build projekt__debug.exe: CXX_EXECUTABLE_LINKER__projekt__debug_Debug CMakeFiles/projekt__debug.dir/src/projekt.cpp.obj CMakeFiles/projekt__debug.dir/main.cpp.obj CMakeFiles/projekt__debug.dir/test/main_test.cpp.obj CMakeFiles/projekt__debug.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__debug.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__debug.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__debug.dir/test/test_pola.cpp.obj
+build projekt__debug.exe: CXX_EXECUTABLE_LINKER__projekt__debug_Debug CMakeFiles/projekt__debug.dir/src/src_matrix.cpp.obj CMakeFiles/projekt__debug.dir/src/src_area.cpp.obj CMakeFiles/projekt__debug.dir/src/src_extraction_exponentiation.cpp.obj CMakeFiles/projekt__debug.dir/src/src_logarithm.cpp.obj CMakeFiles/projekt__debug.dir/src/src_simple.cpp.obj CMakeFiles/projekt__debug.dir/src/src_complex.cpp.obj CMakeFiles/projekt__debug.dir/src/src_integral.cpp.obj CMakeFiles/projekt__debug.dir/src/src_equation.cpp.obj CMakeFiles/projekt__debug.dir/src/src_rounding.cpp.obj CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj CMakeFiles/projekt__debug.dir/src/src_accessory.cpp.obj CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.obj CMakeFiles/projekt__debug.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projekt__debug.dir
@@ -125,8 +167,85 @@ build projekt__debug.exe: CXX_EXECUTABLE_LINKER__projekt__debug_Debug CMakeFiles
 
 build cmake_object_order_depends_target_projekt__test: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build CMakeFiles/projekt__test.dir/src/projekt.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/projekt.cpp || cmake_object_order_depends_target_projekt__test
-  DEP_FILE = CMakeFiles\projekt__test.dir\src\projekt.cpp.obj.d
+build CMakeFiles/projekt__test.dir/src/src_matrix.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_matrix.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_matrix.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_area.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_area.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_area.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_extraction_exponentiation.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_extraction_exponentiation.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_extraction_exponentiation.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_logarithm.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_logarithm.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_logarithm.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_simple.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_simple.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_simple.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_complex.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_complex.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_complex.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_integral.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_integral.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_integral.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_equation.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_equation.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_rounding.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_rounding.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_trigonometric.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_trigonometric.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_accessory.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_accessory.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\src
+
+build CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/src/src_value_conventer.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\src\src_value_conventer.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
   OBJECT_DIR = CMakeFiles\projekt__test.dir
@@ -160,6 +279,20 @@ build CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj: CXX_COMPILER__projekt
   OBJECT_DIR = CMakeFiles\projekt__test.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
 
+build CMakeFiles/projekt__test.dir/test/test_przelicznik_wartosci.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_przelicznik_wartosci.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_przelicznik_wartosci.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
+build CMakeFiles/projekt__test.dir/test/test_logarytmy.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_logarytmy.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_logarytmy.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
 build CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/main_test.cpp || cmake_object_order_depends_target_projekt__test
   DEP_FILE = CMakeFiles\projekt__test.dir\test\main_test.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
@@ -175,7 +308,7 @@ build CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt
 #############################################
 # Link the executable projekt__test.exe
 
-build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/projekt__test.dir/src/projekt.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj CMakeFiles/projekt__test.dir/test/main_test.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
+build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/projekt__test.dir/src/src_matrix.cpp.obj CMakeFiles/projekt__test.dir/src/src_area.cpp.obj CMakeFiles/projekt__test.dir/src/src_extraction_exponentiation.cpp.obj CMakeFiles/projekt__test.dir/src/src_logarithm.cpp.obj CMakeFiles/projekt__test.dir/src/src_simple.cpp.obj CMakeFiles/projekt__test.dir/src/src_complex.cpp.obj CMakeFiles/projekt__test.dir/src/src_integral.cpp.obj CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj CMakeFiles/projekt__test.dir/test/test_przelicznik_wartosci.cpp.obj CMakeFiles/projekt__test.dir/test/test_logarytmy.cpp.obj CMakeFiles/projekt__test.dir/test/main_test.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projekt__test.dir
