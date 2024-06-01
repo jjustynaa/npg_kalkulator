@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt__test.dir/src/src_simple.cpp.obj.d"
   "CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj"
   "CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj.d"
+  "CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj"
+  "CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj.d"
   "CMakeFiles/projekt__test.dir/test/main_test.cpp.obj"
   "CMakeFiles/projekt__test.dir/test/main_test.cpp.obj.d"
   "CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj"

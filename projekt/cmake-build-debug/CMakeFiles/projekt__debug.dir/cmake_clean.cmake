@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt__debug.dir/src/src_simple.cpp.obj.d"
   "CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj"
   "CMakeFiles/projekt__debug.dir/src/src_trigonometric.cpp.obj.d"
+  "CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.obj"
+  "CMakeFiles/projekt__debug.dir/src/src_value_conventer.cpp.obj.d"
   "libprojekt__debug.dll.a"
   "projekt__debug.exe"
   "projekt__debug.exe.manifest"

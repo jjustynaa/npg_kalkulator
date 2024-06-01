@@ -13,21 +13,22 @@ double conventer_speed(){
     double value, result;
     switch (choice) {
         case 1:
-            std::cout << "Podaj predkosc w km/h: ";
+            std::cout << "Podaj predkosc w km/h:" << std::endl;
             std::cin >> value;
             result = value / 3.6;
             std::cout << value << " km/h to " << result << " m/s" << std::endl;
-            return result;
+            break;
         case 2:
-            std::cout << "Podaj predkosc w m/s: ";
+            std::cout << "Podaj predkosc w m/s:" << std::endl;
             std::cin >> value;
             result = value * 3.6;
             std::cout << value << " m/s to " << result << " km/h" << std::endl;
-            return result;
+            break;
         default:
             mistake();
             goto conventer_speed_start;
     }
+    return result;
 }
 
 double conventer_length() {
@@ -47,57 +48,58 @@ double conventer_length() {
     double value, result;
     switch (choice) {
         case 1:
-            std::cout << "Podaj długosc w km: ";
+            std::cout << "Podaj dlugosc w km:" << std::endl;
             std::cin >> value;
             result = value * 0.621371;
             std::cout << value << " km to " << result << " mile" << std::endl;
-            return result;
+            break;
         case 2:
-            std::cout << "Podaj długosc w milach: ";
+            std::cout << "Podaj dlugosc w milach:" << std::endl;
             std::cin >> value;
             result = value / 0.621371;
             std::cout << value << " mile to " << result << " km" << std::endl;
-            return result;
+            break;
         case 3:
-            std::cout << "Podaj długosc w km: ";
+            std::cout << "Podaj dlugosc w km:" << std::endl;
             std::cin >> value;
             result = value * 1000;
             std::cout << value << " km to " << result << " m" << std::endl;
-            return result;
+            break;
         case 4:
-            std::cout << "Podaj długosc w metrach: ";
+            std::cout << "Podaj dlugosc w metrach:" << std::endl;
             std::cin >> value;
             result = value / 1000;
             std::cout << value << " m to " << result << " km" << std::endl;
-            return result;
+            break;
         case 5:
-            std::cout << "Podaj długosc w km: ";
+            std::cout << "Podaj dlugosc w km:" << std::endl;
             std::cin >> value;
             result = value * 100000;
             std::cout << value << " km to " << result << " cm" << std::endl;
-            return result;
+            break;
         case 6:
-            std::cout << "Podaj długosc w centymetrach: ";
+            std::cout << "Podaj dlugosc w centymetrach:" << std::endl;
             std::cin >> value;
             result = value / 100000;
             std::cout << value << " cm to " << result << " km" << std::endl;
-            return result;
+            break;
         case 7:
-            std::cout << "Podaj długosc w metrach: ";
+            std::cout << "Podaj dlugosc w metrach:" << std::endl;
             std::cin >> value;
             result = value * 100;
             std::cout << value << " m to " << result << " cm" << std::endl;
-            return result;
+            break;
         case 8:
-            std::cout << "Podaj długosc w centymetrach: ";
+            std::cout << "Podaj dlugosc w centymetrach:" << std::endl;
             std::cin >> value;
             result = value / 100;
             std::cout << value << " cm to " << result << " m" << std::endl;
-            return result;
+            break;
         default:
             mistake();
             goto conventer_length_start;
     }
+    return result;
 }
 
 double conventer_time() {
@@ -113,33 +115,34 @@ double conventer_time() {
     double value, result;
     switch (choice) {
         case 1:
-            std::cout << "Podaj czas w godzinach: ";
+            std::cout << "Podaj czas w godzinach:" << std::endl;
             std::cin >> value;
             result = value * 60;
             std::cout << value << " h to " << result << " min" << std::endl;
-            return result;
+            break;
         case 2:
-            std::cout << "Podaj czas w minutach: ";
+            std::cout << "Podaj czas w minutach:" << std::endl;
             std::cin >> value;
             result = value / 60;
             std::cout << value << " min to " << result << " h" << std::endl;
-            return result;
+            break;
         case 3:
-            std::cout << "Podaj czas w minutach: ";
+            std::cout << "Podaj czas w minutach:" << std::endl;
             std::cin >> value;
             result = value * 60;
             std::cout << value << " min to " << result << " sek" << std::endl;
-            return result;
+            break;
         case 4:
-            std::cout << "Podaj czas w sekundach: ";
+            std::cout << "Podaj czas w sekundach:" << std::endl;
             std::cin >> value;
             result = value / 60;
             std::cout << value << " sek to " << result << " min" << std::endl;
-            return result;
+            break;
         default:
             mistake();
             goto conventer_time_start;
     }
+    return result;
 }
 
 void value_conventer(){
