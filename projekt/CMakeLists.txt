@@ -16,6 +16,7 @@ set(SOURCE_FILES
         src/src_rounding.cpp
         src/src_trigonometric.cpp
         src/src_accessory.cpp
+        src/value_conventer.cpp
 )
 
 set(SOURCES_FILES_TESTS
