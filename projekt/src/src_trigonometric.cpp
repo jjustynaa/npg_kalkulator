@@ -8,84 +8,97 @@
 
 void cykl_o_tryg() {
     std::string choose;
-    std::cout << "Chcesz skorzystac z funkcji cyklometrycznej czy trygonometrycznej" << std::endl;
+    std::cout << "Chcesz skorzystac z funkcji cyklometrycznej (CYLKO) czy trygonometrycznej (TRYGO):" << std::endl;
     std::cin >> choose;
-    if (choose.find("cyklome") != std::string::npos) {
+    if (lower(choose) == "cyklo") {
         cykl();
-    } else if (choose.find("trygono") != std::string::npos) {
+    }
+    else if (lower(choose) == "trygo") {
         tryg();
-    } else if (choose == "back"){
-
-    }else{
-        mistake();
-        cykl_o_tryg();
+    }
+        else if (choose == "back"){}
+            else{
+                mistake();
+                cykl_o_tryg();
     }
 }
 
 void tryg() {
-    std::cout << "Podaj funkcje i liczbe" << std::endl;
-
     double num;
-
-    std::string fun_tryg;
-
-    std::cin >> fun_tryg >> num;
-
+    int fun_tryg;
     std::string wyb;
+    std::cout << "Podaj funkcje trygonometryczna, ktora chcesz wykorzystac (1. sin, 2. cos, 3. tan, 4. ctag):"
+              << std::endl;
+    std::cin >> fun_tryg;
+    std::cout << "Podaj liczbe:" << std::endl;
+    std::cin >> num;
 
-    std::cout << "Wartosz podajesz w radianach czy stopniach?" << std::endl;
-
+    std::cout << "Liczbe podajesz w radianach (RAD) czy stopniach (STO)?" << std::endl;
     std::cin >> wyb;
 
-    if (wyb.find("stop") != std::string::npos) {
-        num = num / 57.3;
-    } else if (wyb.find("stop") == std::string::npos && wyb.find("radia") == std::string::npos) {
+    if (lower(wyb) == "RAD") {
+        num = num / (360 / 2 / 3.1415);
+    } else if (lower(wyb) == "STO") {}
+    else {
         mistake();
         tryg();
     }
 
-
-    if (fun_tryg.find("sin") != std::string::npos) {
-        std::cout << "Wartosc sinusa podanego kata wynosi " << sin(num) << std::endl;
-    } else if (fun_tryg.find("cos") != std::string::npos) {
-        std::cout << "Wartosc cosinsusa podanego kata wynosi " << cos(num) << std::endl;
-    } else if (fun_tryg.find("tan") != std::string::npos) {
-        std::cout << "Wartosc tangensa podanego kata wynosi " << tan(num) << std::endl;
-    } else if (fun_tryg.find("ctag") != std::string::npos) {
-        std::cout << "Wartosc cotangensa podanego kata wynosi " << 1 / tan(num) << std::endl;
-    } else if (fun_tryg == "back"){
-
-    } else {
-        mistake();
-        tryg();
+    switch (fun_tryg) {
+        case 1:
+            std::cout << "Wartosc sinusa podanego kata wynosi " << sin(num) << std::endl;
+            break;
+        case 2:
+            std::cout << "Wartosc cosinsusa podanego kata wynosi " << cos(num) << std::endl;
+            break;
+        case 3:
+            std::cout << "Wartosc tangensa podanego kata wynosi " << tan(num) << std::endl;
+            break;
+        case 4:
+            std::cout << "Wartosc cotangensa podanego kata wynosi " << 1 / tan(num) << std::endl;
+            break;
+        default:
+            mistake();
+            tryg();
     }
 }
 
 void cykl() {
-    std::cout << "Podaj funkcje i liczbe" << std::endl;
-
     double num;
+    int fun_cyk;
+    std::cout << "Podaj funkcje cyklometyczna, ktora chcesz wykorzystac (1. sin, 2. cos, 3. tan, 4. ctag):" << std::endl;
+    std::cin >> fun_cyk;
+    std::cout << "Podaj liczbe:" << std::endl;
+    std::cin >> num;
 
-    std::string fun_cyk;
-
-    std::cin >> fun_cyk >> num;
-
-    if (fun_cyk.find("sin") != std::string::npos) {
-        std::cout << "Warotść arcusasinusa podanego kąta wynosi " << std::fixed << std::setprecision(1)
-                  << asin(num) * 57.3 << "°" << std::endl;
-    } else if (fun_cyk.find("cos") != std::string::npos) {
-        std::cout << "Warotść arcusacosinusa podanego kąta wynosi " << std::fixed << std::setprecision(1)
-                  << acos(num) * 57.3 << "°" << std::endl;
-    } else if (fun_cyk.find("tan") != std::string::npos) {
-        std::cout << "Warotść arcusatangensa podanego kąta wynosi " << std::fixed << std::setprecision(1)
-                  << atan(num) * 57.3 << "°" << std::endl;
-    } else if (fun_cyk.find("ctag") != std::string::npos) {
-        std::cout << "Warotść arcusacotangensa podanego kąta wynosi " << std::fixed << std::setprecision(1)
-                  << M_PI / 2 - atan(num) * 57.3 << "°" << std::endl;
-    } else if (fun_cyk == "back"){
-
-    } else {
-        mistake();
-        cykl();
+    switch (fun_cyk) {
+        case 1:
+            if(-1 > num or num > 1){
+                mistake_value();
+                cykl();
+            }
+            std::cout << "Wartosc arcusasinusa podanego kata wynosi " << std::fixed << std::setprecision(1)
+                      << asin(num) * (360 / 2 / 3.1415) << "°" << std::endl;
+            break;
+        case 2:
+            if(-1 > num or num > 1){
+                mistake_value();
+                cykl();
+            }
+            std::cout << "Wartosc arcusacosinusa podanego kata wynosi " << std::fixed << std::setprecision(1)
+                      << acos(num) * (360 / 2 / 3.1415) << "°" << std::endl;
+            break;
+        case 3:
+            std::cout << "Wartosc arcusatangensa podanego kata wynosi " << std::fixed << std::setprecision(1)
+                      << atan(num) * (360 / 2 / 3.1415) << "°" << std::endl;
+            break;
+        case 4:
+            std::cout << "Wartosc arcusacotangensa podanego kata wynosi " << std::fixed << std::setprecision(1)
+                      << M_PI / 2 - atan(num) * (360 / 2 / 3.1415) << "°" << std::endl;
+            break;
+        default:
+            mistake();
+            cykl();
     }
+
 }
