@@ -63,6 +63,7 @@ void tryg() {
 }
 
 void cykl() {
+    char degree = 248;
     double num;
     int fun_cyk;
     std::cout << "Podaj funkcje cyklometyczna, ktora chcesz wykorzystac (1. sin, 2. cos, 3. tan, 4. ctag):" << std::endl;
@@ -77,7 +78,7 @@ void cykl() {
                 cykl();
             }
             std::cout << "Wartosc arcusasinusa podanego kata wynosi " << std::fixed << std::setprecision(1)
-                      << asin(num) * (360 / 2 / 3.1415) << "°" << std::endl;
+                      << asin(num) * (360 / 2 / 3.1415) << "" << degree << std::endl;
             break;
         case 2:
             if(-1 > num or num > 1){
@@ -85,15 +86,15 @@ void cykl() {
                 cykl();
             }
             std::cout << "Wartosc arcusacosinusa podanego kata wynosi " << std::fixed << std::setprecision(1)
-                      << acos(num) * (360 / 2 / 3.1415) << "°" << std::endl;
+                      << acos(num) * (360 / 2 / 3.1415) << "" << degree << std::endl;
             break;
         case 3:
             std::cout << "Wartosc arcusatangensa podanego kata wynosi " << std::fixed << std::setprecision(1)
-                      << atan(num) * (360 / 2 / 3.1415) << "°" << std::endl;
+                      << atan(num) * (360 / 2 / 3.1415) << "" << degree << std::endl;
             break;
         case 4:
             std::cout << "Wartosc arcusacotangensa podanego kata wynosi " << std::fixed << std::setprecision(1)
-                      << M_PI / 2 - atan(num) * (360 / 2 / 3.1415) << "°" << std::endl;
+                      << M_PI / 2 - atan(num) * (360 / 2 / 3.1415) << "" << degree << std::endl;
             break;
         default:
             mistake();
