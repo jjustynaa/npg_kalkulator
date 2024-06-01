@@ -148,7 +148,8 @@ int main() {
                          "Cyfry znaczace - podaj liczbe i ilosc cyfr, ile chcesz uzyskac w wyniku koncowym (cyfry liczone sa od pierwszej wartosci niezerowej od lewej strony" << std::endl;
             break;
         case 6:
-            std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ: kwadratowe - okreslone rownaniem 'ax^2 + bx + c' lub szescienne - 'ax^3 + bx^2 + cx + d" << std::endl;
+            std::cout << "Funkcja rozwiazuje rownania, ale najpierw musisz wybrac typ: kwadratowe - okreslone rownaniem 'ax^2 + bx + c', w tym rodzaju rownania mozesz rowniez uzywac wspoczynnikow zespolonych\n"
+                         " lub szescienne - 'ax^3 + bx^2 + cx + d - funkcja bez obslugi zepsolonych wspolczynnikow" << std::endl;
             break;
         case 7:
             std::cout << "Program oblicza pole wybranej figury: prostokat, trojkat, romb i trapez.\n"
