@@ -293,6 +293,20 @@ build CMakeFiles/projekt__test.dir/test/test_logarytmy.cpp.obj: CXX_COMPILER__pr
   OBJECT_DIR = CMakeFiles\projekt__test.dir
   OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
 
+build CMakeFiles/projekt__test.dir/test/test_ca³ki.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_ca³ki.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_ca³ki.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
+build CMakeFiles/projekt__test.dir/test/test_rownania.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/test_rownania.cpp || cmake_object_order_depends_target_projekt__test
+  DEP_FILE = CMakeFiles\projekt__test.dir\test\test_rownania.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/ASUS/Desktop/kalkulator/projekt/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest/include -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googlemock -isystem C:/Users/ASUS/Desktop/kalkulator/projekt/googletest-master/googletest
+  OBJECT_DIR = CMakeFiles\projekt__test.dir
+  OBJECT_FILE_DIR = CMakeFiles\projekt__test.dir\test
+
 build CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt__test_unscanned_Debug C$:/Users/ASUS/Desktop/kalkulator/projekt/test/main_test.cpp || cmake_object_order_depends_target_projekt__test
   DEP_FILE = CMakeFiles\projekt__test.dir\test\main_test.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
@@ -308,7 +322,7 @@ build CMakeFiles/projekt__test.dir/test/main_test.cpp.obj: CXX_COMPILER__projekt
 #############################################
 # Link the executable projekt__test.exe
 
-build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/projekt__test.dir/src/src_matrix.cpp.obj CMakeFiles/projekt__test.dir/src/src_area.cpp.obj CMakeFiles/projekt__test.dir/src/src_extraction_exponentiation.cpp.obj CMakeFiles/projekt__test.dir/src/src_logarithm.cpp.obj CMakeFiles/projekt__test.dir/src/src_simple.cpp.obj CMakeFiles/projekt__test.dir/src/src_complex.cpp.obj CMakeFiles/projekt__test.dir/src/src_integral.cpp.obj CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj CMakeFiles/projekt__test.dir/test/test_przelicznik_wartosci.cpp.obj CMakeFiles/projekt__test.dir/test/test_logarytmy.cpp.obj CMakeFiles/projekt__test.dir/test/main_test.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
+build projekt__test.exe: CXX_EXECUTABLE_LINKER__projekt__test_Debug CMakeFiles/projekt__test.dir/src/src_matrix.cpp.obj CMakeFiles/projekt__test.dir/src/src_area.cpp.obj CMakeFiles/projekt__test.dir/src/src_extraction_exponentiation.cpp.obj CMakeFiles/projekt__test.dir/src/src_logarithm.cpp.obj CMakeFiles/projekt__test.dir/src/src_simple.cpp.obj CMakeFiles/projekt__test.dir/src/src_complex.cpp.obj CMakeFiles/projekt__test.dir/src/src_integral.cpp.obj CMakeFiles/projekt__test.dir/src/src_equation.cpp.obj CMakeFiles/projekt__test.dir/src/src_rounding.cpp.obj CMakeFiles/projekt__test.dir/src/src_trigonometric.cpp.obj CMakeFiles/projekt__test.dir/src/src_accessory.cpp.obj CMakeFiles/projekt__test.dir/src/src_value_conventer.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_prosty.cpp.obj CMakeFiles/projekt__test.dir/test/test_zespolone.cpp.obj CMakeFiles/projekt__test.dir/test/test_kalkulator_macierzy.cpp.obj CMakeFiles/projekt__test.dir/test/test_pola.cpp.obj CMakeFiles/projekt__test.dir/test/test_przelicznik_wartosci.cpp.obj CMakeFiles/projekt__test.dir/test/test_logarytmy.cpp.obj CMakeFiles/projekt__test.dir/test/test_ca³ki.cpp.obj CMakeFiles/projekt__test.dir/test/test_rownania.cpp.obj CMakeFiles/projekt__test.dir/test/main_test.cpp.obj | lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgtest.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projekt__test.dir

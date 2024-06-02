@@ -26,6 +26,8 @@ set(SOURCES_FILES_TESTS
         test/test_pola.cpp
         test/test_przelicznik_wartosci.cpp
         test/test_logarytmy.cpp
+        test/test_całki.cpp
+        test/test_rownania.cpp
 )
 
 include(SetCommonConfig.cmake)

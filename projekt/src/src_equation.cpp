@@ -62,9 +62,9 @@ std::vector<double> solveCubic(double a, double b, double c, double d) {
         double phi = acos(-q / (2 * r));
         double r_cbrt = cbrt(r);
 
-        roots.push_back(2 * r_cbrt * cos(phi / 3) - b / (3 * a));
-        roots.push_back(2 * r_cbrt * cos((phi + 2 * M_PI) / 3) - b / (3 * a));
-        roots.push_back(2 * r_cbrt * cos((phi + 4 * M_PI) / 3) - b / (3 * a));
+        roots.push_back(std::round((2 * r_cbrt * cos(phi / 3) - b / (3 * a)) * 10000.0) / 10000.0);
+        roots.push_back(std::round((2 * r_cbrt * cos((phi + 2 * M_PI) / 3) - b / (3 * a)) * 10000.0) / 10000.0);
+        roots.push_back(std::round((2 * r_cbrt * cos((phi + 4 * M_PI) / 3) - b / (3 * a)) * 10000.0) / 10000.0);
     }
 
     return roots;
