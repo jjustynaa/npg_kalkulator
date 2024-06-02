@@ -123,6 +123,7 @@ void triangle(){
     }
 
     std::cout << "Pole trojkata wynosi: " << area << std::endl;
+    std::cout << "W przypadku wyboru metody 2 lub 3 wynik został podany do 8 miejsc znaczacych" << std::endl;
 }
 
 double rectangularArea(double a, double b){
