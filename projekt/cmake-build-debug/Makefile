@@ -610,6 +610,30 @@ test/main_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/main_test.cpp.s
 .PHONY : test/main_test.cpp.s
 
+test/test_calki.obj: test/test_calki.cpp.obj
+.PHONY : test/test_calki.obj
+
+# target to build an object file
+test/test_calki.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_calki.cpp.obj
+.PHONY : test/test_calki.cpp.obj
+
+test/test_calki.i: test/test_calki.cpp.i
+.PHONY : test/test_calki.i
+
+# target to preprocess a source file
+test/test_calki.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_calki.cpp.i
+.PHONY : test/test_calki.cpp.i
+
+test/test_calki.s: test/test_calki.cpp.s
+.PHONY : test/test_calki.s
+
+# target to generate assembly for a file
+test/test_calki.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_calki.cpp.s
+.PHONY : test/test_calki.cpp.s
+
 test/test_kalkulator_macierzy.obj: test/test_kalkulator_macierzy.cpp.obj
 .PHONY : test/test_kalkulator_macierzy.obj
 
@@ -730,6 +754,30 @@ test/test_przelicznik_wartosci.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_przelicznik_wartosci.cpp.s
 .PHONY : test/test_przelicznik_wartosci.cpp.s
 
+test/test_rownania.obj: test/test_rownania.cpp.obj
+.PHONY : test/test_rownania.obj
+
+# target to build an object file
+test/test_rownania.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_rownania.cpp.obj
+.PHONY : test/test_rownania.cpp.obj
+
+test/test_rownania.i: test/test_rownania.cpp.i
+.PHONY : test/test_rownania.i
+
+# target to preprocess a source file
+test/test_rownania.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_rownania.cpp.i
+.PHONY : test/test_rownania.cpp.i
+
+test/test_rownania.s: test/test_rownania.cpp.s
+.PHONY : test/test_rownania.s
+
+# target to generate assembly for a file
+test/test_rownania.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt__test.dir\build.make CMakeFiles/projekt__test.dir/test/test_rownania.cpp.s
+.PHONY : test/test_rownania.cpp.s
+
 test/test_zespolone.obj: test/test_zespolone.cpp.obj
 .PHONY : test/test_zespolone.obj
 
@@ -814,6 +862,9 @@ help:
 	@echo ... test/main_test.obj
 	@echo ... test/main_test.i
 	@echo ... test/main_test.s
+	@echo ... test/test_calki.obj
+	@echo ... test/test_calki.i
+	@echo ... test/test_calki.s
 	@echo ... test/test_kalkulator_macierzy.obj
 	@echo ... test/test_kalkulator_macierzy.i
 	@echo ... test/test_kalkulator_macierzy.s
@@ -829,6 +880,9 @@ help:
 	@echo ... test/test_przelicznik_wartosci.obj
 	@echo ... test/test_przelicznik_wartosci.i
 	@echo ... test/test_przelicznik_wartosci.s
+	@echo ... test/test_rownania.obj
+	@echo ... test/test_rownania.i
+	@echo ... test/test_rownania.s
 	@echo ... test/test_zespolone.obj
 	@echo ... test/test_zespolone.i
 	@echo ... test/test_zespolone.s
